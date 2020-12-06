@@ -20,9 +20,6 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  text-align: left;
-  hyphens: auto;
-
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
@@ -35,8 +32,6 @@ body {
   min-height: 100vh;
   flex-direction: column;
   overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-  hyphens: auto;
 }
 
 
