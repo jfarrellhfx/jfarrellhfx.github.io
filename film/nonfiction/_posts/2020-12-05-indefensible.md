@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
       style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
   </div>
 </div>
-<p></p>
+
 
 This long-form research documentary focuses on the controversy surrounding a commemorative statue of Edward Cornwallis, the man credited with founding the city of Halifax, Nova Scotia.  His mistreatment of the Mi'kmaq indigenous population has been classified as genocide. The film was screened to a crowded house at Victoria College in the University of Toronto.  It features interviews with historians, city councillors, and journalists.  The project was supervised by Prof. John Duncan at the University of Toronto.
 
@@ -26,5 +26,5 @@ This long-form research documentary focuses on the controversy surrounding a com
  Tom also snapped this great picture of me at our public screening:
  <center>
  <img style = "width: 75%;
-  height: auto;" src = "/assets/screening.jpg">
+  height: auto;" src = "{{site.baseurl}}/assets/screening.jpg">
  </center>
