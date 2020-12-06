@@ -5,4 +5,4 @@ title: Home
 layout: page
 ---
 
-This is just a test, that's all!
+This is just a test, that's all! Just test
