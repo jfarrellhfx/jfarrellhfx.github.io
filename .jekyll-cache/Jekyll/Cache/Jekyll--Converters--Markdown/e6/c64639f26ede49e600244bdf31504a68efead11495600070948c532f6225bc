@@ -1,0 +1,20 @@
+I"i<p>My name is Jack Hollis Farrell, and I am an undergraduate student at the University of Toronto studying <em>physics</em>, <em>mathematics</em>, and <em>english</em>.
+I was born in Halifax, Nova Scotia, where I went to high school.  In 2017, I moved to Toronto to start school.</p>
+
+<p>For specifics, please consult my <a href="/assets/CV.pdf">full CV (pdf)</a>. If you don’t need the exhausting detail, find some highlights below:</p>
+
+<h2 id="interests-and-hobbies">Interests and Hobbies</h2>
+<ul>
+  <li>Filmmaking.  I’ve been making movies with my friends since around middle school.  Lately, though, in addition to my creative film projects, I have been exploring documentary and nonfiction filmmaking.  Lots of examples are on the</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># testing syntax highlighting for python</span>
+<span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="n">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span></code></pre></figure>
+
+<p>And testing tab for code blocks:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Code
+code
+</code></pre></div></div>
+:ET
