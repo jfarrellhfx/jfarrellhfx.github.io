@@ -5,6 +5,8 @@ layout: page
 ---
 In addition to research, I am also an independent/freelance film-maker.  All of my publically-available projects are included below.
 
+---
+
 ## Nonfiction
 <ul>
   {% for post in site.categories.nonfiction %}
@@ -16,3 +18,5 @@ In addition to research, I am also an independent/freelance film-maker.  All of 
     </li>
   {% endfor %}
 </ul>
+
+---
