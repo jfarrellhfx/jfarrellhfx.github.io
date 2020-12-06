@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Film
 permalink: /film/
+layout: page
 ---
 In addition to research, I am also an independent/freelance film-maker.  All of my publically-available projects are included below.
 
