@@ -23,8 +23,8 @@ This long-form research documentary focuses on the controversy surrounding a com
 
  I'm not a historian, but my co-director Tom Fraser is, and he has written a great article called <a href = "https://activehistory.ca/2018/03/edward-cornwallis-public-memory-and-canadian-nationalism/" target = "_blank">Edward Cornwallis, Public Memory, and Canadian Nationalism</a>, which is published on the website <a href = "https://activehistory.ca" target = "_blank">activehistory.ca</a>.  It's a nice treatment of the ideas like *history* vs. *historical memory* that come up in the film.
 
- Tom also snapped this great picture of me at our public screening:
+ Tom also snapped this great picture of me at our public screening: test
  <center>
  <img style = "width: 75%;
-  height: auto;" src = "{{site.baseurl}}/assets/screening.jpg">
+  height: auto;" src = "/assets/screening.jpg">
  </center>
