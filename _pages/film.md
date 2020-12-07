@@ -14,7 +14,7 @@ In addition to research, I am also an independent/freelance film-maker.  All of 
       <a href="{{ post.url }}"> <i>{{ post.title }}</i></a>
       {{ post.excerpt }}
 
-      <p style="text-align:left;position:relative;top:-1em;"><a href="{{ post.url }}"> <i>(read more)</i></a></p>
+      <p style="text-align:center;position:relative;top:-1em;"><a href="{{ post.url }}"> <i>(read more)</i></a></p>
 
   {% endfor %}
 </div>
