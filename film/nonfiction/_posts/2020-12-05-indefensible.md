@@ -26,5 +26,5 @@ This long-form research documentary focuses on the controversy surrounding a com
  Tom also snapped this great picture of me at our public screening: test
  <center>
  <img style = "width: 75%;
-  height: auto;" src = "/assets/screening.jpg">
+  height: auto;" src = "/assets/screening.JPG">
  </center>
