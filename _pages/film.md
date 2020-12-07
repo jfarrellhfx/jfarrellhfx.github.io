@@ -8,15 +8,15 @@ In addition to research, I am also an independent/freelance film-maker.  All of 
 ---
 
 ## Nonfiction
-<ul>
+<div>
   {% for post in site.categories.nonfiction %}
-    <li>
+
       <a href="{{ post.url }}"> <i>{{ post.title }}</i></a>
       {{ post.excerpt }}
 
       <p style="text-align:left;position:relative;top:-1em;"><a href="{{ post.url }}"> <i>(read more)</i></a></p>
-    </li>
+
   {% endfor %}
-</ul>
+</div>
 
 ---
