@@ -11,7 +11,7 @@ In addition to research, I am also an independent/freelance film-maker.  All of 
 <div>
   {% for post in site.categories.nonfiction %}
 
-      <a href="{{ post.url }}"> <i>{{ post.title }}</i></a>
+      <a href="{{ post.url }}"> <i><h3>{{ post.title }}</h3></i></a>
       {{ post.excerpt }}
 
       <p style="text-align:center;position:relative;top:-1em;"><a href="{{ post.url }}"> <i>(read more)</i></a></p>

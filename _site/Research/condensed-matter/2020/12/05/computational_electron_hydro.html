@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Computational Electron Hydrodynamics" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"http://localhost:4000/research/condensed-matter/2020/12/05/computational_electron_hydro.html","headline":"Computational Electron Hydrodynamics","dateModified":"2020-12-05T00:00:00-04:00","datePublished":"2020-12-05T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/research/condensed-matter/2020/12/05/computational_electron_hydro.html"},"description":"Supervisors: Prof. Thomas Scaffidi &amp; Prof. Nicolas Grisouard Supported by a NSERC Undergraduate Student Research Award Electron hydrodynamics is an interesting field that deals with an exotic regime in which electrons can be described by hydrodynamic equations. I implemented a computer simulation to study the flow of these viscous electrons.","@context":"https://schema.org"}</script>
+{"headline":"Computational Electron Hydrodynamics","dateModified":"2020-12-05T00:00:00-04:00","datePublished":"2020-12-05T00:00:00-04:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/research/condensed-matter/2020/12/05/computational_electron_hydro.html"},"url":"http://localhost:4000/research/condensed-matter/2020/12/05/computational_electron_hydro.html","description":"Supervisors: Prof. Thomas Scaffidi &amp; Prof. Nicolas Grisouard Supported by a NSERC Undergraduate Student Research Award Electron hydrodynamics is an interesting field that deals with an exotic regime in which electrons can be described by hydrodynamic equations. I implemented a computer simulation to study the flow of these viscous electrons.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jack H. Farrell" />
 
@@ -51,6 +51,7 @@ MathJax.tex.macros = {
     vui: ["\\hat{\\boldsymbol{#1}}", 1],
     e: "{\\mathrm{e}}",
     i: "{\\mathrm{i}}",
+    dv: ["{\\frac{d #1}{d #2}}", 2],
 };
 </script>
 </head>
@@ -66,7 +67,7 @@ MathJax.tex.macros = {
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/about/">About</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/film/">Film</a></div>
+        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/about/">About</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/film/">Film</a><a class="page-link" href="/blog/">Blog</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -90,22 +91,7 @@ MathJax.tex.macros = {
 
 <!--more-->
 
-<p>After this is the rest of the thing, including some $\LaTeX$ equations.</p>
-
-\[\begin{align}
-    a &amp;=\int_a^b (f(x))\  \d x \nonumber\\
-    &amp;= \pdv{}{r} \left( \sin(kx) \right) \nonumber\\
-    &amp;= \vui{x} \\
-    &amp;= \vbi{x} \\
-    &amp;= \vu{a} \\
-    &amp;= \vui{\beta}
- \end{align}\]
-
-<p>And, I also wrote macros for writing some numbers typeset properly:</p>
-
-\[\begin{equation}
- \e ^ {\i x} = \cos x + \i \sin x
- \end{equation}\]
+<p><a href="test.tex">test.tex</a></p>
 
   </div><a class="u-url" href="/research/condensed-matter/2020/12/05/computational_electron_hydro.html" hidden></a>
 </article>

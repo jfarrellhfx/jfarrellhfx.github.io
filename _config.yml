@@ -25,22 +25,28 @@ description: >- # this means to ignore newlines until "baseurl:"
   Physics and filmmaking
 github_username:  jfarrellhfx
 url: https://jfarrellhfx.github.io # the base hostname & protocol for your site, e.g. http://example.com
-
+baseurl: ""
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
 minima:
-  skin: 
+  skin:
 
 include:
-  - "_pages"
+    - "_pages"
+    - "_categories"
 
 header_pages:
   - index.markdown
   - _pages/about.markdown
   - _pages/research.md
   - _pages/film.md
+  - _pages/blog.md
+
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
