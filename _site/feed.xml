@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-07T18:48:25-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jack H. Farrell</title><subtitle>Physics and filmmaking</subtitle><author><name></name></author><entry><title type="html">Test</title><link href="http://localhost:4000/jekyll/update/2020/12/05/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Test" /><published>2020-12-05T15:02:10-04:00</published><updated>2020-12-05T15:02:10-04:00</updated><id>http://localhost:4000/jekyll/update/2020/12/05/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/12/05/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-12-08T02:21:23-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jack H. Farrell</title><subtitle>Physics and filmmaking</subtitle><author><name></name></author><entry><title type="html">Test</title><link href="http://localhost:4000/jekyll/update/2020/12/05/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Test" /><published>2020-12-05T15:02:10-04:00</published><updated>2020-12-05T15:02:10-04:00</updated><id>http://localhost:4000/jekyll/update/2020/12/05/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/12/05/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
 
@@ -25,9 +25,20 @@
 
 &lt;p&gt;After this is the rest of the thing, including some $\LaTeX$ equations.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Testing a large code block&lt;/code&gt;&lt;/p&gt;
+\[\begin{align}
+    a &amp;amp;=\int_a^b (f(x))\  \d x \nonumber\\
+    &amp;amp;= \pdv{}{r} \left( \sin(kx) \right) \nonumber\\
+    &amp;amp;= \vui{x} \\
+    &amp;amp;= \vbi{x} \\
+    &amp;amp;= \vu{a} \\
+    &amp;amp;= \vui{\beta}
+ \end{align}\]
 
-\[\frac{\partial J}{\partial t} + \frac{\partial}{\partial x}\]</content><author><name></name></author><category term="research" /><category term="condensed-matter" /><summary type="html">Supervisors: Prof. Thomas Scaffidi &amp;amp; Prof. Nicolas Grisouard Supported by a NSERC Undergraduate Student Research Award Electron hydrodynamics is an interesting field that deals with an exotic regime in which electrons can be described by hydrodynamic equations. I implemented a computer simulation to study the flow of these viscous electrons.</summary></entry><entry><title type="html">Test2</title><link href="http://localhost:4000/jekyll/update/2020/12/05/test.html" rel="alternate" type="text/html" title="Test2" /><published>2020-12-05T00:00:00-04:00</published><updated>2020-12-05T00:00:00-04:00</updated><id>http://localhost:4000/jekyll/update/2020/12/05/test</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/12/05/test.html">&lt;p&gt;This is a test of the excerpts thing! I wonder if it works at all.  Maybe not, but I hope so.&lt;/p&gt;
+&lt;p&gt;And, I also wrote macros for writing some numbers typeset properly:&lt;/p&gt;
+
+\[\begin{equation}
+ \e ^ {\i x} = \cos x + \i \sin x
+ \end{equation}\]</content><author><name></name></author><category term="research" /><category term="condensed-matter" /><summary type="html">Supervisors: Prof. Thomas Scaffidi &amp;amp; Prof. Nicolas Grisouard Supported by a NSERC Undergraduate Student Research Award Electron hydrodynamics is an interesting field that deals with an exotic regime in which electrons can be described by hydrodynamic equations. I implemented a computer simulation to study the flow of these viscous electrons.</summary></entry><entry><title type="html">Test2</title><link href="http://localhost:4000/jekyll/update/2020/12/05/test.html" rel="alternate" type="text/html" title="Test2" /><published>2020-12-05T00:00:00-04:00</published><updated>2020-12-05T00:00:00-04:00</updated><id>http://localhost:4000/jekyll/update/2020/12/05/test</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/12/05/test.html">&lt;p&gt;This is a test of the excerpts thing! I wonder if it works at all.  Maybe not, but I hope so.&lt;/p&gt;
 
 &lt;!--more--&gt;
 

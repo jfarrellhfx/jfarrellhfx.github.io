@@ -31,7 +31,7 @@ theme: minima
 plugins:
   - jekyll-feed
 minima:
-  skin:
+  skin: 
 
 include:
   - "_pages"

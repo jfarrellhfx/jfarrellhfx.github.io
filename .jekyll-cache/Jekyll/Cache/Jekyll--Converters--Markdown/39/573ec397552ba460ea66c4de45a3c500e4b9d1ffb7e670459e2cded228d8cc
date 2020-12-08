@@ -1,0 +1,40 @@
+I"<p>I am interested in the theoretical physics of materials, called <em>Condensed Matter Physics</em>.  You can read about my recent research projects, in this area and others, below.</p>
+
+<hr />
+
+<div>
+  
+
+      <a href="/research/condensed-matter/2020/12/05/computational_electron_hydro.html">Computational Electron Hydrodynamics</a>
+      <script>
+MathJax.tex.macros = {
+    d: '{\\mathrm{d}}',
+    pdv: ['{\\frac{\\partial #1}{\\partial #2}}', 2],
+};
+</script>
+
+<ul>
+  <li><em>Supervisors: Prof. Thomas Scaffidi &amp; Prof. Nicolas Grisouard</em></li>
+  <li><em>Supported by a NSERC Undergraduate Student Research Award</em></li>
+</ul>
+
+<p>Electron hydrodynamics is an interesting field that deals with an exotic regime in which electrons can be described by hydrodynamic equations.  I implemented a computer simulation to study the flow of these viscous electrons.</p>
+
+
+      <p style="text-align:left;position:relative;top:-1em;"><a href="/research/condensed-matter/2020/12/05/computational_electron_hydro.html"> <i>(read more)</i></a></p>
+  
+
+      <a href="/research/condensed-matter/2020/12/05/balloon_spectrometer.html">Testing and Contributing to a Balloon-Borne Spectrometer</a>
+      <ul>
+  <li><em>Supervisor: Prof. Kaley A. Wallker</em></li>
+  <li><em>Supported by a NSERC Undergraduate Summer Research Award</em></li>
+</ul>
+
+<p>This is thetttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</p>
+
+      <p style="text-align:left;position:relative;top:-1em;"><a href="/research/condensed-matter/2020/12/05/balloon_spectrometer.html"> <i>(read more)</i></a></p>
+  
+</div>
+
+<p>interested</p>
+:ET

@@ -1,0 +1,28 @@
+I"q<ul>
+  <li><em>Supervisors: Prof. Thomas Scaffidi &amp; Prof. Nicolas Grisouard</em></li>
+  <li><em>Supported by a NSERC Undergraduate Student Research Award</em></li>
+</ul>
+
+<p>Electron hydrodynamics is an interesting field that deals with an exotic regime in which electrons can be described by hydrodynamic equations.  I implemented a computer simulation to study the flow of these viscous electrons.</p>
+
+<!--more-->
+
+<p>After this is the rest of the thing, including some $\LaTeX$ equations.</p>
+
+<p><code class="language-plaintext highlighter-rouge">Testing a large code block</code></p>
+
+\[\begin{equation}
+\label{test}
+\frac{\partial J}{\partial t} + \frac{\partial}{\partial x}
+\end{equation}\]
+
+<p>This was just  test of the thing.  The answer is in Eq. ($\ref{test}$).</p>
+
+\[\LaTeX\]
+
+<p>Testing macro:</p>
+
+<p>pfrac{1}{2}</p>
+
+\[\begin{equation} Test \end{equation}\]
+:ET
