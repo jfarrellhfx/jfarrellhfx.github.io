@@ -10,4 +10,4 @@ Electron hydrodynamics is an interesting field that deals with an exotic regime 
 
 <!--more-->
 
-<a href = "test.tex">test.tex</a>
+<a href = "_posts/test.tex">test.tex</a>

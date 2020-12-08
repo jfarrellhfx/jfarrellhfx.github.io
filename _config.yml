@@ -36,7 +36,7 @@ minima:
 
 include:
     - "_pages"
-    - "_categories"
+    - "_posts"
 
 header_pages:
   - index.markdown
@@ -44,6 +44,7 @@ header_pages:
   - _pages/research.md
   - _pages/film.md
   - _pages/blog.md
+permalink: :path
 
 
 
