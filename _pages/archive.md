@@ -4,6 +4,18 @@ permalink: /archive/
 layout: page
 ---
 
+{% for note in site.notes %}
+  <h2>
+    <a href="{{ note.url }}">
+      {{ note.subject }}
+    </a>
+
+{{note.excerpt}}
+
+  </h2>
+{% endfor %}
+
+
 {% for tag in site.tags %}
   <h3>{{ tag[0] }}</h3>
   <ul>

@@ -46,7 +46,9 @@ header_pages:
   - _pages/writing.md
 permalink: :path
 
-
+collections:
+  notes:
+    output: true
 
 
 # Exclude from processing.
