@@ -3,7 +3,7 @@ title: Blog
 permalink: /blog/
 layout: page
 ---
-Go [here](/archive/) to see all posts organized by category.
+Please feel free to visit the [archive](/archive) to see all posts organized by category!
 
 <ul>
   {% for post in site.categories.Other %}
