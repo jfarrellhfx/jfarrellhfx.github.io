@@ -43,7 +43,7 @@ header_pages:
   - _pages/about.markdown
   - _pages/research.md
   - _pages/film.md
-  - _pages/blog.md
+  - _pages/writing.md
 permalink: :path
 
 

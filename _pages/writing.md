@@ -1,6 +1,6 @@
 ---
-title: Blog
-permalink: /blog/
+title: Writing
+permalink: /writing/
 layout: page
 ---
 Please feel free to visit the [archive](/archive) to see all posts organized by category!
