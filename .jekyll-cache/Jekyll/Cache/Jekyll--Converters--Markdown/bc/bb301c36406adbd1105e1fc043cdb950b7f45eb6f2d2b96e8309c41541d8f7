@@ -1,0 +1,32 @@
+I"£<p>MathJax configuration:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+<span class="nx">MathJax</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">tex</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">inlineMath</span><span class="p">:</span> <span class="p">[[</span><span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">],</span> <span class="p">[</span><span class="dl">'</span><span class="se">\\</span><span class="s1">(</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="se">\\</span><span class="s1">)</span><span class="dl">'</span><span class="p">]],</span>
+    <span class="na">tags</span><span class="p">:</span> <span class="dl">'</span><span class="s1">ams</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">macros</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">d</span><span class="p">:</span> <span class="dl">'</span><span class="s1">{</span><span class="se">\\</span><span class="s1">mathrm{d}}</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">pdv</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">{</span><span class="se">\\</span><span class="s1">frac{</span><span class="se">\\</span><span class="s1">partial #1}{</span><span class="se">\\</span><span class="s1">partial #2}}</span><span class="dl">'</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+        <span class="na">vbi</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="se">\\</span><span class="s2">boldsymbol{#1}</span><span class="dl">"</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="na">vb</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="se">\\</span><span class="s2">mathbf{#1}</span><span class="dl">"</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="na">vu</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="se">\\</span><span class="s2">hat{</span><span class="se">\\</span><span class="s2">mathbf{#1}}</span><span class="dl">"</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="na">vui</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="se">\\</span><span class="s2">hat{</span><span class="se">\\</span><span class="s2">boldsymbol{#1}}</span><span class="dl">"</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="na">e</span><span class="p">:</span> <span class="dl">"</span><span class="s2">{</span><span class="se">\\</span><span class="s2">mathrm{e}}</span><span class="dl">"</span><span class="p">,</span>
+        <span class="na">i</span><span class="p">:</span> <span class="dl">"</span><span class="s2">{</span><span class="se">\\</span><span class="s2">mathrm{i}}</span><span class="dl">"</span><span class="p">,</span>
+        <span class="na">dv</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">{</span><span class="se">\\</span><span class="s2">frac{d #1}{d #2}}</span><span class="dl">"</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+    <span class="p">},</span>
+<span class="p">};</span>
+  <span class="p">},</span>
+  <span class="nx">svg</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nl">fontCache</span><span class="p">:</span> <span class="dl">'</span><span class="s1">global</span><span class="dl">'</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">id=</span><span class="s">"MathJax-script"</span> <span class="na">async</span>
+  <span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/script&gt;</span>
+
+
+</code></pre></div></div>
+:ET

@@ -6,4 +6,8 @@ excerpt_separator: <!--more-->
 - *Supervisor: Prof. Kaley A. Wallker*
 - *Supported by a NSERC Undergraduate Summer Research Award*
 
-This is thetttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
+$$
+ \begin{equation}
+ \int_a^b f(x) \d x 
+ \end{equation}
+$$

@@ -1,0 +1,50 @@
+I"P<p>To be able to type $\LaTeX$ equations in <code class="language-plaintext highlighter-rouge">html</code> documents, you need to add a few lines of <code class="language-plaintext highlighter-rouge">html</code> to the heading of your <code class="language-plaintext highlighter-rouge">html</code> page.  I use the configuration given below.</p>
+
+<!--more-->
+
+<p>First, tell your webpage where to find <code class="language-plaintext highlighter-rouge">MathJax</code>:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">id=</span><span class="s">"MathJax-script"</span> <span class="na">async</span>
+  <span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>But, <em>before that</em> (which is important), we need to configure it.  I like it to be able to use symbols and environments from <code class="language-plaintext highlighter-rouge">amsmath</code>, so I include the tag <code class="language-plaintext highlighter-rouge">tags: ams</code>. Additionally, one drawback of writing $\LaTeX$ on the web like this is that <code class="language-plaintext highlighter-rouge">MathJax</code> doesn’t understand that many packages; many convenient macros from packages like <code class="language-plaintext highlighter-rouge">physics</code> are not accessible.  Still, we can partially fix it by defining our own macros — and I was surprised how few I really used regularly.</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>
+<span class="nx">MathJax</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">tex</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">inlineMath</span><span class="p">:</span> <span class="p">[[</span><span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">$</span><span class="dl">'</span><span class="p">],</span> <span class="p">[</span><span class="dl">'</span><span class="se">\\</span><span class="s1">(</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="se">\\</span><span class="s1">)</span><span class="dl">'</span><span class="p">]],</span>
+    <span class="na">tags</span><span class="p">:</span> <span class="dl">'</span><span class="s1">ams</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">macros</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">d</span><span class="p">:</span> <span class="dl">'</span><span class="s1">{</span><span class="se">\\</span><span class="s1">mathrm{d}}</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">pdv</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">{</span><span class="se">\\</span><span class="s1">frac{</span><span class="se">\\</span><span class="s1">partial #1}{</span><span class="se">\\</span><span class="s1">partial #2}}</span><span class="dl">'</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+        <span class="na">vbi</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="se">\\</span><span class="s2">boldsymbol{#1}</span><span class="dl">"</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="na">vb</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="se">\\</span><span class="s2">mathbf{#1}</span><span class="dl">"</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="na">vu</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="se">\\</span><span class="s2">hat{</span><span class="se">\\</span><span class="s2">mathbf{#1}}</span><span class="dl">"</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="na">vui</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="se">\\</span><span class="s2">hat{</span><span class="se">\\</span><span class="s2">boldsymbol{#1}}</span><span class="dl">"</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="na">e</span><span class="p">:</span> <span class="dl">"</span><span class="s2">{</span><span class="se">\\</span><span class="s2">mathrm{e}}</span><span class="dl">"</span><span class="p">,</span>
+        <span class="na">i</span><span class="p">:</span> <span class="dl">"</span><span class="s2">{</span><span class="se">\\</span><span class="s2">mathrm{i}}</span><span class="dl">"</span><span class="p">,</span>
+        <span class="na">dv</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">{</span><span class="se">\\</span><span class="s2">frac{d #1}{d #2}}</span><span class="dl">"</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+    <span class="p">},</span>
+  <span class="p">},</span>
+  <span class="na">svg</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">fontCache</span><span class="p">:</span> <span class="dl">'</span><span class="s1">global</span><span class="dl">'</span>
+  <span class="p">}</span>
+<span class="p">};</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>e.g.   To get a numbered equation, I write:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$
+ \begin{equation}
+ \left( \i \gamma^\mu \partial_\mu - m \right) \psi = 0
+ \end{equation}
+$$
+</code></pre></div></div>
+<p>which renders as:</p>
+
+\[\begin{equation}
+ \left( \i \gamma^\mu \partial_\mu - m \right) \psi = 0
+ \end{equation}\]
+
+<p>Note that <code class="language-plaintext highlighter-rouge">html</code> wants the <code class="language-plaintext highlighter-rouge">$$ $$</code> around the <code class="language-plaintext highlighter-rouge">\begin{equation} ... \end{equation}</code>— it needs to know you’re trying to type $\LaTeX$.</p>
+:ET

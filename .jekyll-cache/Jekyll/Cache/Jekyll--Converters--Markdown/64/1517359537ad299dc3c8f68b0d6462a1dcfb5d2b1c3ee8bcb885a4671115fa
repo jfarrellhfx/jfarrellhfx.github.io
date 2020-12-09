@@ -1,0 +1,15 @@
+I"½<p>Go <a href="/archive/">here</a> to see all posts organized by category.</p>
+
+<ul>
+  
+
+     <li> <a href="/Other/Computer%20Stuff/2020-12-08-math-on-the-web"><div style="font-family: Roboto;font-size:16pt">Math on the Web</div></a>
+      <p>To be able to type $\LaTeX$ equations in <code class="language-plaintext highlighter-rouge">html</code> documents, you need to add a few lines of <code class="language-plaintext highlighter-rouge">html</code> to the heading of your <code class="language-plaintext highlighter-rouge">html</code> page.  I use the configuration given below.</p>
+
+
+      <div style="text-align:right;position:relative;top:-1em;"><i>
+(08 December, 2020)</i></div>
+</li>
+  
+</ul>
+:ET

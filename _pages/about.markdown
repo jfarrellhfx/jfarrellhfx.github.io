@@ -14,5 +14,7 @@ I am blah blah blah
 ## Filmmaking
  I've been making movies with my friends since around middle school.  For the past few years, in addition to my creative film projects, I have been exploring documentary and nonfiction filmmaking.  Lots of examples are on the <a href = "/film/">film</a> page.
 
+ <img src = "/assets/screening.JPG">
+
 ## Other Interests
 - *Comics:*
