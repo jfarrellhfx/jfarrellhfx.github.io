@@ -5,6 +5,9 @@ layout: page
 ---
 
 ## Notes on Physics and Math
+
+---
+
 <div>
 {% assign subjects = site.notes| group_by:"subject" %}
 {% for subject in subjects %}
@@ -20,6 +23,10 @@ layout: page
 {% endfor %}
 
 </div>
+
+## Blog
+
+---
 
 {% for tag in site.tags %}
   <h2>{{ tag[0] }}</h2>

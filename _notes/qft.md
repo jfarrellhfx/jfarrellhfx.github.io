@@ -2,11 +2,11 @@
 subject: Quantum Field Theory
 title: Typesetting Slash Notation
 order: 1
-layout: post
+layout: note
 excerpt_separator: <!--more-->
 ---
 <!--more-->
-<a href = "{{ page.url }}.pdf">(pdf)</a>
+
 
 There are a few notations one uses pretty often in Quantum Field Theory.  One of them is Feynman's "slash" notation:
 $$
