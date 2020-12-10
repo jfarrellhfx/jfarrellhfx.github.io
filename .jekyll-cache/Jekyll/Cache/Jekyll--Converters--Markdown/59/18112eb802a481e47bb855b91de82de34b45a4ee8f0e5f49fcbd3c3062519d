@@ -1,0 +1,47 @@
+I"p<p>This page is meant to give an overview of my writing.  If you’d rather see the notes and articles organized by category, p lease feel free to visit the <a href="/archive">archive</a> page!</p>
+
+<h2 id="math-and-physics-notes">Math and Physics Notes</h2>
+
+<p>When I am trying to learn a concept, it helps a lot to write it out as if I am explaining it to myself.  These notes are part of that exercise.  Here, you can find pages (some more technical than others) on a variety of topics in mathematics and physics. The notes are consistently updated; they may (read: definitely) contain errors. <em>In most cases, you can also download a <code class="language-plaintext highlighter-rouge">pdf</code> of the notes by by clicking a button at the end of each page</em>.</p>
+
+<details><summary>View Notes</summary>
+<div>
+
+
+    <h3>Quantum Field Theory</h3>
+    <ul>
+    
+    <li> <a href="/notes/qft"><div style="font-family: Roboto;font-size:14pt">Typesetting Slash Notation</div></a>
+    
+
+    </li>
+
+    
+    </ul>
+
+</div>
+</details>
+
+<h2 id="blog">Blog</h2>
+
+<ul>
+  
+
+     <li> <a href="/Other/Computer%20Stuff/2020-12-08-math-on-the-web"><div style="font-family: Roboto;font-size:16pt">Math on the Web</div></a>
+      <p>To be able to type $\LaTeX$ equations in <code class="language-plaintext highlighter-rouge">html</code> documents, you need to add a few lines of <code class="language-plaintext highlighter-rouge">html</code> to the heading of your <code class="language-plaintext highlighter-rouge">html</code> page.  I use the configuration given below.</p>
+
+
+      <div style="text-align:right;position:relative;top:-1em;"><i>
+(08 December, 2020)</i></div>
+</li>
+  
+
+     <li> <a href="/Other/Computer%20Stuff/2020-12-07-site-workflow"><div style="font-family: Roboto;font-size:16pt">Site Workflow</div></a>
+      <p>This site was built using <a href="https://jekyllrb.com/">jekyll</a> and the <a href="https://github.com/jekyll/minima">minima</a> theme, and it was pretty easy.  Still, the workflow took a little bit of fiddling.</p>
+
+      <div style="text-align:right;position:relative;top:-1em;"><i>
+(07 December, 2020)</i></div>
+</li>
+  
+</ul>
+:ET
