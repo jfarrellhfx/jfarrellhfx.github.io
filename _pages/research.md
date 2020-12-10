@@ -9,12 +9,10 @@ I am interested in the theoretical physics of materials, called *Condensed Matte
 ---
 
 <div>
-  {% for post in site.categories.research %}
+  {% for doc in site.research_projects %}
 
-      <a href="{{ post.url }}"><h3>{{ post.title }}</h3></a>
-      {{ post.excerpt }}
-      <p style="text-align:left;position:relative;top:-1em;"><a href="{{ post.url }}"> <i>(read more)</i></a></p>
+      <a href="{{ doc.url }}"><h3>{{ doc.title }}</h3></a>
+      {{ doc.excerpt }}
+      <p style="text-align:center;position:relative;top:-0em;"><a href="{{ doc.url }}"> <i>(read more)</i></a></p>
   {% endfor %}
 </div>
-
-interested

@@ -1,0 +1,9 @@
+I"G<!--more-->
+<p>There are a few notations one uses pretty often in Quantum Field Theory.  One of them is Feynman’s “slash” notation:
+\(\begin{equation}
+ \label{eq:slash}
+  \slash p \equiv \gamma^\mu  p_\mu \slash\partial
+ \end{equation}\)</p>
+
+<p>The notation used in Eq. \((\ref{eq:slash})\) was developed by Feynman</p>
+:ET

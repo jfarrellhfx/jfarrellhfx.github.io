@@ -4,23 +4,28 @@ permalink: /archive/
 layout: page
 ---
 
-{% for note in site.notes %}
-  <h2>
-    <a href="{{ note.url }}">
-      {{ note.subject }}
-    </a>
+## Notes on Physics and Math
+<div>
+{% assign subjects = site.notes| group_by:"subject" %}
+{% for subject in subjects %}
+    <h3>{{ subject.name }}</h3>
+    <ul>
+    {% for item in subject.items %}
+    <li> <a href="{{ item.url }}"><div style="font-family: Roboto;font-size:14pt">{{ item.title }}</div></a>
+    {{ item.excerpt }}
+    </li>
 
-{{note.excerpt}}
-
-  </h2>
+    {% endfor %}
+    </ul>
 {% endfor %}
 
+</div>
 
 {% for tag in site.tags %}
-  <h3>{{ tag[0] }}</h3>
+  <h2>{{ tag[0] }}</h2>
   <ul>
     {% for post in tag[1] %}
-    <li> <a href="{{ post.url }}"><div style="font-family: Roboto;font-size:16pt">{{ post.title }}</div></a></li>
+    <li> <a href="{{ post.url }}"><div style="font-family: Roboto;font-size:14pt">{{ post.title }}</div></a></li>
     {% endfor %}
   </ul>
 {% endfor %}

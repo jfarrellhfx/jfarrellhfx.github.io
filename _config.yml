@@ -32,7 +32,7 @@ plugins:
   - jekyll-feed
 
 minima:
-  skin:
+  skin: dark
 
 include:
     - "_pages"
@@ -49,6 +49,10 @@ permalink: :path
 collections:
   notes:
     output: true
+  research_projects:
+      output: true
+  films:
+      output: true
 
 
 # Exclude from processing.
