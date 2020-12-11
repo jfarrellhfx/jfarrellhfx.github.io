@@ -1,4 +1,4 @@
-I".<h2 id="notes-on-physics-and-math">Notes on Physics and Math</h2>
+I"Š<h2 id="notes-on-physics-and-math">Notes on Physics and Math</h2>
 
 <hr />
 
@@ -8,13 +8,18 @@
     <h3>Quantum Field Theory</h3>
     <ul>
     
-    <li> <a href="/notes/intermed_qft"><div style="font-family: Roboto;font-size:14pt">Typesetting Slash Notation</div></a>
+    <li> <a href="/notes/qft"><div style="font-family: Roboto;font-size:14pt">Typesetting Slash Notation</div></a>
     
 
     </li>
 
     
-    <li> <a href="/notes/qft"><div style="font-family: Roboto;font-size:14pt">Typesetting Slash Notation</div></a>
+    </ul>
+
+    <h3>Condensed Matter Physics</h3>
+    <ul>
+    
+    <li> <a href="/notes/quantum-theory-harmonic-crystal"><div style="font-family: Roboto;font-size:14pt">Quantum Theory of the Harmonic Solid</div></a>
     
 
     </li>

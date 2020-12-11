@@ -11,7 +11,6 @@ header-includes: |
     \renewcommand{\d}{\mathrm{d}}
     \usepackage{libertine}
     \usepackage[libertine]{newtxmath}
-
 ---
 <!--more-->
 

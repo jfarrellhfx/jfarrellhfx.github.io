@@ -1,4 +1,4 @@
-I"œ<h2 id="notes-on-physics-and-math">Notes on Physics and Math</h2>
+I"ˆ<h2 id="notes-on-physics-and-math">Notes on Physics and Math</h2>
 
 <hr />
 
@@ -9,6 +9,17 @@
     <ul>
     
     <li> <a href="/notes/qft"><div style="font-family: Roboto;font-size:14pt">Typesetting Slash Notation</div></a>
+    
+
+    </li>
+
+    
+    </ul>
+
+    <h3>Condensed Matter Physics</h3>
+    <ul>
+    
+    <li> <a href="/notes/quantum_theory_harmonic_solid"><div style="font-family: Roboto;font-size:14pt">Quantum Theory of the Harmonic Solid</div></a>
     
 
     </li>
