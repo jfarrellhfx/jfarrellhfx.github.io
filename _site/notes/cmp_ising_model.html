@@ -3,21 +3,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Typesetting Slash Notation | Jack H. Farrell</title>
+<title>Ising Model | Jack H. Farrell</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Typesetting Slash Notation" />
+<meta property="og:title" content="Ising Model" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Physics and filmmaking" />
 <meta property="og:description" content="Physics and filmmaking" />
-<link rel="canonical" href="http://localhost:4000/notes/qft" />
-<meta property="og:url" content="http://localhost:4000/notes/qft" />
+<link rel="canonical" href="http://localhost:4000/notes/cmp_ising_model" />
+<meta property="og:url" content="http://localhost:4000/notes/cmp_ising_model" />
 <meta property="og:site_name" content="Jack H. Farrell" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-12-10T21:51:40-04:00" />
+<meta property="article:published_time" content="2020-12-14T02:10:23-04:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Typesetting Slash Notation" />
+<meta property="twitter:title" content="Ising Model" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Typesetting Slash Notation","dateModified":"2020-12-10T21:51:40-04:00","datePublished":"2020-12-10T21:51:40-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/notes/qft"},"url":"http://localhost:4000/notes/qft","description":"Physics and filmmaking","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Ising Model","dateModified":"2020-12-14T02:10:23-04:00","datePublished":"2020-12-14T02:10:23-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/notes/cmp_ising_model"},"url":"http://localhost:4000/notes/cmp_ising_model","description":"Physics and filmmaking","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jack H. Farrell" />
 
@@ -75,23 +75,50 @@ MathJax = {
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Typesetting Slash Notation</h1>
+    <h1 class="post-title">Ising Model</h1>
   </header>
   <div class="post-content">
     <!--more-->
 
-<p>Right now, I am just testing by ability to typeset math nicely and do it all from markdown!  Here is a numbered equation:</p>
+<h2 id="ising-model-in-d--0">Ising Model in <em>d</em> = 0</h2>
+<p>Let’s consider a system with only two degrees of freedom, which we’ll call $s_1$ and $s_2$.  They are <em>spins</em>, so they only take on the values $s = 1$ and $s = -1$.  To specify a system you just need to give values for $s_1$ and $s_2$.</p>
+
+<p>Imagine the spins have magnetic moments of $\mu_B = 1$ (just so we don’t have to put it in the formulas), and also imagine that there is a uniform magnetic field of magnitude $B$ along the same axis as the spins.  Then the energy has two parts — an interaction between the two spins, and an interaction between each spin and the external field:</p>
 
 \[\begin{equation}
-    \int_a^bf(x) \d^2 x = \oint \d x.
+ E(s) = -J s_1 s_2 - B(s_1+s_2).
 \end{equation}\]
 
-<p>And here is a not numbered equation!</p>
+<p>It’s useful to define some additional constants:</p>
 
-\[\nabla^2f(x,y,z) = \pdv{}{x}f+\pdv{}{y}f + \pdv{}{z}f.\]
+\[\begin{align}K = \beta J, \nonumber\\
+h = \beta B.\nonumber
+\end{align}\]
+
+<p>with $\beta= 1 / k_b T$ as usual.</p>
+
+<p>To solve the problem, we’ll need to work out the partition function, which will be:</p>
+
+\[\begin{align}
+    Z &amp;= \e ^ {-\beta E(s_1,s_2)} \nonumber\\
+      &amp;= \sum_{s_1,s_2} \e ^ {Ks_1s_2 + h (s_1 + s_2)}. \nonumber
+\end{align}\]
+
+<p>In this case, the sums over $s_1$ and $s_2$ are just over two values , $s_1 = 1$ and $s_2 = -1$.  So we get:</p>
+
+\[\begin{equation}
+    Z(K,h) = 2 \cosh(2 h) \e ^K + 2 \e^{-K}.
+\end{equation}\]
+
+<p>To get a sense of the physics, we’ll use the partition function to calculate some averages of quantities (I mean <em>thermal</em> averages).  For example, consider the (<em>spin</em>-averaged) magnetization, $M = (s_1 + s_2)/2$.  We take thermal average by working out:</p>
+
+\[\begin{align}
+    \langle M \rangle &amp;= \frac1Z \sum_{s_1,s_2} M \e^{-E(s)} \nonumber\\
+    &amp;= \frac1Z \sum_{s_1,s_2}\frac12 (s_1 + s_2)\e^{Ks_1s_2+h(s_1+s_2)} \nonumber
+\end{align}\]
 
   </div>
-  <div style="text-align:center"><a href = "/notes/qft.pdf">(pdf of this page)</a></div>
+  <div style="text-align:center"><a href = "/notes/cmp_ising_model.pdf">(pdf of this page)</a></div>
 
 </article>
 
