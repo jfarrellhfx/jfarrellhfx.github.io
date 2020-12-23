@@ -40,10 +40,10 @@ include:
 
 header_pages:
   - index.markdown
-  - _pages/about.markdown
   - _pages/research.md
   - _pages/film.md
   - _pages/writing.md
+
 permalink: :path
 
 collections:
