@@ -1,6 +1,6 @@
 ---
 title: Computational Electron Hydrodynamics
-layout: post
+layout: page
 excerpt_separator: <!--more-->
 ---
 - *Supervisors: Prof. Thomas Scaffidi & Prof. Nicolas Grisouard*
@@ -8,6 +8,10 @@ excerpt_separator: <!--more-->
 
 Electron hydrodynamics is an interesting field that deals with an exotic regime in which electrons can be described by hydrodynamic equations.  I implemented a computer simulation to study the flow of these viscous electrons.
 
+<video width="100%" controls muted src="basic_animation.mp4">
+</video>
+
 <!--more-->
 
 <a href = "_posts/test.tex">test.tex</a>
+{{ page.url }}/basic_animation.mp4"

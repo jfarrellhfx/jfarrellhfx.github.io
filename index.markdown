@@ -16,7 +16,7 @@ I was born in Halifax, Nova Scotia, where I went to high school.  In 2017, I mov
 
 For specifics, please consult my [full CV (pdf)](/assets/CV.pdf). If you don't need the exhausting detail, find some highlights below.
 
-<h3>My Schedule:</h3>
+<h1>My Schedule:</h1>
 <details><summary>View</summary>
 <div style="margin-top:1em;margin-bottom:1em">
   <div style="position:relative;padding-top:75%;">
