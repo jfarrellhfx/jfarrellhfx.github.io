@@ -11,7 +11,7 @@ layout: no_title_page
 <p style = "text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px"> &mdash; Tom Stoppard's play <i>Arcadia</i></p>
 
 # Welcome!
-<img class = "responsive" src = "assets/farrellJPG.jpg">
+<img class = "responsive" src = "/assets/farrellJPG.jpg">
 
 My name is Jack Hollis Farrell, and I am an undergraduate student at the University of Toronto studying *physics*, *mathematics*, and *English*.
 I was born in Halifax, Nova Scotia, where I went to high school.  In 2017, I moved to Toronto to start university.
