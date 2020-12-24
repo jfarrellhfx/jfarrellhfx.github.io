@@ -9,7 +9,7 @@ I am interested in the theoretical physics of materials, called *Condensed Matte
 ---
 
 <div>
-  {% for doc in site.research_projects %}
+  {% for doc in site.research_projects | sort: "order" %}
 
       <a href="{{ doc.url }}"><h3>{{ doc.title }}</h3></a>
       {{ doc.excerpt }}
