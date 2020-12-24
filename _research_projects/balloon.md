@@ -1,6 +1,7 @@
 ---
 title: Testing and Contributing to a Balloon-Borne Spectrometer
-layout: post
+layout: page
+order: 2
 excerpt_separator: <!--more-->
 ---
 - *Supervisor: Prof. Kaley A. Wallker*

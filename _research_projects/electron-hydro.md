@@ -1,6 +1,7 @@
 ---
 title: Computational Electron Hydrodynamics
 layout: page
+order: 1
 excerpt_separator: <!--more-->
 ---
 - *Supervisors: Prof. Thomas Scaffidi & Prof. Nicolas Grisouard*
@@ -11,7 +12,7 @@ In usual circumstances, collections of electrons moving in a solid do not experi
 I used a finite-volume method to simulate a viscous electron gas moving in one dimension in a field effect transistor.  With certaain boundary conditions, this setup experiences an instability: small perturbations to the steady state grow and oscillate at a certain frequency.  Depending on the length of the channe, this frequency can reach the range of TeraHertz.
 
 
-<video width="100%" controls muted autoplay src="/research_projects/basic_animation.mp4">
+<video width="100%" controls muted autoplay loop src="/research_projects/basic_animation.mp4">
 </video>
 
 <!--more-->
