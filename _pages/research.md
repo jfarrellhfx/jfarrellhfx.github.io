@@ -9,8 +9,8 @@ I am interested in the theoretical physics of materials, called *Condensed Matte
 ---
 
 <div>
-  {% for doc in site.research_projects | sort: "order" %}
-
+  {% assign projects = (site.research_projects | sort: "order") %}
+  {% for doc in projects %}
       <a href="{{ doc.url }}"><h3>{{ doc.title }}</h3></a>
       {{ doc.excerpt }}
       <p style="text-align:center;position:relative;top:-0em;"><a href="{{ doc.url }}"> <i>(read more)</i></a></p>
