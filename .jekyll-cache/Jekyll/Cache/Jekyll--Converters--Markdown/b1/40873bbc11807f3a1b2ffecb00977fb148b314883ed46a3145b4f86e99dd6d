@@ -1,4 +1,4 @@
-I" <blockquote>
+I"�<blockquote>
   <p>I have known several Jacks, and they all, without exception, were more than usually plain. Besides, Jack is a notorious domesticity for John! And I pity any woman who is married to a man called John.</p>
 </blockquote>
 <p style="text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
@@ -9,16 +9,22 @@
 <p style="text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px"> &mdash; Tom Stoppard's play <i>Arcadia</i></p>
 
 <h1 id="welcome">Welcome!</h1>
-<p>My name is Jack Hollis Farrell, and I am an undergraduate student at the University of Toronto studying <em>physics</em>, <em>mathematics</em>, and <em>English</em>.
-I was born in Halifax, Nova Scotia, where I went to high school.  In 2017, I moved to Toronto to start university.</p>
-<div>
+<p><img class="responsive" src="/assets/farrellJPG.JPG" /></p>
 
-&lt;img class = "responsive" width = 40% style = "float:right" src = "assets/farrellJPG.jpg"&gt;
-</div>
-<p>For specifics, please consult my <a href="/assets/CV.pdf">full CV (pdf)</a>. If you don’t need the exhausting detail, find some highlights below.</p>
+<p>My name is Jack Hollis Farrell, and I am an undergraduate student at the University of Toronto studying physics.  Mostly, I am interested in <em>Condensed Matter Physics</em>, the theoretical physics of materials — this wide field includes some of the theory behind Quantum Computers, Superconductors, and more.</p>
 
-<h1>My Schedule:</h1>
-<details><summary>View</summary>
+<p>I was born in Halifax, Nova Scotia, where I went to high school. There, In 2017, I moved to Toronto to start university.</p>
+
+<p>For specifics, please consult my <a href="/assets/CV.pdf">full CV</a>. If you don’t need the exhausting detail, find some highlights below!</p>
+
+<details>
+<summary>Contact</summary>
+<ul>
+<li>email: jack dot farrell at mail.utoronto.ca</li>
+</ul>
+</details>
+
+<details><summary>Schedule</summary>
 <div style="margin-top:1em;margin-bottom:1em">
   <div style="position:relative;padding-top:75%;">
     <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FHalifax&amp;src=MnJyN2RwZGY4dm5mbnFidHFuNzlzZzg3NzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZWdpbGM0Z21ydDIwamQ0NmE1Y29nOTN1MWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=MDV2dmFlZGRwODNkMTBvaWlrOTVpbWs2cjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bm1wYmNsaDkydmYxOGpucG81Njh2b2prbmdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Zm1yc2VyODFkazdvcm50bTU5aHI3aG1jOW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F09300&amp;color=%23039BE5&amp;color=%23B39DDB&amp;color=%233F51B5&amp;color=%237986CB&amp;title=Jack&#39;s%20Schedule&amp;showDate=1&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK" frameborder="0" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
