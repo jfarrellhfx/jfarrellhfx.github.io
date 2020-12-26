@@ -49,6 +49,32 @@ $$\begin{equation}
 To get a sense of the physics, we'll use the partition function to calculate some averages of quantities (I mean *thermal* averages).  For example, consider the (*spin*-averaged) magnetization, $M = (s_1 + s_2)/2$.  We take thermal average by working out:
 
 $$\begin{align}
-    \langle M \rangle &= \frac1Z \sum_{s_1,s_2} M \e^{-E(s)} \nonumber\\
-    &= \frac1Z \sum_{s_1,s_2}\frac12 (s_1 + s_2)\e^{Ks_1s_2+h(s_1+s_2)} \nonumber
+    \langle M \rangle &= \frac1Z \sum_{s_1,s_2} M \e^{-E(s)}, \nonumber\\
+    &= \frac1Z \sum_{s_1,s_2}\frac12 (s_1 + s_2)\e^{Ks_1s_2+h(s_1+s_2)}, \nonumber\\
+    &= \frac12\frac1Z \pdv{Z}{h}, \nonumber\\
+    &= \frac12 \frac1Z \pdv{\ln Z}{h}. \nonumber\\
 \end{align}$$
+
+Or, if we define free energy $F$ by:
+
+$$\begin{equation}
+  F(K,h) \equiv \e ^{- \beta F},
+\end{equation}$$
+
+then we can write:
+
+$$\begin{equation}
+    \langle M \rangle = \frac12 \pdv{}{h}\left( -\beta F \right).
+\end{equation}$$
+
+For us, $-\beta F = \ln \left( 2 \cosh(2 h)\e ^K + 2 \e ^{-K} \right)$, so we get:
+
+$$\begin{equation}
+    \langle M \rangle \frac{\sinh(2h)}{\cosh(2h) + \e^{-2K}}.
+\end{equation}$$
+
+If we wanted instead the *thermal* average of a *particular* spin (instead of the spin-average), we need to add a source term to the Boltzmann weight.  The idea is to couple each spin to its own magnetic field --- the source term is $h_1 s_1 + h_2 s_2$, and it gives the partition function:
+
+$$\begin{equation}
+ Z = \sum \e ^ {K s_1 s_2 + h_1 s_1 + h_2 s_2} \equiv \e^{-\beta F}. 
+\end{equation}$$

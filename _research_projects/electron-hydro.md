@@ -2,6 +2,7 @@
 title: Computational Electron Hydrodynamics
 layout: page
 order: 1
+date: 2020-12-24
 excerpt_separator: <!--more-->
 ---
 - *Supervisors: Prof. Thomas Scaffidi & Prof. Nicolas Grisouard*
