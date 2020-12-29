@@ -13,11 +13,11 @@
 <meta property="og:url" content="http://localhost:4000/notes/cmp_ising_model" />
 <meta property="og:site_name" content="Jack H. Farrell" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-12-25T01:39:54-04:00" />
+<meta property="article:published_time" content="2020-12-28T23:36:50-04:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Ising Model" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Ising Model","url":"http://localhost:4000/notes/cmp_ising_model","dateModified":"2020-12-25T01:39:54-04:00","datePublished":"2020-12-25T01:39:54-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/notes/cmp_ising_model"},"description":"Physics and filmmaking","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Ising Model","url":"http://localhost:4000/notes/cmp_ising_model","dateModified":"2020-12-28T23:36:50-04:00","datePublished":"2020-12-28T23:36:50-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/notes/cmp_ising_model"},"description":"Physics and filmmaking","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jack H. Farrell" />
 
@@ -79,6 +79,7 @@ MathJax = {
   </header>
   <div class="post-content">
     <!--more-->
+<p>The source for these notes is Chapter (2) of Shankar’s Book <em>Quantum Field Theory for Condensed Matter Physics</em>.</p>
 
 <h2 id="ising-model-in-d--0">Ising Model in <em>d</em> = 0</h2>
 <p>Let’s consider a system with only two degrees of freedom, which we’ll call $s_1$ and $s_2$.  They are <em>spins</em>, so they only take on the values $s = 1$ and $s = -1$.  To specify a system you just need to give values for $s_1$ and $s_2$.</p>
@@ -113,9 +114,62 @@ h = \beta B.\nonumber
 <p>To get a sense of the physics, we’ll use the partition function to calculate some averages of quantities (I mean <em>thermal</em> averages).  For example, consider the (<em>spin</em>-averaged) magnetization, $M = (s_1 + s_2)/2$.  We take thermal average by working out:</p>
 
 \[\begin{align}
-    \langle M \rangle &amp;= \frac1Z \sum_{s_1,s_2} M \e^{-E(s)} \nonumber\\
-    &amp;= \frac1Z \sum_{s_1,s_2}\frac12 (s_1 + s_2)\e^{Ks_1s_2+h(s_1+s_2)} \nonumber
+    \langle M \rangle &amp;= \frac1Z \sum_{s_1,s_2} M \e^{-E(s)}, \nonumber\\
+    &amp;= \frac1Z \sum_{s_1,s_2}\frac12 (s_1 + s_2)\e^{Ks_1s_2+h(s_1+s_2)}, \nonumber\\
+    &amp;= \frac12\frac1Z \pdv{Z}{h}, \nonumber\\
+    &amp;= \frac12 \frac1Z \pdv{\ln Z}{h}. \nonumber\\
 \end{align}\]
+
+<p>Or, if we define free energy $F$ by:</p>
+
+\[\begin{equation}
+  F(K,h) \equiv \e ^{- \beta F},
+\end{equation}\]
+
+<p>then we can write:</p>
+
+\[\begin{equation}
+    \langle M \rangle = \frac12 \pdv{}{h}\left( -\beta F \right).
+\end{equation}\]
+
+<p>For us, $-\beta F = \ln \left( 2 \cosh(2 h)\e ^K + 2 \e ^{-K} \right)$, so we get:</p>
+
+\[\begin{equation}
+    \langle M \rangle \frac{\sinh(2h)}{\cosh(2h) + \e^{-2K}}.
+\end{equation}\]
+
+<p>If we wanted instead the <em>thermal</em> average of a <em>particular</em> spin (instead of the spin-average), we need to add a source term to the Boltzmann weight.  The idea is to couple each spin to its own magnetic field — the source term is $h_1 s_1 + h_2 s_2$, and it gives the partition function:</p>
+
+\[\begin{equation}
+\label{eq:source_terms}
+ Z = \sum \e ^ {K s_1 s_2 + h_1 s_1 + h_2 s_2} \equiv \e^{-\beta F}.
+\end{equation}\]
+
+<p>We can check that as $h \rightarrow \infty$ and $K \rightarrow \infty$, $\langle M \rangle \rightarrow 1$.  This makes sense, since in the limit of strong fields, the spins should be completely aligned.</p>
+
+<h3 id="correlators">Correlators</h3>
+
+<p>Taking single spatial derivatives of the free energy in (\ref{eq:source_terms}) with respect to the $h_i$ is the same as taking a thermal average of the corresponding spin, because basically, the derivative just brings down a factor of $s_i$ from the exponential.  <em>e.g.</em></p>
+
+\[\begin{equation}
+    \langle s_1 \rangle = \frac{1}{Z} \sum_{s_11, s_2} s_1 \e ^ {K s_1 s_2 + h_1 s_1 + h_2 s_2} = \pdv{(-\beta F)}{h_1} = \pdv{\ln Z}{h_1}
+\end{equation}\]
+
+<p>And, similarly, taking two mixed derivatives with respect to, say, $h_1$ and $h_2$ is <em>kind of</em>  like taking an average of the product $s_1 s_2$.  But it’s not quite — we actually get (using the product rule):
+\(\begin{align}
+    \pdv{^2}{h_1 \partial h_2}(-\beta F) &amp;= \pdv{}{h_1} \left( \frac1Z \pdv{Z}{h_2} \right) \nonumber\\
+                                         &amp;= \frac1Z\pdv{^2}{h_1 \partial h_2} - \frac{1}{Z^2}\pdv{Z}{h_1} \pdv{Z}{h_2} \nonumber\\
+                                         &amp;= \langle s_1 s_2 \rangle - \langle s_1 \rangle \langle s_2 \rangle
+\end{align}\)</p>
+
+<p>This kind of thing comes up often, motivating a definition:</p>
+
+<div class="definition"><b>Definition: Connected Correlation Function</b><br />
+The <i>connected correlation function</i> $\langle s_1 s_2 \rangle_c$ is defined as:
+$$\begin{equation}
+ \langle s_1s_2 \rangle_c = \langle s_1 s_2 \rangle - \langle s_1 \rangle \langle s_2 \rangle
+\end{equation}$$
+</div>
 
   </div>
   <div style="text-align:center"><a href = "/notes/cmp_ising_model.pdf">(pdf of this page)</a></div>

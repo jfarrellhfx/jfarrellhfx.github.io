@@ -9,3 +9,8 @@ img.responsive { width: 75%; display: block;
 @media screen and ( min-width: 480px ) {
 img.responsive { width: 25%; float:right; margin-left: 30px; margin_bottom:30px}
 }
+
+.definition {
+  border: 1px solid currentColor;
+  padding: 1%;
+}
