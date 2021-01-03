@@ -4,9 +4,7 @@ title: "Math on the Web"
 tag: Computer Stuff
 excerpt_separator: <!--more-->
 ---
-To be able to type $\LaTeX$ equations in `html` documents, you need to add a few lines of `html` to the heading of your `html` page.  I use the configuration given below.
-
-<!--more-->
+To be able to type $\LaTeX$ equations in websites, you need to add a few lines of `html` to the heading of your page.  I use the configuration given below.
 
 First, tell your webpage where to find `MathJax`:
 ```html
@@ -14,6 +12,8 @@ First, tell your webpage where to find `MathJax`:
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 ```
+
+<!--more-->
 
 But, *before that* (which is important), we need to configure it.  I like it to be able to use symbols and environments from `amsmath`, so I include the tag `tags: ams`. Additionally, one drawback of writing $\LaTeX$ on the web like this is that `MathJax` doesn't understand that many packages; many convenient macros from packages like `physics` are not accessible.  Still, we can partially fix it by defining our own macros --- and I was surprised how few I really used regularly.
 ```html

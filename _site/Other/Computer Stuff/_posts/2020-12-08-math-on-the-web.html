@@ -65,7 +65,7 @@ MathJax = {
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/film/">Film</a><a class="page-link" href="/writing/">Writing</a></div>
+        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/film/">Film</a><a class="page-link" href="/writing/">Writing</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/etc/">Etc</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -80,15 +80,15 @@ MathJax = {
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>To be able to type $\LaTeX$ equations in <code class="language-plaintext highlighter-rouge">html</code> documents, you need to add a few lines of <code class="language-plaintext highlighter-rouge">html</code> to the heading of your <code class="language-plaintext highlighter-rouge">html</code> page.  I use the configuration given below.</p>
-
-<!--more-->
+    <p>To be able to type $\LaTeX$ equations in websites, you need to add a few lines of <code class="language-plaintext highlighter-rouge">html</code> to the heading of your page.  I use the configuration given below.</p>
 
 <p>First, tell your webpage where to find <code class="language-plaintext highlighter-rouge">MathJax</code>:</p>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">id=</span><span class="s">"MathJax-script"</span> <span class="na">async</span>
   <span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/script&gt;</span>
 </code></pre></div></div>
+
+<!--more-->
 
 <p>But, <em>before that</em> (which is important), we need to configure it.  I like it to be able to use symbols and environments from <code class="language-plaintext highlighter-rouge">amsmath</code>, so I include the tag <code class="language-plaintext highlighter-rouge">tags: ams</code>. Additionally, one drawback of writing $\LaTeX$ on the web like this is that <code class="language-plaintext highlighter-rouge">MathJax</code> doesn’t understand that many packages; many convenient macros from packages like <code class="language-plaintext highlighter-rouge">physics</code> are not accessible.  Still, we can partially fix it by defining our own macros — and I was surprised how few I really used regularly.</p>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script&gt;</span>

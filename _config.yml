@@ -43,6 +43,8 @@ header_pages:
   - _pages/research.md
   - _pages/film.md
   - _pages/writing.md
+  - _pages/blog.md
+  - _pages/etc.md
 
 permalink: :path
 
@@ -55,6 +57,7 @@ collections:
   films:
       output: true
 
+show_excerpts: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

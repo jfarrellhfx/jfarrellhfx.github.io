@@ -8,11 +8,10 @@ This page is meant to give an overview of my writing.  If you'd rather see the n
 
 ## Math and Physics Notes
 
-When I am trying to learn a concept, it helps a lot to write it out as if I am explaining it to myself.  These notes are part of that exercise.  Here, you can find pages (some more technical than others) on a variety of topics in mathematics and physics. The notes are consistently updated; they may (read: definitely) contain errors. *In most cases, you can also download a `pdf` of the notes by by clicking a button at the end of each page*. 
+When I am trying to learn a concept, it helps a lot to write it out as if I am explaining it to myself.  These notes are part of that exercise.  Here, you can find pages (some more technical than others) on a variety of topics in mathematics and physics. The notes are consistently updated; they may (read: definitely) contain errors. *In most cases, you can also download a `pdf` of the notes by by clicking a button at the end of each page*.
 
-<details><summary>View Notes</summary>
 <div>
-{% assign subjects = site.notes| group_by:"subject" %}
+{% assign subjects = site.notes | group_by:"subject" %}
 {% for subject in subjects %}
     <h3>{{ subject.name }}</h3>
     <ul>
@@ -25,18 +24,6 @@ When I am trying to learn a concept, it helps a lot to write it out as if I am e
     </ul>
 {% endfor %}
 </div>
-</details>
 
 
-## Blog
-
-<ul>
-  {% for post in site.categories.Other %}
-
-     <li> <a href="{{ post.url }}"><div style="font-family: Roboto;font-size:16pt">{{ post.title }}</div></a>
-      {{ post.excerpt }}
-      <div style="text-align:right;position:relative;top:-1em;"><i>
-({{ post.date | date: '%d %B, %Y' }})</i></div>
-</li>
-  {% endfor %}
-</ul>
+## Blog Highlights

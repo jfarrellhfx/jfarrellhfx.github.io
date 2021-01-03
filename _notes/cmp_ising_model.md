@@ -1,6 +1,7 @@
 ---
 subject: Condensed Matter Physics
 title: Ising Model
+date: 2020-01-02
 order: 1
 layout: note
 excerpt_separator: <!--more-->
@@ -14,6 +15,7 @@ header-includes: |
     \newcommand{\e}{\mathrm{e}}
     \usepackage{physics}
 ---
+The Ising Model of magnets in $d = 0$ (finite number of interacting dipoles) and $d = 1$ (infinite line of interacting dipoles).
 <!--more-->
 The source for these notes is Chapter (2) of Shankar's Book *Quantum Field Theory for Condensed Matter Physics*.
 
