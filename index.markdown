@@ -4,6 +4,7 @@
 title: Home
 layout: no_title_page
 ---
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 > I have known several Jacks, and they all, without exception, were more than usually plain. Besides, Jack is a notorious domesticity for John! And I pity any woman who is married to a man called John.
 <p style = "text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
 
