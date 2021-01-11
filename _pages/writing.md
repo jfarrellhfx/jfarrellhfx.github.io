@@ -16,7 +16,7 @@ When I am trying to learn a concept, it helps a lot to write it out as if I am e
     <h3>{{ subject.name }}</h3>
     <ul>
     {% for item in subject.items %}
-    <li> <a href="{{ item.url }}"><div style="font-family: Roboto;font-size:14pt">{{ item.title }}</div></a>
+    <li> <a href="{{ item.url }}"><h4>{{ item.title }}</h4></a>
     {{ item.excerpt }}
     </li>
 
