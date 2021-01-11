@@ -122,7 +122,7 @@ html { font-size: 16px; }
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font: 400 16px/1.5 "Georgia Pro", serif; color: #bbbbbb; background-color: #181818; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; overflow-wrap: break-word; }
+body { font: 400 16px/1.5 "Merriweather", serif; color: #bbbbbb; background-color: #181818; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; overflow-wrap: break-word; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
@@ -146,7 +146,7 @@ ul, ol { margin-left: 30px; }
 li > ul, li > ol { margin-bottom: 0; }
 
 /** Headings */
-h1, h2, h3, h4, h5, h6 { font-family: "Verdana Pro"; font-weight: 400; }
+h1, h2, h3, h4, h5, h6 { font-family: "Roboto"; font-weight: 400; }
 
 /** Links */
 a { color: #79b8ff; text-decoration: none; }
@@ -208,7 +208,7 @@ table td { border: 1px solid #404040; }
 @media screen and (max-width: 800px) { table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; -ms-overflow-style: -ms-autohiding-scrollbar; } }
 
 /** Site header */
-.site-header { font-family: "Verdana Pro"; border-top: 5px solid #999999; border-bottom: 1px solid #404040; min-height: 55.95px; line-height: 54px; position: relative; }
+.site-header { font-family: "Roboto"; border-top: 5px solid #999999; border-bottom: 1px solid #404040; min-height: 55.95px; line-height: 54px; position: relative; }
 
 .site-title { font-size: 1.625rem; font-weight: 300; letter-spacing: -1px; margin-bottom: 0; float: left; }
 
