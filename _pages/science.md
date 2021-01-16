@@ -30,7 +30,7 @@ In this section, I document the collection of miscellaneous notes on mathematics
     <h3>{{ subject.name }}</h3>
     <ul>
     {% for item in subject.items %}
-    <li> <a href="{{ item.url }}"><h4>{{ item.title }}</h4></a>
+    <li> <a href="{{ item.url }}">{{ item.title }}</a>
     {% unless item.show_excerpt == false %}
     {{ item.excerpt }}
     {% endunless %}
