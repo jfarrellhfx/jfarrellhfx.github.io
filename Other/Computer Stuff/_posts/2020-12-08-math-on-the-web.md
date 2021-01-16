@@ -21,6 +21,7 @@ But, *before that* (which is important), we need to configure it.  I like it to 
 MathJax = {
   tex: {
     inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [ ['$$','$$'], ['\[','\]'] ],
     tags: 'ams',
     macros: {
         d: '{\\mathrm{d}}',

@@ -22,6 +22,10 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Roboto&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
 
 
 <script>
@@ -67,7 +71,7 @@ MathJax = {
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/film/">Film</a><a class="page-link" href="/writing/">Writing</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/etc/">Etc</a></div>
+        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/science/">Science</a><a class="page-link" href="/film/">Film</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/etc/">Etc</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -99,6 +103,41 @@ MathJax = {
     
     <li> <a href="/notes/quantum-theory-harmonic-crystal"><h4>Quantum Theory of the Harmonic Solid</h4></a>
     
+
+    </li>
+
+    
+    </ul>
+
+    <h3>Calculus</h3>
+    <ul>
+    
+    <li> <a href="/notes/inverse"><h4>Derivitive of Inverse Functions</h4></a>
+    <p>This note explains how to take the derivative of an inverse function.</p>
+<h2 id="statement">Statement:</h2>
+
+<p>Take a function $f$, and let $g = f^{-1}$.  Then we can compute its derivative using:</p>
+
+\[\begin{gather*}
+f(g(x)) = x\\
+\implies \dv{}{x}f(g(x)) = 1\\
+\implies f'(g(x))g'(x) = 1.
+\end{gather*}\]
+
+<p>So that, remembering $g=f^{-1}$, we get:</p>
+
+\[\begin{equation}
+\label{eq:inverse}
+\boxed{g'(x) = \frac1{f\left(f^{-1}(x)\right)}.}
+\end{equation}\]
+
+<h2 id="an-example">An Example:</h2>
+
+<p>You can use Eq. ($\ref{eq:inverse}$) this to work out the derivatives of the inverse trigonometric functions.   As an example:
+\(\begin{align}
+\dv{}{x}\arccos x &amp;= \frac1{-\sin(\arccos(x))}, \nonumber\\
+&amp;= \frac{-1}{\sqrt{1-x^2}}.
+\end{align}\)</p>
 
     </li>
 

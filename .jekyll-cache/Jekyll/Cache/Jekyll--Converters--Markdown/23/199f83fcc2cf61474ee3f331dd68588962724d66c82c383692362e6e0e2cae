@@ -1,0 +1,80 @@
+I"æ<h2 id="notes-on-physics-and-math">Notes on Physics and Math</h2>
+
+<hr />
+
+<div>
+
+
+    <h3>Condensed Matter Physics</h3>
+    <ul>
+    
+    <li> <a href="/notes/cmp_ising_model"><div style="font-family: Roboto;font-size:14pt">Ising Model</div></a>
+    <p>The Ising Model of magnets in $d = 0$ (finite number of interacting dipoles) and $d = 1$ (infinite line of interacting dipoles).</p>
+
+    </li>
+
+    
+    <li> <a href="/notes/quantum-theory-harmonic-crystal"><div style="font-family: Roboto;font-size:14pt">Quantum Theory of the Harmonic Solid</div></a>
+    
+
+    </li>
+
+    
+    </ul>
+
+    <h3>Calculus</h3>
+    <ul>
+    
+    <li> <a href="/notes/inverse"><div style="font-family: Roboto;font-size:14pt">Derivitive of Inverse Functions</div></a>
+    <p>This note explains how to take the derivative of an inverse function.</p>
+<h2 id="the-thing">The Thing</h2>
+
+<p>Take a function $f$, and let $g = f^{-1}$.  Then we can compute its derivative using:</p>
+
+\[\begin{gather*}
+f(g(x)) = x\\
+\implies \dv{}{x}f(g(x)) = 1\\
+\implies f'(g(x))g'(x) = 1.
+\end{gather*}\]
+
+<p>So that, remembering $g=f^{-1}$, we get:</p>
+
+\[\begin{equation}
+\label{eq:inverse}
+\boxed{g'(x) = \frac1{f\left(f^{-1}(x)\right)}.}
+\end{equation}\]
+
+<h2 id="an-example">An Example</h2>
+
+<p>You can use Eq. ($\ref{eq:inverse}$) this to work out the derivatives of the inverse trigonometric functions.   As an example:
+\(\begin{align}
+\dv{}{x}\arccos x &amp;= \frac1{-\sin(\arccos(x))}, \nonumber\\
+&amp;= \frac{-1}{\sqrt{1-x^2}}.
+\end{align}\)</p>
+
+<p>This is just a test to make sure everything is working nicely!
+\(test\)
+test!</p>
+
+    </li>
+
+    
+    </ul>
+
+
+</div>
+
+<h2 id="blog">Blog</h2>
+
+<hr />
+
+<h2>Computer Stuff</h2>
+<ul>
+    
+    <li> <a href="/Other/Computer%20Stuff/2020-12-08-math-on-the-web"><div style="font-family: Roboto;font-size:14pt">Math on the Web</div></a></li>
+    
+    <li> <a href="/Other/Computer%20Stuff/2020-12-07-site-workflow"><div style="font-family: Roboto;font-size:14pt">Site Workflow</div></a></li>
+    
+  </ul>
+
+:ET

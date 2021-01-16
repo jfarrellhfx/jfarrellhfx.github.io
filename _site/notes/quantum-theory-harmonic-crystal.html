@@ -24,6 +24,10 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Roboto&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
 
 
 <script>
@@ -69,7 +73,7 @@ MathJax = {
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/Research/">Research</a><a class="page-link" href="/film/">Film</a><a class="page-link" href="/writing/">Writing</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/etc/">Etc</a></div>
+        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/science/">Science</a><a class="page-link" href="/film/">Film</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/etc/">Etc</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -84,9 +88,25 @@ MathJax = {
 <h2 id="classical-theory-of-the-harmonic-crystal">Classical Theory of the Harmonic Crystal</h2>
 <p>Before we deal with the quantum case, it is a good idea to understand the theory of the harmonic crystal at a classical level.  The main idea is that we are going to suppose we have a crystal in its <em>equilibrium state</em> — that means there is no net force on any of the ions.  We can write the potential energy of the lattice as:</p>
 
-\[\begin{equation}
- V(\vbi{R})=\sum_{\vbi{R'}}
-\end{equation}\]
+<h2 id="the-thing">The Thing</h2>
+
+<p>Take a function $f$, and let $g = f^{-1}$.  Then we can compute its derivative using:
+\(f(g(x)) = x \\
+\implies \dv{}{x}f(g(x)) = 1\\
+\implies f'(g(x))g'(x) = 1\)
+So that, remembering $g=f^{-1}$, we get:
+\(\begin{equation}
+\label{eq:inverse}
+\boxed{g'(x) = \frac1{f\left(f^{-1}(x)\right)}.}
+\end{equation}\)</p>
+
+<h2 id="an-example">An Example</h2>
+
+<p>You can use Eq. ($\ref{eq:inverse}$) this to work out the derivatives of the inverse trigonometric functions.   As an example:
+\(\begin{align}
+\dv{}{x}\arccos x &amp;= \frac1{-\sin(\arccos(x))}, \nonumber\\
+&amp;= \frac{-1}{\sqrt{1-x^2}}.
+\end{align}\)</p>
 
   </div>
   <div style="text-align:center"><a href = "/notes/quantum-theory-harmonic-crystal.pdf">(pdf of this page)</a></div>

@@ -1,0 +1,28 @@
+I"<p>This note explains how to take the derivative of an inverse function.</p>
+<h2 id="the-thing">The Thing</h2>
+
+<p>Take a function $f$, and let $g = f^{-1}$.  Then we can compute its derivative using:</p>
+
+\[\begin{align*}
+f(g(x)) = x\\
+\implies \dv{}{x}f(g(x)) = 1\\
+\implies f'(g(x))g'(x) = 1.
+\end{align*}\]
+
+<p>So that, remembering $g=f^{-1}$, we get:</p>
+
+\[\begin{equation}
+\label{eq:inverse}
+\boxed{g'(x) = \frac1{f\left(f^{-1}(x)\right)}.}
+\end{equation}\]
+
+<h2 id="an-example">An Example</h2>
+
+<p>You can use Eq. ($\ref{eq:inverse}$) this to work out the derivatives of the inverse trigonometric functions.   As an example:
+\(\begin{align}
+\dv{}{x}\arccos x &amp;= \frac1{-\sin(\arccos(x))}, \nonumber\\
+&amp;= \frac{-1}{\sqrt{1-x^2}}.
+\end{align}\)</p>
+
+\[test\]
+:ET
