@@ -1,10 +1,6 @@
-I"%<p>I am interested in the theoretical physics of materials, called <em>Condensed Matter Physics</em>.  You can read about my recent research projects, in this area and others, below.</p>
+I"è<h2 id="research-projects">Research Projects</h2>
 
-<hr />
-
-<h2 id="research-projects">Research Projects</h2>
-
-<hr />
+<p>I am interested in the theoretical physics of materials, called <em>Condensed Matter Physics</em>.  You can read about my recent research projects, in this area and others, below.</p>
 
 <div>
   
@@ -44,7 +40,7 @@
 
 <h2 id="math-and-physics-notes">Math and Physics Notes</h2>
 
-<p>When I am trying to learn a concept, it helps a lot to write it out as if I am explaining it to myself.  These notes are part of that exercise.  Here, you can find pages (some more technical than others) on a variety of topics in mathematics and physics. The notes are consistently updated; they may (read: definitely) contain errors. <em>In most cases, you can also download a <code class="language-plaintext highlighter-rouge">pdf</code> of the notes by by clicking a button at the end of each page</em>.</p>
+<p>In this section, I document the collection of miscellaneous notes on mathematics and physics.  Some of them are large exposition (or documents of my self-study), while some are short explanations of mathematical tricks or trivia.</p>
 
 <div>
 
@@ -52,13 +48,30 @@
     <h3>Condensed Matter Physics</h3>
     <ul>
     
-    <li> <a href="/notes/cmp_ising_model"><h4>Ising Model</h4></a>
+    <li> <a href="/notes/cmp_ising_model">Ising Model</a>
+    
     <p>The Ising Model of magnets in $d = 0$ (finite number of interacting dipoles) and $d = 1$ (infinite line of interacting dipoles).</p>
+
+    
 
     </li>
 
     
-    <li> <a href="/notes/quantum-theory-harmonic-crystal"><h4>Quantum Theory of the Harmonic Solid</h4></a>
+    <li> <a href="/notes/quantum-theory-harmonic-crystal">Quantum Theory of the Harmonic Solid</a>
+    
+    
+
+    
+
+    </li>
+
+    
+    </ul>
+
+    <h3>Calculus</h3>
+    <ul>
+    
+    <li> <a href="/notes/inverse">Derivitive of Inverse Functions</a>
     
 
     </li>
