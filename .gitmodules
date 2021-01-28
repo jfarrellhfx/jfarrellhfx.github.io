@@ -1,0 +1,3 @@
+[submodule "labbook"]
+	path = labbook
+	url = https://github.com/jfarrellhfx/labbook
