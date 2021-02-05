@@ -6,6 +6,7 @@
 <title>Derivitive of Inverse Functions | Jack Farrell</title>
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Derivitive of Inverse Functions" />
+<meta name="author" content="Jack Hollis Farrell" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This note explains how to take the derivative of an inverse function. Statement: Take a function $f$, and let $g = f^{-1}$. Then we can compute its derivative using: [\begin{gather} f(g(x)) = x \implies \dv{}{x}f(g(x)) = 1 \implies f’(g(x))g’(x) = 1. \end{gather}] So that, remembering $g=f^{-1}$, we get: [\begin{equation} \label{eq:inverse} \boxed{g’(x) = \frac1{f\left(f^{-1}(x)\right)}.} \end{equation}] An Example: You can use Eq. ($\ref{eq:inverse}$) this to work out the derivatives of the inverse trigonometric functions. As an example: \(\begin{align} \dv{}{x}\arccos x &amp;= \frac1{-\sin(\arccos(x))}, \nonumber\\ &amp;= \frac{-1}{\sqrt{1-x^2}}. \end{align}\)" />
 <meta property="og:description" content="This note explains how to take the derivative of an inverse function. Statement: Take a function $f$, and let $g = f^{-1}$. Then we can compute its derivative using: [\begin{gather} f(g(x)) = x \implies \dv{}{x}f(g(x)) = 1 \implies f’(g(x))g’(x) = 1. \end{gather}] So that, remembering $g=f^{-1}$, we get: [\begin{equation} \label{eq:inverse} \boxed{g’(x) = \frac1{f\left(f^{-1}(x)\right)}.} \end{equation}] An Example: You can use Eq. ($\ref{eq:inverse}$) this to work out the derivatives of the inverse trigonometric functions. As an example: \(\begin{align} \dv{}{x}\arccos x &amp;= \frac1{-\sin(\arccos(x))}, \nonumber\\ &amp;= \frac{-1}{\sqrt{1-x^2}}. \end{align}\)" />
@@ -13,11 +14,11 @@
 <meta property="og:url" content="http://localhost:4000/notes/inverse" />
 <meta property="og:site_name" content="Jack Farrell" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2021-01-28T18:08:58-04:00" />
+<meta property="article:published_time" content="2021-02-05T14:48:45-04:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Derivitive of Inverse Functions" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Derivitive of Inverse Functions","url":"http://localhost:4000/notes/inverse","dateModified":"2021-01-28T18:08:58-04:00","datePublished":"2021-01-28T18:08:58-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/notes/inverse"},"description":"This note explains how to take the derivative of an inverse function. Statement: Take a function $f$, and let $g = f^{-1}$. Then we can compute its derivative using: [\\begin{gather} f(g(x)) = x \\implies \\dv{}{x}f(g(x)) = 1 \\implies f’(g(x))g’(x) = 1. \\end{gather}] So that, remembering $g=f^{-1}$, we get: [\\begin{equation} \\label{eq:inverse} \\boxed{g’(x) = \\frac1{f\\left(f^{-1}(x)\\right)}.} \\end{equation}] An Example: You can use Eq. ($\\ref{eq:inverse}$) this to work out the derivatives of the inverse trigonometric functions. As an example: \\(\\begin{align} \\dv{}{x}\\arccos x &amp;= \\frac1{-\\sin(\\arccos(x))}, \\nonumber\\\\ &amp;= \\frac{-1}{\\sqrt{1-x^2}}. \\end{align}\\)","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"Derivitive of Inverse Functions","dateModified":"2021-02-05T14:48:45-04:00","datePublished":"2021-02-05T14:48:45-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/notes/inverse"},"url":"http://localhost:4000/notes/inverse","author":{"@type":"Person","name":"Jack Hollis Farrell"},"description":"This note explains how to take the derivative of an inverse function. Statement: Take a function $f$, and let $g = f^{-1}$. Then we can compute its derivative using: [\\begin{gather} f(g(x)) = x \\implies \\dv{}{x}f(g(x)) = 1 \\implies f’(g(x))g’(x) = 1. \\end{gather}] So that, remembering $g=f^{-1}$, we get: [\\begin{equation} \\label{eq:inverse} \\boxed{g’(x) = \\frac1{f\\left(f^{-1}(x)\\right)}.} \\end{equation}] An Example: You can use Eq. ($\\ref{eq:inverse}$) this to work out the derivatives of the inverse trigonometric functions. As an example: \\(\\begin{align} \\dv{}{x}\\arccos x &amp;= \\frac1{-\\sin(\\arccos(x))}, \\nonumber\\\\ &amp;= \\frac{-1}{\\sqrt{1-x^2}}. \\end{align}\\)","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Jack Farrell" />
 
@@ -75,7 +76,7 @@ MathJax = {
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/science/">Science</a><a class="page-link" href="/film/">Film</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/etc/">Etc</a><a class="page-link" href="/labbook/">Lab Book</a></div>
+        <div class="trigger"><a class="page-link" href="/">Home</a><a class="page-link" href="/science/">Science</a><a class="page-link" href="/film/">Film</a><a class="page-link" href="/blog/">Blog</a><a class="page-link" href="/etc/">Etc</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -128,7 +129,7 @@ f(g(x)) = x\\
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name"></li><li><a class="u-email" href="mailto:jfarrellhfx@gmail.com">jfarrellhfx@gmail.com</a></li></ul>
+          <li class="p-name">Jack Hollis Farrell</li></ul>
       </div>
 
       <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jfarrellhfx"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jfarrellhfx</span></a></li></ul>

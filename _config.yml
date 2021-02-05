@@ -19,8 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Jack Farrell
-author: ""
-email: jfarrellhfx@gmail.com
+author: "Jack Hollis Farrell"
 description: >- # this means to ignore newlines until "baseurl:"
   Physics and filmmaking
 github_username:  jfarrellhfx
