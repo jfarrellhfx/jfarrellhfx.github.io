@@ -11,10 +11,18 @@ In addition to research, I am also an independent/freelance film-maker.  All of 
     {% if doc.genre == "nonfiction" %}
       <a href="{{ doc.url }}"><h3>{{ doc.title }}</h3></a>
       {{ doc.excerpt }}
-
-      <p style="text-align:center;position:relative;top:-0em;"><a href="{{ doc.url }}"> <i>(read more)</i></a></p>
+      <p style="text-align:center;position:relative;top:-1em;"><a href="{{ doc.url }}"> <i>(read more)</i></a></p>
       {% endif %}
   {% endfor %}
 </div>
 
 ## Fiction
+<div>
+  {% for doc in site.films %}
+    {% if doc.genre == "fiction" %}
+      <a href="{{ doc.url }}"><h3>{{ doc.title }}</h3></a>
+      {{ doc.excerpt }}
+      <p style="text-align:center;position:relative;top:-1em;"><a href="{{ doc.url }}"> <i>(read more)</i></a></p>
+      {% endif %}
+  {% endfor %}
+</div>
