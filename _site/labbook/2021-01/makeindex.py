@@ -10,6 +10,7 @@ with open("index.md", "w") as g:
         if filename != "index.md" and filename != "makeindex.py" and filename[0] != ".":
             if "." in filename:
                 line = "<li><a href = \"{}\">{}</a></li>\n".format(filename, filename)
+                line = line.replace(".md","")
             else:
                 line = "<li><a href = \"{}\"><i class=\"material-icons\" style=\"color:#bbb\">folder</i> {}</a></li>\n".format(filename, filename)
             g.write(line)

@@ -20,24 +20,6 @@ I am interested in the theoretical physics of materials, called *Condensed Matte
   {% endfor %}
 </div>
 
-## Math and Physics Notes
+## Virtual Lab Book
 
-In this section, I document the collection of miscellaneous notes on mathematics and physics.  Some of them are large exposition (or documents of my self-study), while some are short explanations of mathematical tricks or trivia.
-
-<div>
-{% assign subjects = site.notes | group_by:"subject" %}
-{% for subject in subjects %}
-    <h3>{{ subject.name }}</h3>
-    <ul>
-    {% for item in subject.items %}
-    <li> <a href="{{ item.url }}">{{ item.title }}</a>
-    {% unless item.show_excerpt == false %}
-    {{ item.excerpt }}
-    {% endunless %}
-
-    </li>
-
-    {% endfor %}
-    </ul>
-{% endfor %}
-</div>
+Lately, to help my own organization, I have beent trying to keep all my class, research, and general science and mathematics notes together and 'backed up' online.  In case you find any of it useful or interesting, you can find it <a href = "/labbook">here</a>.
