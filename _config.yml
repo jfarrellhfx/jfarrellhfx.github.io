@@ -54,6 +54,8 @@ collections:
       sort_by: order
   films:
       output: true
+  etc:
+      output: true
 
 show_excerpts: true
 
