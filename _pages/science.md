@@ -19,7 +19,3 @@ I am interested in the theoretical physics of materials, called *Condensed Matte
       <p style="text-align:center;position:relative;top:-0em;"><a href="{{ doc.url }}"> <i>(read more)</i></a></p>
   {% endfor %}
 </div>
-
-## Virtual Lab Book
-
-Lately, to help my own organization, I have beent trying to keep all my class, research, and general science and mathematics notes together and 'backed up' online.  In case you find any of it useful or interesting, you can find it <a href = "/labbook">here</a>.
