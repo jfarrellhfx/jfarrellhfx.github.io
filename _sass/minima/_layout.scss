@@ -131,6 +131,7 @@
 .footer-heading {
   @include relative-font-size(1.125);
   margin-bottom: $spacing-unit / 2;
+  border-bottom: 0px;
 }
 
 .feed-subscribe .svg-icon {
