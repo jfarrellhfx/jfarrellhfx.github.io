@@ -1,0 +1,971 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     42238,        963]
+NotebookOptionsPosition[     40111,        920]
+NotebookOutlinePosition[     40548,        937]
+CellTagsIndexPosition[     40505,        934]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "Variational Method - SHO Potential with Additional ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["x", "4"], " ", "Term"}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "6cabd191-cf4a-4823-8932-be6237ef3430"]
+}], "Section",
+ CellChangeTimes->{{3.790953037908867*^9, 
+  3.790953074090064*^9}},ExpressionUUID->"86e84893-d2c8-4d7c-80a7-\
+c733028ec8b0"],
+
+Cell["\<\
+We are trying to solve the Schrodinger equation with the potential:\
+\>", "Text",
+ CellChangeTimes->{{3.7909530812631245`*^9, 3.7909531469102325`*^9}, {
+   3.790953191120754*^9, 3.790953192902296*^9}, {3.790953362508956*^9, 
+   3.790953468026661*^9}, {3.790953684735115*^9, 3.7909536893140855`*^9}, 
+   3.7909538694591722`*^9},ExpressionUUID->"781eb7a2-e871-4614-99dd-\
+ef7163bcf0bc"],
+
+Cell[BoxData[
+ RowBox[{"V", "=", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", "2"], "m", " ", 
+    SuperscriptBox["w", "2"], 
+    SuperscriptBox["x", "2"]}], "+", 
+   SuperscriptBox["ax", "4"]}]}]], "EquationNumbered",
+ CellChangeTimes->{{3.7909537215982976`*^9, 3.7909537352760153`*^9}, {
+   3.7909537930215263`*^9, 3.790953851371478*^9}, {3.790953953325183*^9, 
+   3.790953961030164*^9}, 
+   3.790971439122398*^9},ExpressionUUID->"7b73f24a-cd91-48cc-a216-\
+48f345cfae97"],
+
+Cell[TextData[{
+ "We already know the Eigenfunctions of the regular SH0 Hamiltonian (which \
+has ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"V", " ", "=", " ", 
+    RowBox[{
+     FractionBox["1", "2"], "m", " ", 
+     SuperscriptBox[
+      RowBox[{"w", " "}], "2"], 
+     SuperscriptBox["x", "2"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "0bda843a-ba89-464c-8d57-5d8dd975be84"],
+ ") are the states |",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "6569ffe5-8ae9-46eb-9a63-799eb2011bd1"],
+ "\[RightAngleBracket].  We will guess that the ground state wave function of \
+the full, complicated Hamiltonian is a linear combination of two of these \
+states:"
+}], "Text",
+ CellChangeTimes->{{3.7909539135118217`*^9, 3.790953993833906*^9}, {
+  3.790954044726698*^9, 3.790954055436369*^9}, {3.7909541693776927`*^9, 
+  3.790954269395533*^9}, {3.7909543046041946`*^9, 3.7909543106491756`*^9}, {
+  3.790954341844449*^9, 3.7909543755516186`*^9}, {3.7909545568000774`*^9, 
+  3.790954572322917*^9}},ExpressionUUID->"057e1a45-b205-402d-9408-\
+294a913c9f31"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"|", "\[Psi]"}], "\[RightAngleBracket]"}], "=", 
+  FractionBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"|", "0"}], "\[RightAngleBracket]"}], "+", " ", "A"}], " ", 
+     "|", "2"}], "\[RightAngleBracket]"}], 
+   SqrtBox[
+    RowBox[{"1", "+", 
+     SuperscriptBox["A", "2"]}]]]}]], "EquationNumbered",
+ CellChangeTimes->{{3.790954393662554*^9, 3.790954486801646*^9}, {
+  3.7909545608413734`*^9, 3.7909545853144746`*^9}, {3.790954634233239*^9, 
+  3.7909547110388184`*^9}, {3.790954761766379*^9, 3.7909548136179247`*^9}, {
+  3.7909603057860355`*^9, 
+  3.790960305876789*^9}},ExpressionUUID->"6b0e31c1-4be3-4f1c-8b52-\
+d333a6ba8ace"],
+
+Cell[TextData[{
+ "These are the lowest two states that have the right symmetry.  Then, we \
+just calculate the expectation value of the Hamiltonian in this state, \
+minimize that with respect to ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],ExpressionUUID->
+  "34c021fb-9a85-4200-b2c9-d3d9a7bd6cae"],
+ " by setting ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["d", "dA"], "=", "0"}], TraditionalForm]],ExpressionUUID->
+  "12fe5eef-be28-49a5-bcf9-0b2751333387"],
+ ", and that gives us the best estimate of the ground state of the \
+complicated Hamiltonian!  This problem is solved and visualized below.  There \
+must be a nicer way to do this kind of thing, but I don\[CloseCurlyQuote]t \
+know it.  Basically I have ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " evaluating all the integrals of the Gaussian Functions and Hermite \
+Polynomials etc. to find the matrix elements rather than using the raising \
+and lowering operators which would probably be much faster for the computer.  \
+But I don\[CloseCurlyQuote]t know how to tell the program to do this stuff."
+}], "Text",
+ CellChangeTimes->{{3.7909547203591547`*^9, 3.7909547522356052`*^9}, {
+   3.7909548201735396`*^9, 3.790954929246385*^9}, {3.790954969211341*^9, 
+   3.790955051776184*^9}, {3.790955189401679*^9, 3.790955242647524*^9}, {
+   3.7909558143077536`*^9, 3.7909558233946533`*^9}, 3.790955933327573*^9, {
+   3.7909603221503057`*^9, 
+   3.790960322763668*^9}},ExpressionUUID->"b1fb0905-9589-4a7a-83e8-\
+0e33137a28fa"],
+
+Cell[TextData[{
+ "Because it is a neat comparison, I have also solved the Schrodinger \
+equation numerically including the ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", " ", 
+    SuperscriptBox["x", "4"]}], TraditionalForm]],ExpressionUUID->
+  "13ff0e5b-b7f4-4ebe-9a3e-d0ff33b46c8c"],
+ " term using a built-in ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " function.  Assuming the computer is more accurate than our kind-of-simple \
+variational method guess, we can see by how much the variational method is \
+wrong.  "
+}], "Text",
+ CellChangeTimes->{{3.7909547203591547`*^9, 3.7909547522356052`*^9}, {
+  3.7909548201735396`*^9, 3.790954929246385*^9}, {3.790954969211341*^9, 
+  3.790955051776184*^9}, {3.790955189401679*^9, 3.790955302150481*^9}, {
+  3.790955375305545*^9, 3.790955597083655*^9}, {3.790955634989129*^9, 
+  3.7909556387770867`*^9}, {3.7909558310053406`*^9, 3.790955850639414*^9}, {
+  3.790955931577242*^9, 3.790955938880766*^9}, {3.790959809285488*^9, 
+  3.7909598096934013`*^9}, {3.7909696565698075`*^9, 
+  3.7909696580898805`*^9}},ExpressionUUID->"9b179d06-bdac-4c67-b168-\
+9102943e60bc"],
+
+Cell[CellGroupData[{
+
+Cell["Using the Model:", "Subsection",
+ CellChangeTimes->{{3.7909559539944468`*^9, 3.7909559578571925`*^9}, {
+  3.7909593606487703`*^9, 
+  3.7909593787414284`*^9}},ExpressionUUID->"0a803b7f-6007-4aaa-a000-\
+61daa04b7cda"],
+
+Cell["The figure below has two sliders.", "Text",
+ CellChangeTimes->{{3.790959384457165*^9, 
+  3.7909594035202484`*^9}},ExpressionUUID->"3877389a-497c-4279-8451-\
+497c57a6a4ee"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "The ",
+ StyleBox["outer",
+  FontWeight->"Bold"],
+ " slider sets the strength of the ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["x", "4"], TraditionalForm]],ExpressionUUID->
+  "b32f048a-af30-4bc1-b5c2-e750eade6a65"],
+ " term in the potential.  It starts at almost ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", " ", "=", " ", "0"}], TraditionalForm]],ExpressionUUID->
+  "f6db321f-dd71-4f3a-b424-ce72d015d3df"],
+ ", which means the potential is almost identical to the regular SHO.  At \
+that point, both the Variational Energy and the \[OpenCurlyDoubleQuote]Actual\
+\[CloseCurlyDoubleQuote] Energy (still numerically calculated, but much more \
+accurate I think) are very close to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"E", " ", "=", " ", 
+    FractionBox["1", "2"]}], TraditionalForm]],ExpressionUUID->
+  "f7f98309-991e-4e58-9391-8c1ba1b173e1"],
+ ".  This is exactly as it should be because for the SHO, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["E", "0"], "=", 
+    FractionBox["\[HBar]\[Omega]", "2"]}], TraditionalForm]],ExpressionUUID->
+  "db8dc5f7-8542-4fac-bc59-d7ecc93935f5"],
+ ", and I have set ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[HBar]", "=", 
+    RowBox[{"\[Omega]", "=", "1"}]}], TraditionalForm]],ExpressionUUID->
+  "43fe3105-739c-4e6c-b88e-b51df75cb447"],
+ " in order to do the things numerically.  You can \
+\[OpenCurlyDoubleQuote]turn up\[CloseCurlyDoubleQuote] the additional term by \
+changing the slider. As you do this, the Variational Energy and Actual Energy \
+start to differ noticeably.  It seems like the Variational Energy is always \
+greater than the actual energy, as it should be."
+}], "Item1",
+ CellChangeTimes->{{3.7909547203591547`*^9, 3.7909547522356052`*^9}, {
+  3.7909548201735396`*^9, 3.790954929246385*^9}, {3.790954969211341*^9, 
+  3.790955051776184*^9}, {3.790955189401679*^9, 3.790955302150481*^9}, {
+  3.790955375305545*^9, 3.790955597083655*^9}, {3.790955634989129*^9, 
+  3.7909557642923822`*^9}, {3.7909558751580505`*^9, 3.790955916208188*^9}, {
+  3.790959444739765*^9, 3.7909595040093737`*^9}, {3.7909595536108856`*^9, 
+  3.7909595589905624`*^9}},ExpressionUUID->"68088dc0-774a-4a70-ae84-\
+b0c462cb52d0"],
+
+Cell[TextData[{
+ "The ",
+ StyleBox["inner",
+  FontWeight->"Bold"],
+ " slider lets you change ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],ExpressionUUID->
+  "413adffd-634e-49f3-a9d6-363259b24a44"],
+ ", which sets the mixture of the two states in our \
+\[OpenCurlyDoubleQuote]guess\[CloseCurlyDoubleQuote] (See Eq. (0.1)).  By \
+default, ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],ExpressionUUID->
+  "93cd2d92-bf1d-4ea5-8435-806e72181bd6"],
+ " is assigned the value that minimizes ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "H", "\[RightAngleBracket]"}], 
+   TraditionalForm]],ExpressionUUID->"8b857a37-c958-4ec1-b361-4967da294ab7"],
+ " in the state (i.e. - the best guess wave function).  Changing ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],ExpressionUUID->
+  "8d447904-b467-410a-bbac-7d6fd7a6cb93"],
+ " always increases the energy from this value, hopefully.  If you change ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],ExpressionUUID->
+  "13877ec0-2d06-43b5-8809-e0e85b8488b7"],
+ ", you can reset it to the best-guess-value by clicking \
+\[OpenCurlyDoubleQuote]Minimize\[CloseCurlyDoubleQuote]."
+}], "Item1",
+ CellChangeTimes->{{3.7909547203591547`*^9, 3.7909547522356052`*^9}, {
+  3.7909548201735396`*^9, 3.790954929246385*^9}, {3.790954969211341*^9, 
+  3.790955051776184*^9}, {3.790955189401679*^9, 3.790955302150481*^9}, {
+  3.790955375305545*^9, 3.790955597083655*^9}, {3.790955634989129*^9, 
+  3.7909557642923822`*^9}, {3.7909558751580505`*^9, 3.790955912846114*^9}, {
+  3.790956009878559*^9, 3.7909560143247085`*^9}, {3.7909560682111053`*^9, 
+  3.7909560781236534`*^9}, {3.7909561432321377`*^9, 3.790956185390605*^9}, {
+  3.7909595686597385`*^9, 3.7909595941736126`*^9}, {3.790959674716483*^9, 
+  3.790959688022896*^9}, {3.7909598284776587`*^9, 
+  3.790960045062848*^9}},ExpressionUUID->"fac9c6aa-39e5-4712-b94c-\
+8f588b61132d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"$Assumptions", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"A", " ", ">", "0"}], ",", " ", 
+       RowBox[{"h", ">", "0"}], ",", 
+       RowBox[{"m", ">", "0"}], ",", 
+       RowBox[{"w", ">", "0"}], ",", 
+       RowBox[{"a", ">", "0"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"w0", " ", "=", " ", "1"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"a0", " ", "=", " ", "2"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"atomicUnits", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"h", "\[Rule]", "1"}], ",", " ", 
+       RowBox[{"m", "\[Rule]", "1"}], ",", " ", 
+       RowBox[{"w", "\[Rule]", "w0"}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"S0", " ", "=", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", 
+          RowBox[{"h", "^", "2"}]}], "/", "2"}], "/", "m"}], "*", 
+       RowBox[{"Laplacian", "[", 
+        RowBox[{
+         RowBox[{"u", "[", "x", "]"}], ",", 
+         RowBox[{"{", "x", "}"}]}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"1", "/", "2"}], "*", "m", "*", 
+       RowBox[{"w", "^", "2"}], "*", 
+       RowBox[{"x", "^", "2"}], "*", 
+       RowBox[{"u", "[", "x", "]"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"SHOValues", ",", " ", "SHOFuncs"}], "}"}], " ", "=", " ", 
+     RowBox[{"DEigensystem", "[", 
+      RowBox[{"S0", ",", 
+       RowBox[{"u", "[", "x", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", 
+         RowBox[{"-", "Infinity"}], ",", "Infinity"}], "}"}], ",", "3", ",", 
+       " ", 
+       RowBox[{"Method", "\[Rule]", "\"\<Normalize\>\""}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"s0", " ", "=", " ", 
+     RowBox[{"Evaluate", "[", 
+      RowBox[{"SHOFuncs", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"s2", " ", "=", " ", 
+     RowBox[{"Evaluate", "[", 
+      RowBox[{"SHOFuncs", "[", 
+       RowBox[{"[", "3", "]"}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"With", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"a", "=", "a"}], ",", " ", 
+       RowBox[{"A0", "=", "A0"}]}], "}"}], ",", " ", 
+     RowBox[{"Manipulate", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"S", " ", "=", " ", 
+         RowBox[{
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", 
+              RowBox[{"h", "^", "2"}]}], "/", "2"}], "/", "m"}], "*", 
+           RowBox[{"Laplacian", "[", 
+            RowBox[{
+             RowBox[{"u", "[", "x", "]"}], ",", 
+             RowBox[{"{", "x", "}"}]}], "]"}]}], "+", 
+          RowBox[{
+           RowBox[{"1", "/", "2"}], "*", "m", "*", 
+           RowBox[{"w", "^", "2"}], "*", 
+           RowBox[{"x", "^", "2"}], "*", 
+           RowBox[{"u", "[", "x", "]"}]}], " ", "+", " ", 
+          RowBox[{"a", "*", 
+           RowBox[{"x", "^", "4"}], "*", 
+           RowBox[{"u", "[", "x", "]"}]}]}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"vals", ",", "funs"}], "}"}], "=", 
+         RowBox[{"NDEigensystem", "[", 
+          RowBox[{
+           RowBox[{"S", " ", "/.", "atomicUnits"}], ",", 
+           RowBox[{"u", "[", "x", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", 
+             RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", "1", ",", 
+           RowBox[{"Method", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"\"\<PDEDiscretization\>\"", "\[Rule]", 
+              RowBox[{"{", 
+               RowBox[{"\"\<FiniteElement\>\"", ",", 
+                RowBox[{"{", 
+                 RowBox[{"\"\<MeshOptions\>\"", "\[Rule]", 
+                  RowBox[{"{", 
+                   RowBox[{"MaxCellMeasure", "\[Rule]", "0.05"}], "}"}]}], 
+                 "}"}]}], "}"}]}], "}"}]}]}], "]"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"energy", " ", "=", " ", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1", "/", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{"A", "^", "2"}]}], ")"}]}], ")"}], "*", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"SHOValues", "[", 
+             RowBox[{"[", "1", "]"}], "]"}], "+", 
+            RowBox[{
+             RowBox[{"A", "^", "2"}], "*", 
+             RowBox[{"SHOValues", "[", 
+              RowBox[{"[", "3", "]"}], "]"}]}], "+", 
+            RowBox[{"Integrate", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"s0", "+", 
+                  RowBox[{"A", "*", "s2"}]}], ")"}], "^", "2"}], "*", "a", 
+               "*", 
+               RowBox[{"x", "^", "4"}]}], ",", 
+              RowBox[{"{", 
+               RowBox[{"x", ",", " ", 
+                RowBox[{"-", "Infinity"}], ",", " ", "Infinity"}], "}"}], ",",
+               " ", 
+              RowBox[{"GenerateConditions", "\[Rule]", "False"}]}], "]"}]}], 
+           ")"}]}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"sol", " ", "=", " ", 
+         RowBox[{
+          RowBox[{"NSolve", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"D", "[", 
+              RowBox[{"energy", ",", "A"}], "]"}], "\[Equal]", "0"}], ",", 
+            " ", "A"}], "]"}], "/.", "atomicUnits"}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Manipulate", "[", 
+         RowBox[{
+          RowBox[{"Plot", "[", 
+           RowBox[{
+            RowBox[{"Evaluate", "[", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{"s0", "+", 
+                    RowBox[{"A", "*", "s2"}]}], ")"}], "/", 
+                  RowBox[{"Sqrt", "[", 
+                   RowBox[{"1", "+", 
+                    RowBox[{"A", "^", "2"}]}], "]"}]}], "/.", "atomicUnits"}],
+                 " ", "/.", 
+                RowBox[{"{", 
+                 RowBox[{"A", "\[Rule]", "A0"}], "}"}]}], ",", " ", 
+               RowBox[{"-", 
+                RowBox[{"funs", "[", 
+                 RowBox[{"[", "1", "]"}], "]"}]}]}], "}"}], "]"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"x", ",", " ", 
+              RowBox[{"-", "3"}], ",", "3"}], "}"}], ",", " ", 
+            RowBox[{"PlotLegends", "\[Rule]", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{
+                RowBox[{
+                "StringTemplate", "[", 
+                 "\"\<Variational Wave Function, Energy = `1`\>\"", "]"}], 
+                "[", 
+                RowBox[{
+                 RowBox[{"energy", "/.", "atomicUnits"}], "/.", 
+                 RowBox[{"A", "\[Rule]", "A0"}]}], "]"}], ",", 
+               RowBox[{
+                RowBox[{
+                "StringTemplate", "[", 
+                 "\"\<Actual Wave Function, Energy = `1`\>\"", "]"}], "[", 
+                RowBox[{"vals", "[", 
+                 RowBox[{"[", "1", "]"}], "]"}], "]"}]}], "}"}]}], ",", " ", 
+            RowBox[{"PlotLabel", "\[Rule]", 
+             RowBox[{
+              RowBox[{
+              "StringTemplate", "[", 
+               "\"\<Solutions to TDSE with Potential V = \
+\!\(\*Cell[TextData[Cell[BoxData[FormBox[RowBox[{RowBox[{
+FractionBox[\"1\", \"2\"], \" \", \"m\", \" \", 
+SuperscriptBox[\"w\", \"2\"], 
+SuperscriptBox[\"x\", \"2\"]}], \"+\", RowBox[{\"a\", \" \", 
+SuperscriptBox[\"x\", \"2\"]}]}], \
+TraditionalForm]],FormatType->\"TraditionalForm\",ExpressionUUID->\"379e7e39-\
+51fb-446d-9404-efb97431f398\"]],ExpressionUUID->\"093e6efb-dea1-4152-875e-\
+58c1f6688c34\"]\), a = `1`\>\"", "]"}], "[", "a", "]"}]}], ",", " ", 
+            RowBox[{"AxesLabel", "\[Rule]", 
+             RowBox[{"{", 
+              RowBox[{"\"\<x\>\"", ",", "\"\<\[Psi](x)\>\""}], "}"}]}]}], 
+           "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"A0", ",", 
+              RowBox[{"A", "/.", 
+               RowBox[{"sol", "[", 
+                RowBox[{"[", "1", "]"}], "]"}]}], ",", "\"\<A\>\""}], "}"}], 
+            ",", " ", 
+            RowBox[{"-", "2"}], ",", "2"}], "}"}], " ", ",", " ", 
+          RowBox[{"Button", "[", 
+           RowBox[{"\"\<Minimize\>\"", ",", " ", 
+            RowBox[{"A0", "=", 
+             RowBox[{"A", "/.", 
+              RowBox[{"sol", "[", 
+               RowBox[{"[", "1", "]"}], "]"}]}]}]}], "]"}]}], "]"}]}], ",", 
+       RowBox[{"{", 
+        RowBox[{"a", ",", " ", "0.001", ",", " ", "20"}], "}"}]}], "]"}]}], 
+    "]"}], "\[IndentingNewLine]", "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.790895688937787*^9, 3.7908957289919567`*^9}, {
+   3.790895762821812*^9, 3.7908959922979107`*^9}, {3.7908960249777803`*^9, 
+   3.7908962214538884`*^9}, {3.790896275112653*^9, 3.7908963919764023`*^9}, {
+   3.79089646174199*^9, 3.790896522951098*^9}, {3.7908965729479012`*^9, 
+   3.790896587125206*^9}, {3.790896697940696*^9, 3.7908967605401707`*^9}, 
+   3.790896835585806*^9, {3.790896872821286*^9, 3.7908969550120497`*^9}, {
+   3.790897011655349*^9, 3.7908970868768015`*^9}, {3.790897159792136*^9, 
+   3.790897195385812*^9}, {3.790897239429354*^9, 3.7908973023873415`*^9}, {
+   3.7908973882660327`*^9, 3.7908974832446637`*^9}, {3.7908975383268375`*^9, 
+   3.7908975748405724`*^9}, 3.7908976100800686`*^9, {3.7908977235902243`*^9, 
+   3.790897743178793*^9}, {3.790897928449198*^9, 3.7908979562073364`*^9}, {
+   3.79089799837197*^9, 3.790898099774995*^9}, {3.790898148518956*^9, 
+   3.7908982695347548`*^9}, {3.790898395178178*^9, 3.7908984528112803`*^9}, {
+   3.7908986283702865`*^9, 3.7908986627127686`*^9}, {3.7908994097914305`*^9, 
+   3.790899430599004*^9}, {3.7909000471108007`*^9, 3.790900048302782*^9}, {
+   3.7909004543824887`*^9, 3.7909004757954664`*^9}, {3.7909008129678206`*^9, 
+   3.790900833539613*^9}, {3.7909013081535788`*^9, 3.790901423666809*^9}, {
+   3.7909014659016027`*^9, 3.7909014781061544`*^9}, {3.7909015929278874`*^9, 
+   3.7909015963544054`*^9}, 3.7909016515348244`*^9, 3.7909020349017897`*^9, {
+   3.7909023710834074`*^9, 3.7909023951600146`*^9}, {3.790902621385187*^9, 
+   3.7909026221777616`*^9}, {3.790902668120571*^9, 3.790902695756143*^9}, {
+   3.7909486624083185`*^9, 3.790948691322387*^9}, {3.7909487828550663`*^9, 
+   3.7909488487284985`*^9}, {3.7909488851081*^9, 3.7909489842791657`*^9}, {
+   3.790949018946591*^9, 3.790949023697959*^9}, {3.7909490553875594`*^9, 
+   3.7909490754640517`*^9}, 3.7909491186117983`*^9, 3.7909491545976343`*^9, {
+   3.790949271229677*^9, 3.790949320881496*^9}, {3.7909493711820107`*^9, 
+   3.7909494418998733`*^9}, {3.790949494910256*^9, 3.790949523422241*^9}, {
+   3.7909495851722865`*^9, 3.7909495853547277`*^9}, 3.790949658796484*^9, {
+   3.7909497537179947`*^9, 3.7909497748771677`*^9}, {3.7909498078797493`*^9, 
+   3.7909498162400284`*^9}, {3.7909498507879887`*^9, 3.790949851269437*^9}, {
+   3.7909503580742903`*^9, 3.7909503620019865`*^9}, {3.790950446773258*^9, 
+   3.790950504181882*^9}, {3.7909505501923213`*^9, 3.790950680321756*^9}, {
+   3.7909507425986533`*^9, 3.7909507537456636`*^9}, {3.7909508300145535`*^9, 
+   3.7909509030550776`*^9}, {3.7909509429282475`*^9, 
+   3.7909509818118577`*^9}, {3.790951023229436*^9, 3.790951032431309*^9}, {
+   3.7909510959893336`*^9, 3.790951097900345*^9}, {3.790951284508224*^9, 
+   3.7909513600587797`*^9}, {3.7909514127370853`*^9, 
+   3.7909514629115696`*^9}, {3.7909515117155504`*^9, 3.790951513684843*^9}, {
+   3.790951548674197*^9, 3.79095165716848*^9}, {3.79095169106782*^9, 
+   3.790951692005165*^9}, {3.7909518405139294`*^9, 3.7909518895829864`*^9}, {
+   3.790951922457703*^9, 3.7909520315519447`*^9}, {3.7909521129191027`*^9, 
+   3.790952115122691*^9}, {3.790952234052106*^9, 3.7909522930355673`*^9}, {
+   3.790952513712532*^9, 3.7909526144246016`*^9}, {3.7909526574446697`*^9, 
+   3.790952751649881*^9}, {3.790952913873844*^9, 3.790952916483652*^9}, {
+   3.7909532070016303`*^9, 3.790953210001864*^9}, {3.7909543381542635`*^9, 
+   3.790954340160937*^9}, 3.7909549357970195`*^9, 3.7909550723546004`*^9, {
+   3.790956287350876*^9, 3.7909562875104456`*^9}, {3.7909564331981936`*^9, 
+   3.7909564333477993`*^9}, {3.790956469609948*^9, 3.7909564697266283`*^9}, 
+   3.79095655047793*^9, {3.7909565810355406`*^9, 3.7909565890950623`*^9}, {
+   3.790956630554575*^9, 3.790956647978143*^9}, {3.790957120820217*^9, 
+   3.790957283944492*^9}, {3.7909573257843804`*^9, 3.7909573297588444`*^9}, {
+   3.790957384753049*^9, 3.7909573912366867`*^9}, {3.7909574495363207`*^9, 
+   3.7909574836603894`*^9}, {3.790957516397153*^9, 3.790957637670416*^9}, {
+   3.790957685523876*^9, 3.790957710159907*^9}, {3.7909578589457827`*^9, 
+   3.790957860404895*^9}, {3.790958135218649*^9, 3.790958188921255*^9}, {
+   3.7909582848395977`*^9, 3.7909583202186146`*^9}, {3.790958377686121*^9, 
+   3.7909583832362957`*^9}, {3.7909584321316924`*^9, 3.790958456205347*^9}, {
+   3.790958625867076*^9, 3.7909587022570815`*^9}, {3.7909587547789297`*^9, 
+   3.7909588537544136`*^9}, {3.790959107522627*^9, 3.7909591118091702`*^9}, {
+   3.7909591700039454`*^9, 3.79095920758462*^9}, {3.7909703643574533`*^9, 
+   3.790970429170021*^9}, {3.790973194326493*^9, 3.790973198947282*^9}, {
+   3.7909744440919156`*^9, 3.7909745346145716`*^9}, {3.790974566046821*^9, 
+   3.7909747644384766`*^9}},
+ CellLabel->
+  "In[222]:=",ExpressionUUID->"3c7ba7c0-61b0-400a-8e19-909cd5b1b283"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 0.001, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`a$$], 0.001, 20}}, Typeset`size$$ = {
+    865., {233., 240.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`a$445545$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`a$$ = 0.001}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$445545$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> ($CellContext`S = (((-$CellContext`h^2)/2)/$CellContext`m) 
+          Laplacian[
+            $CellContext`u[$CellContext`x], {$CellContext`x}] + (1/
+           2) $CellContext`m $CellContext`w^2 $CellContext`x^2 \
+$CellContext`u[$CellContext`x] + $CellContext`a$$ $CellContext`x^4 \
+$CellContext`u[$CellContext`x]; {$CellContext`vals, $CellContext`funs} = 
+        NDEigensystem[
+          ReplaceAll[$CellContext`S, $CellContext`atomicUnits], 
+          $CellContext`u[$CellContext`x], {$CellContext`x, -10, 10}, 1, 
+          Method -> {
+           "PDEDiscretization" -> {
+             "FiniteElement", {
+              "MeshOptions" -> {
+                MaxCellMeasure -> 0.05}}}}]; $CellContext`energy = (1/(
+          1 + $CellContext`A^2)) (
+          Part[$CellContext`SHOValues, 1] + $CellContext`A^2 
+           Part[$CellContext`SHOValues, 3] + 
+          Integrate[($CellContext`s0 + $CellContext`A $CellContext`s2)^2 \
+$CellContext`a$$ $CellContext`x^4, {$CellContext`x, -Infinity, Infinity}, 
+            GenerateConditions -> False]); $CellContext`sol = ReplaceAll[
+          NSolve[
+          D[$CellContext`energy, $CellContext`A] == 
+           0, $CellContext`A], $CellContext`atomicUnits]; Manipulate[
+         Plot[
+          Evaluate[{
+            ReplaceAll[
+             
+             ReplaceAll[($CellContext`s0 + $CellContext`A $CellContext`s2)/
+              Sqrt[1 + $CellContext`A^2], $CellContext`atomicUnits], \
+{$CellContext`A -> $CellContext`A0}], -
+            Part[$CellContext`funs, 1]}], {$CellContext`x, -3, 3}, 
+          PlotLegends -> {
+            StringTemplate["Variational Wave Function, Energy = `1`"][
+             ReplaceAll[
+              
+              ReplaceAll[$CellContext`energy, $CellContext`atomicUnits], \
+$CellContext`A -> $CellContext`A0]], 
+            StringTemplate["Actual Wave Function, Energy = `1`"][
+             Part[$CellContext`vals, 1]]}, PlotLabel -> 
+          StringTemplate[
+           "Solutions to TDSE with Potential V = \
+\!\(\*Cell[TextData[Cell[BoxData[FormBox[\n RowBox[{RowBox[{\nFractionBox[\"1\
+\", \"2\"], \" \", \"m\", \" \", \n\n    SuperscriptBox[\"w\", \"2\"], \n\
+SuperscriptBox[\"x\", \"2\"]}], \"+\", \n   RowBox[{\"a\", \" \", \n\
+SuperscriptBox[\"x\", \"2\"]}]}], \
+TraditionalForm]],FormatType->\"TraditionalForm\"]]]\), a = \
+`1`"][$CellContext`a$$], AxesLabel -> {"x", "\[Psi](x)"}], {{$CellContext`A0, 
+           ReplaceAll[$CellContext`A, 
+            Part[$CellContext`sol, 1]], "A"}, -2, 2}, 
+         Button["Minimize", $CellContext`A0 = ReplaceAll[$CellContext`A, 
+            Part[$CellContext`sol, 1]]]]), 
+      "Specifications" :> {{$CellContext`a$$, 0.001, 20}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{924., {286., 293.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.790975959943137*^9},
+ CellLabel->
+  "Out[230]=",ExpressionUUID->"81a34986-59a2-4c4e-a7bc-d65b1c06c752"]
+}, {2}]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Another View", "Subsection",
+ CellChangeTimes->{{3.790971930011629*^9, 3.7909719344553795`*^9}, {
+  3.790973027308755*^9, 
+  3.7909730315189805`*^9}},ExpressionUUID->"e6e4658b-73e1-459f-8bba-\
+17e5b2ca985b"],
+
+Cell["\<\
+The other day in tutorial when we talked about this problem, the question of \
+the \[OpenCurlyDoubleQuote]stability\[CloseCurlyDoubleQuote] of the thing \
+also came up (i.e. - for what range of energies does this work well, are \
+there other minimum points nearby?).  I think a nice way to see what is going \
+on is looking at the Energy (really, the expectation value of H) as a \
+function of the variational parameter.  For this problem, it seems like the \
+minimum point is pretty isolated.\
+\>", "Text",
+ CellChangeTimes->{{3.790971952000534*^9, 3.790972025909854*^9}, {
+  3.7909730473947763`*^9, 3.7909730584329495`*^9}, {3.7909731217121563`*^9, 
+  3.7909731592066746`*^9}, {3.7909735410863333`*^9, 
+  3.7909735577400537`*^9}},ExpressionUUID->"a50a03a2-bc6e-49b9-979a-\
+c8a614e58442"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"With", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a2", "=", "a2"}], "}"}], ",", " ", 
+   RowBox[{"Manipulate", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"S2", " ", "=", " ", 
+       RowBox[{
+        RowBox[{
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", 
+            RowBox[{"h", "^", "2"}]}], "/", "2"}], "/", "m"}], "*", 
+         RowBox[{"Laplacian", "[", 
+          RowBox[{
+           RowBox[{"u", "[", "x", "]"}], ",", 
+           RowBox[{"{", "x", "}"}]}], "]"}]}], "+", 
+        RowBox[{
+         RowBox[{"1", "/", "2"}], "*", "m", "*", 
+         RowBox[{"w", "^", "2"}], "*", 
+         RowBox[{"x", "^", "2"}], "*", 
+         RowBox[{"u", "[", "x", "]"}]}], " ", "+", " ", 
+        RowBox[{"a2", "*", 
+         RowBox[{"x", "^", "4"}], "*", 
+         RowBox[{"u", "[", "x", "]"}]}]}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"vals2", ",", "funs2"}], "}"}], "=", 
+       RowBox[{"NDEigensystem", "[", 
+        RowBox[{
+         RowBox[{"S2", " ", "/.", "atomicUnits"}], ",", 
+         RowBox[{"u", "[", "x", "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", 
+           RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", "1", ",", 
+         RowBox[{"Method", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{"\"\<PDEDiscretization\>\"", "\[Rule]", 
+            RowBox[{"{", 
+             RowBox[{"\"\<FiniteElement\>\"", ",", 
+              RowBox[{"{", 
+               RowBox[{"\"\<MeshOptions\>\"", "\[Rule]", 
+                RowBox[{"{", 
+                 RowBox[{"MaxCellMeasure", "\[Rule]", "0.05"}], "}"}]}], 
+               "}"}]}], "}"}]}], "}"}]}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"energy2", " ", "=", " ", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "/", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"A2", "^", "2"}]}], ")"}]}], ")"}], "*", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"SHOValues", "[", 
+           RowBox[{"[", "1", "]"}], "]"}], "+", 
+          RowBox[{
+           RowBox[{"A2", "^", "2"}], "*", 
+           RowBox[{"SHOValues", "[", 
+            RowBox[{"[", "3", "]"}], "]"}]}], "+", 
+          RowBox[{"Integrate", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{"s0", "+", 
+                RowBox[{"A2", "*", "s2"}]}], ")"}], "^", "2"}], "*", "a2", 
+             "*", 
+             RowBox[{"x", "^", "4"}]}], ",", 
+            RowBox[{"{", 
+             RowBox[{"x", ",", " ", 
+              RowBox[{"-", "Infinity"}], ",", " ", "Infinity"}], "}"}], ",", 
+            " ", 
+            RowBox[{"GenerateConditions", "\[Rule]", "False"}]}], "]"}]}], 
+         ")"}]}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"sol2", " ", "=", " ", 
+       RowBox[{
+        RowBox[{"NSolve", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"D", "[", 
+            RowBox[{"energy2", ",", "A2"}], "]"}], "\[Equal]", "0"}], ",", 
+          " ", "A2"}], "]"}], "/.", "atomicUnits"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"val", " ", "=", 
+       RowBox[{
+        RowBox[{"energy2", "/.", "atomicUnits"}], "/.", 
+        RowBox[{"sol2", "[", 
+         RowBox[{"[", "1", "]"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"energy2", " ", "/.", "atomicUnits"}], ",", "val", ",", " ", 
+          RowBox[{"vals2", "[", 
+           RowBox[{"[", "1", "]"}], "]"}]}], "}"}], ",", " ", 
+        RowBox[{"{", 
+         RowBox[{"A2", ",", 
+          RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", " ", 
+        RowBox[{"PlotLabel", "\[Rule]", 
+         RowBox[{
+          RowBox[{
+          "StringTemplate", "[", "\"\<E as Function of A, a = `1`\>\"", "]"}],
+           "[", "a2", "]"}]}], ",", " ", 
+        RowBox[{"PlotLegends", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Text", "[", "\"\<Energy(A)\>\"", "]"}], ",", 
+           RowBox[{
+            RowBox[{
+            "StringTemplate", "[", 
+             "\"\<Minimum Energy for Variational Guess = `1`\>\"", "]"}], "[", 
+            RowBox[{
+             RowBox[{"energy2", "/.", "atomicUnits"}], "/.", 
+             RowBox[{"sol2", "[", 
+              RowBox[{"[", "1", "]"}], "]"}]}], "]"}], ",", 
+           RowBox[{
+            RowBox[{
+            "StringTemplate", "[", "\"\<Actual Ground State Energy = `1`\>\"",
+              "]"}], "[", 
+            RowBox[{"vals2", "[", 
+             RowBox[{"[", "1", "]"}], "]"}], "]"}]}], "}"}]}], ",", " ", 
+        RowBox[{"AxesLabel", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"\"\<A\>\"", ",", " ", "\"\<Energy\>\""}], "}"}]}]}], 
+       "]"}]}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"a2", ",", "0.001", ",", " ", "\"\<a\>\""}], "}"}], ",", " ", 
+       "0.001", ",", " ", "20"}], "}"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.7909608317216344`*^9, {3.790960898635729*^9, 3.790960986461125*^9}, {
+   3.7909610254161386`*^9, 3.7909610281657915`*^9}, {3.7909611011985254`*^9, 
+   3.790961112934146*^9}, {3.7909611755465126`*^9, 3.7909612124528008`*^9}, {
+   3.7909612503210144`*^9, 3.7909612527834296`*^9}, {3.7909613272464223`*^9, 
+   3.7909613605453606`*^9}, {3.7909613922266865`*^9, 3.790961427723742*^9}, {
+   3.7909614617767344`*^9, 3.7909615906614294`*^9}, {3.7909616335682607`*^9, 
+   3.790961677559642*^9}, {3.7909617258964148`*^9, 3.7909617550325427`*^9}, {
+   3.790961786717826*^9, 3.7909618293637714`*^9}, {3.790961874446707*^9, 
+   3.7909619152737727`*^9}, {3.7909623274035854`*^9, 3.790962390260763*^9}, {
+   3.7909624215808115`*^9, 3.790962635556178*^9}, {3.7909626818068757`*^9, 
+   3.790962692199335*^9}, {3.790962736285285*^9, 3.7909627815286674`*^9}, 
+   3.790962848889557*^9, 3.790962906653513*^9, {3.7909697261923084`*^9, 
+   3.7909698504871216`*^9}, {3.790969884021019*^9, 3.790969889061427*^9}, {
+   3.790970050668078*^9, 3.7909701061837482`*^9}, 3.790970284908063*^9, {
+   3.7909708021322656`*^9, 3.7909709783573294`*^9}, {3.790971098177638*^9, 
+   3.7909711063254566`*^9}, 3.790971137644681*^9, {3.7909711684950004`*^9, 
+   3.790971199097966*^9}, {3.790972054483878*^9, 3.7909720555072975`*^9}, {
+   3.790972099574706*^9, 3.790972100116222*^9}, 3.7909729197579064`*^9},
+ CellLabel->
+  "In[231]:=",ExpressionUUID->"f729c967-56d2-4044-aef9-ff36ce547954"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a2$$ = 0.001, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a2$$], 0.001, "a"}, 0.001, 20}}, Typeset`size$$ = {
+    833., {152., 158.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`a2$446596$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`a2$$ = 0.001}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`a2$$, $CellContext`a2$446596$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> ($CellContext`S2 = (((-$CellContext`h^2)/2)/$CellContext`m) 
+          Laplacian[
+            $CellContext`u[$CellContext`x], {$CellContext`x}] + (1/
+           2) $CellContext`m $CellContext`w^2 $CellContext`x^2 \
+$CellContext`u[$CellContext`x] + $CellContext`a2$$ $CellContext`x^4 \
+$CellContext`u[$CellContext`x]; {$CellContext`vals2, $CellContext`funs2} = 
+        NDEigensystem[
+          ReplaceAll[$CellContext`S2, $CellContext`atomicUnits], 
+          $CellContext`u[$CellContext`x], {$CellContext`x, -10, 10}, 1, 
+          Method -> {
+           "PDEDiscretization" -> {
+             "FiniteElement", {
+              "MeshOptions" -> {
+                MaxCellMeasure -> 0.05}}}}]; $CellContext`energy2 = (1/(
+          1 + $CellContext`A2^2)) (
+          Part[$CellContext`SHOValues, 1] + $CellContext`A2^2 
+           Part[$CellContext`SHOValues, 3] + 
+          Integrate[($CellContext`s0 + $CellContext`A2 $CellContext`s2)^2 \
+$CellContext`a2$$ $CellContext`x^4, {$CellContext`x, -Infinity, Infinity}, 
+            GenerateConditions -> False]); $CellContext`sol2 = ReplaceAll[
+          NSolve[
+          D[$CellContext`energy2, $CellContext`A2] == 
+           0, $CellContext`A2], $CellContext`atomicUnits]; $CellContext`val = 
+        ReplaceAll[
+          ReplaceAll[$CellContext`energy2, $CellContext`atomicUnits], 
+          Part[$CellContext`sol2, 1]]; Plot[{
+          
+          ReplaceAll[$CellContext`energy2, $CellContext`atomicUnits], \
+$CellContext`val, 
+          Part[$CellContext`vals2, 1]}, {$CellContext`A2, -1, 1}, PlotLabel -> 
+         StringTemplate["E as Function of A, a = `1`"][$CellContext`a2$$], 
+         PlotLegends -> {
+           Text["Energy(A)"], 
+           StringTemplate["Minimum Energy for Variational Guess = `1`"][
+            ReplaceAll[
+             ReplaceAll[$CellContext`energy2, $CellContext`atomicUnits], 
+             Part[$CellContext`sol2, 1]]], 
+           StringTemplate["Actual Ground State Energy = `1`"][
+            Part[$CellContext`vals2, 1]]}, AxesLabel -> {"A", "Energy"}]), 
+      "Specifications" :> {{{$CellContext`a2$$, 0.001, "a"}, 0.001, 20}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{892., {205., 212.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.790975962831275*^9},
+ CellLabel->
+  "Out[231]=",ExpressionUUID->"3967f4a5-1ba8-44b4-8ce2-b5ce81220732"]
+}, {2}]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1536, 781},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>1.25 Inherited,
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->FrontEnd`FileName[{"Book"}, "Textbook.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 405, 11, 72, "Section",ExpressionUUID->"86e84893-d2c8-4d7c-80a7-c733028ec8b0"],
+Cell[988, 35, 394, 7, 27, "Text",ExpressionUUID->"781eb7a2-e871-4614-99dd-ef7163bcf0bc"],
+Cell[1385, 44, 473, 12, 54, "EquationNumbered",ExpressionUUID->"7b73f24a-cd91-48cc-a216-48f345cfae97"],
+Cell[1861, 58, 1127, 27, 37, "Text",ExpressionUUID->"057e1a45-b205-402d-9408-294a913c9f31"],
+Cell[2991, 87, 705, 19, 62, "EquationNumbered",ExpressionUUID->"6b0e31c1-4be3-4f1c-8b52-d333a6ba8ace"],
+Cell[3699, 108, 1508, 30, 79, "Text",ExpressionUUID->"b1fb0905-9589-4a7a-83e8-0e33137a28fa"],
+Cell[5210, 140, 1112, 23, 50, "Text",ExpressionUUID->"9b179d06-bdac-4c67-b168-9102943e60bc"],
+Cell[CellGroupData[{
+Cell[6347, 167, 221, 4, 42, "Subsection",ExpressionUUID->"0a803b7f-6007-4aaa-a000-61daa04b7cda"],
+Cell[6571, 173, 177, 3, 27, "Text",ExpressionUUID->"3877389a-497c-4279-8451-497c57a6a4ee"],
+Cell[CellGroupData[{
+Cell[6773, 180, 2192, 49, 71, "Item1",ExpressionUUID->"68088dc0-774a-4a70-ae84-b0c462cb52d0"],
+Cell[8968, 231, 1883, 40, 42, "Item1",ExpressionUUID->"fac9c6aa-39e5-4712-b94c-8f588b61132d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10888, 276, 13643, 294, 543, "Input",ExpressionUUID->"3c7ba7c0-61b0-400a-8e19-909cd5b1b283"],
+Cell[24534, 572, 4248, 85, 633, "Output",ExpressionUUID->"81a34986-59a2-4c4e-a7bc-d65b1c06c752"]
+}, {2}]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28828, 663, 213, 4, 42, "Subsection",ExpressionUUID->"e6e4658b-73e1-459f-8bba-17e5b2ca985b"],
+Cell[29044, 669, 799, 13, 48, "Text",ExpressionUUID->"a50a03a2-bc6e-49b9-979a-c8a614e58442"],
+Cell[CellGroupData[{
+Cell[29868, 686, 6484, 154, 199, "Input",ExpressionUUID->"f729c967-56d2-4044-aef9-ff36ce547954"],
+Cell[36355, 842, 3719, 73, 438, "Output",ExpressionUUID->"3967f4a5-1ba8-44b4-8ce2-b5ce81220732"]
+}, {2}]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
