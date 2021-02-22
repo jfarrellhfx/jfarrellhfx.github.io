@@ -12,12 +12,12 @@ with open("index.md", "w") as g:
             if "." in filename:
                 line = "<li><a href = \"{}\">{}</a></li>\n".format(filename, filename)
                 line = line.replace(".md","")
-
-                if ".pdf" in filename:
-                    if filename.replace(".pdf", ".md") not in filenames:
+                if filename[0:3] != "PRI":
+                    if ".pdf" in filename:
+                        if filename.replace(".pdf", ".md") not in filenames:
+                            g.write(line)
+                    else:
                         g.write(line)
-                else:
-                    g.write(line)
 
 
             else:
@@ -25,3 +25,6 @@ with open("index.md", "w") as g:
                 g.write(line)
 
     g.write("</ul>")
+    g.write("<br>")
+    g.write("<br>")
+    g.write("<a href = \"links\">>> links</a>")
