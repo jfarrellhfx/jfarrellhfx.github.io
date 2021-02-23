@@ -1,4 +1,0 @@
-I"<p>To update submodules locally, open a terminal inside the local repository and run:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git submodule foreach git pull origin main
-</code></pre></div></div>
-:ET

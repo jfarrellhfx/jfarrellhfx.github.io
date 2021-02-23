@@ -1,6 +1,0 @@
-I"<p>In Windows, to make a python script “double-clickable”, need to use a <code class="language-plaintext highlighter-rouge">batch</code> file, which has extension <code class="language-plaintext highlighter-rouge">.bat</code>.  Using <code class="language-plaintext highlighter-rouge">conda</code> distribution for Python, need to do:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CALL conda.bat activate base
-python python_script.py
-</code></pre></div></div>
-:ET

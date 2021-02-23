@@ -1,2 +1,3 @@
-start chrome http://127.0.0.1:4000/labbook
+start chrome http://127.0.0.1:4000
 jekyll serve
+cmd \k
