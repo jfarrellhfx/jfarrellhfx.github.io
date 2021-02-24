@@ -6,11 +6,11 @@ layout: homepage
 ---
 <div>
 <span data-nosnippet>
-<blockquote style="font-size:16px">I have known several Jacks, and they all, without exception, were more than usually plain. Besides, Jack is a notorious domesticity for John! And I pity any woman who is married to a man called John.</blockquote>
-<p style = "font-size:14px;text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
+<blockquote>I have known several Jacks, and they all, without exception, were more than usually plain. Besides, Jack is a notorious domesticity for John! And I pity any woman who is married to a man called John.</blockquote>
+<p style = "text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
 
-<blockquote style="font-size:16px">Each week I plot your equations dot for dot, <i>x</i>s against <i>y</i>s in all manner of algebraical relation, and every week they draw themselves as commonplace geometry, as if the world of forms were nothing but arcs and angles.  God’s truth, Septimus, if there is an equation for a curve like a bell, there must be an an equation for one like a bluebell, and if a bluebell, why not a rose?  Do we believe nature is written in numbers?</blockquote>
-<p style = "font-size:14px;text-align:center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px"> &mdash; Tom Stoppard's play <i>Arcadia</i></p>
+<blockquote>Each week I plot your equations dot for dot, <i>x</i>s against <i>y</i>s in all manner of algebraical relation, and every week they draw themselves as commonplace geometry, as if the world of forms were nothing but arcs and angles.  God’s truth, Septimus, if there is an equation for a curve like a bell, there must be an an equation for one like a bluebell, and if a bluebell, why not a rose?  Do we believe nature is written in numbers?</blockquote>
+<p style = "text-align:center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px"> &mdash; Tom Stoppard's play <i>Arcadia</i></p>
 </span>
 </div>
 
