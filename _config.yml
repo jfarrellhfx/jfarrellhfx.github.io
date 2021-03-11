@@ -57,6 +57,8 @@ collections:
       output: true
   etc:
       output: true
+  tech_writing:
+      output: true
 
 show_excerpts: true
 
