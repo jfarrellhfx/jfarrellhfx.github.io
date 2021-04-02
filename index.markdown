@@ -46,7 +46,7 @@ today
 
 
 ## Education
-- Hon. Bachelor's of Science, *University of Toronto*, 2017 -- 2021
+- Honors Bachelors of Science, *University of Toronto*, 2017 -- 2021
 
 <!--
 ## More about Me
