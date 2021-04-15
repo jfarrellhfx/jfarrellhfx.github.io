@@ -1,4 +1,4 @@
-I"�<div>
+I"�<div>
 <span data-nosnippet="">
 <blockquote>I have known several Jacks, and they all, without exception, were more than usually plain. Besides, Jack is a notorious domesticity for John! And I pity any woman who is married to a man called John.</blockquote>
 <p style="text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
@@ -16,11 +16,22 @@ My name is Jack Hollis Farrell, and I am an undergraduate student at the Univers
 
 <p>For specifics, please feel free consult my <a href="/assets/CV.pdf">full CV</a>. If you don’t need the exhausting detail, find some highlights below!</p>
 
+<h2 id="news">News</h2>
+<ul>
+
+<li><a href=""><h4 style="margin-bottom:0px">Grad. School at Boulder</h4></a>
+<div style="margin-bottom:1em;font-size:14px"><i>5 April 2021</i></div>
+<p>I’m moving to Boulder Colorado in September of 2021 to start my Ph.D. in Physics at the <em>University of Colorado Boulder</em>!</p>
+
+</li>
+
+</ul>
+
 <h2 id="contact">Contact</h2>
-<p>Jack H. Farrell</p>
-<ul><li><span class="material-icons" style="position:relative;top:0.2em">
+<p><span><b>Jack H. Farrell</b><br />
+<span class="material-icons" style="position:relative;top:0.2em">
 email
-</span>&emsp;jack DOT farrell AT mail.utoronto.ca</li></ul>
+</span> jack DOT farrell AT mail.utoronto.ca&lt;/li&gt;&lt;/ul&gt;</span></p>
 
 <details><summary>&ensp; <span class="material-icons" style="position:relative;top:0.2em">
 today
@@ -34,18 +45,19 @@ today
 
 <h2 id="education">Education</h2>
 <ul>
-  <li>Hon. Bachelor’s of Science, <em>University of Toronto</em>, 2017 – 2021</li>
+  <li>Honors B.Sc. Physics, <em>University of Toronto</em>, 2017 – 2021</li>
 </ul>
 
-<!--
-## More about Me
-### Science
-I am interested in *Condensed Matter Physics* on the theoretical side.  I got into physics in high school by reading lots of so-called "popular" books on the subject.  You can find a list of my favourites here.
+<h2 id="more-about-me">More about Me</h2>
+<h3 id="science">Science</h3>
+<p>I am interested in <em>Condensed Matter Physics</em> on the theoretical side.  I got into physics in high school by reading lots of so-called “popular” books on the subject.  You can find a list of my favourites here.</p>
 
-### Filmmaking
- I've been making movies with my friends since around middle school.  For the past few years, in addition to my creative film projects, I have been exploring documentary and nonfiction filmmaking.  Lots of examples are on the <a href = "/film/">film</a> page.
+<h3 id="filmmaking">Filmmaking</h3>
+<p>I’ve been making movies with my friends since around middle school.  For the past few years, in addition to my creative film projects, I have been exploring documentary and nonfiction filmmaking.  Lots of examples are on the <a href="/film/">film</a> page.</p>
 
-### Other Interests
-- *Comics:* I am a big fan of comic books and comic book movies.  There are lots of great stores in Toronto.  My "pull file" is set up at The Beguiling in toronto.  This is a great.  If you're interested for some reason, feel free to check out my (usually updated) list of books I'm following right now!
--->
+<h3 id="other-interests">Other Interests</h3>
+<ul>
+  <li><em>Comics:</em> I am a big fan of comic books and comic book movies.  There are lots of great stores in Toronto.  My “pull file” is set up at The Beguiling in toronto.  This is a great.  If you’re interested for some reason, feel free to check out my (usually updated) list of books I’m following right now!
+–&gt;</li>
+</ul>
 :ET

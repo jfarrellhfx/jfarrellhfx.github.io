@@ -29,7 +29,7 @@ baseurl: ""
 theme: minima
 plugins:
   - jekyll-feed
-
+date_format: "%-d %B %Y"
 minima:
   skin: dark
 
@@ -58,6 +58,8 @@ collections:
   etc:
       output: true
   tech_writing:
+      output: true
+  news:
       output: true
 
 show_excerpts: true

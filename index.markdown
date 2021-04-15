@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 title: Home
-layout: homepage
+layout: no_title_page
 ---
 <div>
 <span data-nosnippet>
@@ -26,13 +26,11 @@ I was born in Halifax, Nova Scotia, where I went to high school. In 2017, I move
 For specifics, please feel free consult my [full CV](/assets/CV.pdf). If you don't need the exhausting detail, find some highlights below!
 
 ## Contact
-Jack H. Farrell
-<ul><li><span class="material-icons" style = "position:relative;top:0.2em">
+<span><b>Jack H. Farrell</b><br><br>
+<span class="material-icons" style = "position:relative;top:0.2em">
 email
-</span>&emsp;jack DOT farrell AT mail.utoronto.ca</li></ul>
-
-
-<details><summary>&ensp; <span class="material-icons" style = "position:relative;top:0.2em">
+</span>&emsp;jack DOT farrell AT mail.utoronto.ca
+<details><summary><span class="material-icons" style = "position:relative;top:0.2em">
 today
 </span>&emsp;Schedule</summary>
 <div style="margin-top:1em;margin-bottom:1em">
@@ -43,10 +41,21 @@ today
 </div>
 </details>
 
-
-
 ## Education
-- Honors Bachelors of Science, *University of Toronto*, 2017 -- 2021
+- Honors B.Sc. Physics, *University of Toronto*, 2017 -- 2021
+- Ph.D. Physics, *University of Colorado Boulder*, 2021 -- Present
+
+
+## News
+<ul>
+{% for post in site.tags["news"] limit:3 %}
+<li><a href = ""><h4 style="margin-bottom:0px">{{ post.title }}</h4></a>
+<div style="margin-bottom:1em;font-size:14px"><i>{{ post.date | date: "%-d %B %Y" }}</i></div>
+{{ post.content }}
+</li>
+{% endfor %}
+</ul>
+
 
 <!--
 ## More about Me
