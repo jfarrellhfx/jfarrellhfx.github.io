@@ -45,7 +45,6 @@ today
 - Honors B.Sc. Physics, *University of Toronto*, 2017 -- 2021
 - Ph.D. Physics, *University of Colorado Boulder*, 2021 -- Present
 
-
 ## News
 <ul>
 {% for post in site.tags["news"] limit:3 %}
