@@ -7,7 +7,7 @@ layout: homepage
 <div>
 <span data-nosnippet>
 <blockquote>I have known several Jacks, and they all, without exception, were more than usually plain.</blockquote>
-<p style = "text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
+<p style = "text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px;z-index: -1"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
 
 <blockquote>If there is an equation for a curve like a bell, there must be an an equation for one like a bluebell, and if a bluebell, why not a rose?  Do we believe nature is written in numbers?</blockquote>
 <p style = "text-align:center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px"> &mdash; Tom Stoppard's play <i>Arcadia</i></p>
