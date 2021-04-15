@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: /about/
 ---
 For specifics, please feel free consult my [full CV](/assets/CV.pdf). If you don't need the exhausting detail, find some highlights below!
 
