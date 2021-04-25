@@ -43,7 +43,7 @@ I was born in Halifax, Nova Scotia, where I went to high school. In 2017, I move
 
 For detailed information, you can access my [full CV](/assets/CV.pdf).  If you don't need the exhaustive detail, find some highlights and news below!
 
-<img style="width:100%" src="/assets/small_banner.JPG">
+<img style="width:100%" src="/assets/small_banner.jpg">
 
 ## Info
 <ul>
