@@ -8,3 +8,4 @@ tags: news
 I'm moving to Boulder, Colorado in September of 2021 to start my Ph.D. in Physics at the *University of Colorado Boulder*!
 
 <img style = "width:100%" src = "/assets/cu_boulder.jpg">
+<!--more-->
