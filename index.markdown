@@ -22,14 +22,6 @@ layout: homepage
 </div>
 -->
 
-
-
-
-<!--
-<img class = "responsive" src = "/assets/farrellJPG.JPG">
--->
-My name is Jack Hollis Farrell, and I am an undergraduate student at the University of Toronto studying physics.  Mostly, I am interested in *Condensed Matter Physics*, the theoretical physics of materials --- this wide field includes some of the theory behind Quantum Computers, Superconductors, and more.
-
 <div style>
 <span data-nosnippet>
 <div style="margin-left:10%;margin-right:10%">
@@ -39,11 +31,19 @@ My name is Jack Hollis Farrell, and I am an undergraduate student at the Univers
 </span>
 </div>
 
+
+<!--
+<img class = "responsive" src = "/assets/farrellJPG.JPG">
+-->
+My name is Jack Hollis Farrell, and I am an undergraduate student at the University of Toronto studying physics.  Mostly, I am interested in *Condensed Matter Physics*, the theoretical physics of materials --- this wide field includes some of the theory behind Quantum Computers, Superconductors, and more.
+
+
+
 I was born in Halifax, Nova Scotia, where I went to high school. In 2017, I moved to Toronto to start university, and I plan to graduate in June of 2021.
 
 For detailed information, you can access my [full CV](/assets/CV.pdf).  If you don't need the exhaustive detail, find some highlights and news below!
 
-<img style="width:100%" src="/assets/banner_image.png">
+<img style="width:100%" src="/assets/small_banner.JPG">
 
 ## Info
 <ul>
