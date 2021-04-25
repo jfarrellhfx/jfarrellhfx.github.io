@@ -31,7 +31,6 @@ plugins:
   - jekyll-feed
 date_format: "%-d %B %Y"
 minima:
-    skin: dark
 
 include:
     - "_pages"
