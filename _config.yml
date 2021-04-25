@@ -39,7 +39,6 @@ include:
 
 header_pages:
   -  index.markdown
-  - _pages/about.md
   - _pages/science.md
   - _pages/film.md
   - _pages/blog.md

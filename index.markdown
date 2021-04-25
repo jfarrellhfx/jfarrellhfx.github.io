@@ -4,33 +4,70 @@
 title: Home
 layout: homepage
 ---
+<!--
 <div>
 <span data-nosnippet>
+<div style="margin-left:10%;margin-right:100">
 <blockquote>I have known several Jacks, and they all, without exception, were more than usually plain.</blockquote>
-<p style = "text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px;z-index: -1"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
-
+<p style = "text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px;z-index: -1;width:90%"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
+</div>
+-->
+<!--
+<div style = "width:40%;position:relative">
 <blockquote>If there is an equation for a curve like a bell, there must be an an equation for one like a bluebell, and if a bluebell, why not a rose?  Do we believe nature is written in numbers?</blockquote>
 <p style = "text-align:center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px"> &mdash; Tom Stoppard's play <i>Arcadia</i></p>
+</div>
+
+</span>
+</div>
+-->
+
+
+
+
+<!--
+<img class = "responsive" src = "/assets/farrellJPG.JPG">
+-->
+My name is Jack Hollis Farrell, and I am an undergraduate student at the University of Toronto studying physics.  Mostly, I am interested in *Condensed Matter Physics*, the theoretical physics of materials --- this wide field includes some of the theory behind Quantum Computers, Superconductors, and more.
+
+<div style>
+<span data-nosnippet>
+<div style="margin-left:10%;margin-right:10%">
+<blockquote>"I have known several Jacks, and they all, without exception, were more than usually plain."</blockquote>
+<p style = "text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px;z-index: -1;width:90%"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
+</div>
 </span>
 </div>
 
-
-
-## About
-<img class = "responsive" src = "/assets/farrellJPG.JPG">
-My name is Jack Hollis Farrell, and I am an undergraduate student at the University of Toronto studying physics.  Mostly, I am interested in *Condensed Matter Physics*, the theoretical physics of materials --- this wide field includes some of the theory behind Quantum Computers, Superconductors, and more.
-
 I was born in Halifax, Nova Scotia, where I went to high school. In 2017, I moved to Toronto to start university, and I plan to graduate in June of 2021.
 
-For detailed information, you can access my [full CV](/assets/CV.pdf).  For less detailed information, try my [about](/about) page.
+For detailed information, you can access my [full CV](/assets/CV.pdf).  If you don't need the exhaustive detail, find some highlights and news below!
+
+<img style="width:100%" src="/assets/banner_image.png">
+
+## Info
+<ul>
+<li>
+<span class="material-icons" style = "position:relative;top:0.2em">
+email
+</span>&emsp;jack DOT farrell AT colorado.edu
+</li>
+<li>
+<span class="material-icons" style = "position:relative;top:0.2em">
+today
+</span>&emsp;<a href = "/schedule">Schedule</a>
+</li>
+</ul>
 
 
-
+## Education
+- Honors B.Sc. Physics, *University of Toronto*, 2017--2021
+- Ph.D. Physics, *University of Colorado Boulder*, 2021--Present
 
 ## News
 <ul>
 {% for post in site.tags["news"] limit:3 %}
-<li><a href = ""><h4 style="margin-bottom:0px">{{ post.title }}</h4></a>
+<li><a href = "{{post.url}}"><h4 style="margin-bottom:0px">{{ post.title }}</h4></a>
 <div style="margin-bottom:1em;font-size:14px"><i>{{ post.date | date: "%-d %B %Y" }}</i></div>
 {{ post.content }}
 </li>
