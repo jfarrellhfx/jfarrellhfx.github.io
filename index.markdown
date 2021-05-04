@@ -25,7 +25,7 @@ layout: homepage
 <div style>
 <span data-nosnippet>
 <div style="margin-left:10%;margin-right:10%">
-<blockquote>"I have known several Jacks, and they all, without exception, were more than usually plain."</blockquote>
+<blockquote><q>I have known several Jacks, and they all, without exception, were more than usually plain.</q></blockquote>
 <p style = "text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px;z-index: -1;width:90%"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
 </div>
 </span>
