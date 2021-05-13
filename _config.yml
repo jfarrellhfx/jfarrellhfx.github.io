@@ -43,7 +43,6 @@ header_pages:
   - _pages/film.md
   - _pages/blog.md
   - _pages/etc.md
-  - labbook/index.md
 
 permalink: :path
 
