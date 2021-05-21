@@ -13,7 +13,7 @@ layout: homepage
 </div>
 -->
 <!--
-<div style = "width:40%;position:relative">
+<div style = "width:100%;position:relative">
 <blockquote>If there is an equation for a curve like a bell, there must be an an equation for one like a bluebell, and if a bluebell, why not a rose?  Do we believe nature is written in numbers?</blockquote>
 <p style = "text-align:center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px"> &mdash; Tom Stoppard's play <i>Arcadia</i></p>
 </div>
