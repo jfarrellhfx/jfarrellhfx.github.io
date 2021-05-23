@@ -22,19 +22,54 @@ layout: homepage
 </div>
 -->
 
-<div style>
+<div>
 <span data-nosnippet>
 <div>
-<blockquote><q>I have known several Jacks, and they all, without exception, were more than usually plain.</q></blockquote>
-<p style = "text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px;z-index: -1;width:90%"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
+
+
+<div style = "color:#909090;font-size:24px;margin-top:20px"><b><i><q>I have known several Jacks, and they all, without exception, were more than usually plain.</q></i></b></div>
+
+
+<p style = "font-size:16px; text-align: center;position:relative;top:-0.0;margin-left:20px;margin-right:20px;margin-bottom:50px;z-index: -1;width:90%"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
 </div>
+
+<div class = "responsive">
+<img style = "border: 0px solid #bbb; border-radius: 5%" src="/assets/small_banner3.jpg">
+</div>
+
+<ul style="list-style-type:none">
+<li>
+<span class="material-icons" style = "position:relative;top:0.2em">
+email
+</span>&emsp;jack DOT farrell AT colorado.edu
+</li>
+<li>
+<a href = "/schedule">
+<span class="material-icons" style = "position:relative;top:0.2em">
+today
+</span>&ensp;Schedule</a>
+</li>
+<li>
+<a href = "/assets/CV.pdf">
+<span class="material-icons" style = "position:relative;top:0.2em">
+attachment
+</span>&ensp;CV
+</a>
+</li>
+</ul>
+
+
+
+
 </span>
 </div>
 
-
+<div style="clear:left"></div>
 <!--
 <img class = "responsive" src = "/assets/farrellJPG.JPG">
 -->
+
+
 My name is Jack Hollis Farrell, and I am an undergraduate student at the University of Toronto studying physics.  Mostly, I am interested in *Condensed Matter Physics*, the theoretical physics of materials --- this wide field includes some of the theory behind Quantum Computers, Superconductors, and more.
 
 
@@ -42,22 +77,6 @@ My name is Jack Hollis Farrell, and I am an undergraduate student at the Univers
 I was born in Halifax, Nova Scotia, where I went to high school. In 2017, I moved to Toronto to start university, and I plan to graduate in June of 2021.
 
 For detailed information, you can access my [full CV](/assets/CV.pdf).  If you don't need the exhaustive detail, find some highlights and news below!
-
-<img style="width:100%" src="/assets/small_banner.jpg">
-
-## Info
-<ul>
-<li>
-<span class="material-icons" style = "position:relative;top:0.2em">
-email
-</span>&emsp;jack DOT farrell AT colorado.edu
-</li>
-<li>
-<span class="material-icons" style = "position:relative;top:0.2em">
-today
-</span>&emsp;<a href = "/schedule">Schedule</a>
-</li>
-</ul>
 
 
 ## Education

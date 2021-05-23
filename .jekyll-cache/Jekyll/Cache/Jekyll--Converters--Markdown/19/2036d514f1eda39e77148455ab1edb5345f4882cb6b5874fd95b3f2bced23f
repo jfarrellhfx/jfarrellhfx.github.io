@@ -1,0 +1,91 @@
+I"E<!--
+<div>
+<span data-nosnippet>
+<div style="margin-left:10%;margin-right:100">
+<blockquote>I have known several Jacks, and they all, without exception, were more than usually plain.</blockquote>
+<p style = "text-align: center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px;z-index: -1;width:90%"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
+</div>
+-->
+<!--
+<div style = "width:100%;position:relative">
+<blockquote>If there is an equation for a curve like a bell, there must be an an equation for one like a bluebell, and if a bluebell, why not a rose?  Do we believe nature is written in numbers?</blockquote>
+<p style = "text-align:center;position:relative;top:-0.75em;margin-left:20px;margin-right:20px"> &mdash; Tom Stoppard's play <i>Arcadia</i></p>
+</div>
+
+</span>
+</div>
+-->
+
+<div style="">
+<span data-nosnippet="">
+<div>
+<div style="color:#909090"><b><i><q>I have known several Jacks, and they all, without exception, were more than usually plain.</q></i></b></div>
+<p style="font-size:15px; text-align: center;position:relative;top:-0.0;margin-left:20px;margin-right:20px;margin-bottom:30px;z-index: -1;width:90%"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
+</div>
+</span>
+</div>
+<div>
+<div class="responsive">
+<img style="border-radius:10px" src="/assets/small_banner2.jpg" />
+</div>
+
+<ul>
+<li>
+<span class="material-icons" style="position:relative;top:0.2em">
+email
+</span>&emsp;jack DOT farrell AT colorado.edu
+</li>
+<li>
+<span class="material-icons" style="position:relative;top:0.2em">
+today
+</span>&emsp;<a href="/schedule">Schedule</a>
+</li>
+</ul>
+
+</div>
+<div clear="both">test</div>
+
+<!--
+<img class = "responsive" src = "/assets/farrellJPG.JPG">
+-->
+
+<p>My name is Jack Hollis Farrell, and I am an undergraduate student at the University of Toronto studying physics.  Mostly, I am interested in <em>Condensed Matter Physics</em>, the theoretical physics of materials — this wide field includes some of the theory behind Quantum Computers, Superconductors, and more.</p>
+
+<p>I was born in Halifax, Nova Scotia, where I went to high school. In 2017, I moved to Toronto to start university, and I plan to graduate in June of 2021.</p>
+
+<p>For detailed information, you can access my <a href="/assets/CV.pdf">full CV</a>.  If you don’t need the exhaustive detail, find some highlights and news below!</p>
+
+<h2 id="info">Info</h2>
+
+<h2 id="education">Education</h2>
+<ul>
+  <li>Honors B.Sc. Physics, <em>University of Toronto</em>, 2017–2021</li>
+  <li>Ph.D. Physics, <em>University of Colorado Boulder</em>, 2021–Present</li>
+</ul>
+
+<h2 id="news">News</h2>
+<ul>
+
+<li><a href="/2021-04-05-gradschool"><h4 style="margin-bottom:0px">Grad. School at Boulder!</h4></a>
+<div style="margin-bottom:1em;font-size:14px"><i>5 April 2021</i></div>
+<p>I’m moving to Boulder, Colorado in September of 2021 to start my Ph.D. in Physics at the <em>University of Colorado Boulder</em>!</p>
+
+<p><img style="width:100%" src="/assets/cu_boulder.jpg" />
+<!--more--></p>
+
+</li>
+
+</ul>
+
+<!--
+## More about Me
+### Science
+I am interested in *Condensed Matter Physics* on the theoretical side.  I got into physics in high school by reading lots of so-called "popular" books on the subject.  You can find a list of my favourites here.
+
+### Filmmaking
+ I've been making movies with my friends since around middle school.  For the past few years, in addition to my creative film projects, I have been exploring documentary and nonfiction filmmaking.  Lots of examples are on the <a href = "/film/">film</a> page.
+
+### Other Interests
+- *Comics:* I am a big fan of comic books and comic book movies.  There are lots of great stores in Toronto.  My "pull file" is set up at The Beguiling in toronto.  This is a great.  If you're interested for some reason, feel free to check out my (usually updated) list of books I'm following right now!
+-->
+:ET
