@@ -1,17 +1,40 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
-@media screen and ( max-width: 500px ) {
-div.responsive { width: 75%; display: block;
+@media screen and ( max-width: 600px ) {
+div.small { width: 60%; display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 }
 
-@media screen and ( min-width: 500px ) {
-div.responsive { width: 35%; float:left; margin-left:0px;margin-right: 40px; margin-bottom:30px;margin-top:0}
+@media screen and ( max-width: 600px ) {
+    div.laptop {
+    width:0;
+    }
 }
+
+@media screen and ( min-width: 600px ) {
+div.laptop {
+
+    float:right;
+    width: 35%;
+    margin-top:auto;
+    margin-left: 30px;
+    margin-right: auto;
+    margin-bottom:40px};
+}
+
+@media screen and ( min-width: 600px ) {
+div.small {
+    width: 0px;
+}
+}
+//old
+//@media screen and ( min-width: 480px ) {
+//img.responsive { width: 30%; float:left; margin-left:0px;margin-right: 40px; margin-bottom:30px;margin-top:0}
+//}
 
 .definition {
   border: 1px solid currentColor;

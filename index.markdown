@@ -22,24 +22,35 @@ layout: homepage
 </div>
 -->
 
+
 <div>
-<span data-nosnippet>
 
 
-<div style = "color:#909090;font-size:24px;margin-top:20px"><b><i><q>I have known several Jacks, and they all, without exception, were more than usually plain.</q></i></b></div>
+<div class = "laptop">
+<center>
 
+<img style = "border-radius:20px;" src="/assets/small_banner3.jpg">
+</center>
 
-<p style = "font-size:16px; text-align: center;position:relative;top:-0.0;margin-left:20px;margin-right:20px;margin-bottom:50px;z-index: -1;width:90%"> &mdash; Oscar Wilde's play <i>The Importance of Being Earnest</i></p>
-
-</span>
-<div class = "responsive">
-<img style = "border: 0px solid #bbb; border-radius: 2.5%" src="/assets/small_banner3.jpg">
 </div>
 
-<div>
-My name is Jack Hollis Farrell, and I am a Ph.D. student in physics at the <i>University of Colorado Boulder</i>, a freelance filmmaker, and a science communicator.
-<hr>
-<ul style="list-style-type:none">
+
+<p>My name is <b>Jack Hollis Farrell</b>, and I am a Ph.D. student in physics at the <i>University of Colorado Boulder</i>, a freelance filmmaker, and a science communicator.
+</p>
+
+<div class = "small">
+<center>
+
+<img style = "border-radius:20px;" src="/assets/small_banner3.jpg">
+</center>
+
+</div>
+
+
+<div style = "margin-bottom:30px">
+<ul style="list-style-type:none;display: table;
+    margin: 0 auto;
+    text-align: left;">
 <li>
 <span class="material-icons" style = "position:relative;top:0.2em">
 email</span>&ensp;jack DOT farrell AT colorado.edu
@@ -58,33 +69,27 @@ attachment
 </a>
 </li>
 </ul>
-
 </div>
 
+<!-- don't use the following section for the snippet -->
+<span data-nosnippet>
 
 
+<div style="clear:right"></div>
 
 
-<div style="clear:left"></div>
-<!--
-<img class = "responsive" src = "/assets/farrellJPG.JPG">
--->
+<p>My <a href = "/science/">research</a> focuses on <i>Condensed Matter Physics</i>, the theoretical physics of materials; this wide field includes some of the theory behind Quantum Computers, Superconductors, and more.  My freelance and independent <a href = "/film/">filmmaking</a> has involved short-form science communication pieces and a long-form research documentary.</p>
+
+<p>I was born in Halifax, Nova Scotia, where I went to high school. In 2017, I moved to Toronto to start university at the <i>University of Toronto</i>, and I graduated in June of 2021.  After that, I moved to Boulder, Colorado to start my Ph.D. at the <i>University of Colorado Boulder</i>.</p>
+
+<p>For detailed information, you can access my <a href = "/assets/CV.pdf">CV</a>.  If you don't need the exhaustive detail, find some highlights and news below!</p>
 
 
- <p>My <a href = "/science/">research</a> focuses on *Condensed Matter Physics*, the theoretical physics of materials; this wide field includes some of the theory behind Quantum Computers, Superconductors, and more.  My freelance and independent <a href = "/film/">filmmaking</a> has involved short-form science communication pieces and a long-form research documentary.</p>
+<h2>Education</h2>
+<ul><li>Honors B.Sc. Physics, <i>University of Toronto</i>, 2017&ndash;2021</li>
+<li>Ph.D. Physics, <i>University of Colorado Boulder</i>, 2021&ndash;Present</li></ul>
 
-
-
-I was born in Halifax, Nova Scotia, where I went to high school. In 2017, I moved to Toronto to start university at the *University of Toronto*, and I graduated in June of 2021.  After that, I moved to Boulder, Colorado to start my Ph.D. at the *University of Colorado Boulder*.
-
-For detailed information, you can access my [full CV](/assets/CV.pdf).  If you don't need the exhaustive detail, find some highlights and news below!
-
-
-## Education
-- Honors B.Sc. Physics, *University of Toronto*, 2017--2021
-- Ph.D. Physics, *University of Colorado Boulder*, 2021--Present
-
-## News
+<h2>News</h2>
 <ul>
 {% for post in site.tags["news"] limit:3 %}
 <li><a href = "{{post.url}}"><h4 style="margin-bottom:0px">{{ post.title }}</h4></a>
