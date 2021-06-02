@@ -34,7 +34,7 @@ layout: homepage
 </div>
 
 <div class = "responsive">
-<img style = "border: 0px solid #bbb; border-radius: 5%" src="/assets/small_banner3.jpg">
+<img style = "border: 0px solid #bbb; border-radius: 2.5%" src="/assets/small_banner3.jpg">
 </div>
 
 <ul style="list-style-type:none">
