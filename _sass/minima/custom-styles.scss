@@ -1,6 +1,6 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
-@media screen and ( max-width: 480px ) {
+@media screen and ( max-width: 500px ) {
 div.responsive { width: 75%; display: block;
   margin-left: auto;
   margin-right: auto;
@@ -9,8 +9,8 @@ div.responsive { width: 75%; display: block;
 }
 }
 
-@media screen and ( min-width: 480px ) {
-div.responsive { width: 30%; float:left; margin-right: 20px; margin-bottom:50px;margin-top:0}
+@media screen and ( min-width: 500px ) {
+div.responsive { width: 35%; float:left; margin-left:0px;margin-right: 40px; margin-bottom:30px;margin-top:0}
 }
 
 .definition {
