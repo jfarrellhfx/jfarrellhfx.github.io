@@ -55,7 +55,16 @@ div.profile {
 }
 }
 
-@media screen and ( min-width: 1500px ) {
+@media screen and ( min-width: 1300px ) {
+div.profile {
+    position: absolute;
+    left: 25px;
+    width:250px;
+    top: 105px;
+}
+}
+
+@media screen and ( min-width: 1400px ) {
 div.profile {
     position: absolute;
     left: 75px;
