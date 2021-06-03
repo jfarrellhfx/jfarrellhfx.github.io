@@ -4,8 +4,15 @@ permalink: /film/
 layout: page
 ---
 In addition to research, I am also an independent/freelance film-maker.  All of my publically-available projects are included below.
+<div class = "sidebar">
+<h3>Navigation</h3>
+<ul>
+<li><a href = "#nonfiction">Nonfiction</a></li>
+<li><a href = "#fiction">Fiction</a></li>
+</ul>
+</div>
 
-## Nonfiction
+<h2 id = "nonfiction">Nonfiction</h2>
 <div>
   {% for doc in site.films %}
     {% if doc.genre == "nonfiction" %}
@@ -16,7 +23,7 @@ In addition to research, I am also an independent/freelance film-maker.  All of 
   {% endfor %}
 </div>
 
-## Fiction
+<h2 id = "fiction">Fiction</h2>
 <div>
   {% for doc in site.films %}
     {% if doc.genre == "fiction" %}

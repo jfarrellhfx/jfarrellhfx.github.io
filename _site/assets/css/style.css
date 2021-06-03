@@ -333,10 +333,12 @@ table td { border: 1px solid #404040; }
 
 .definition { border: 1px solid currentColor; padding: 1%; }
 
-div.sidebar { margin-left: auto; margin-right: auto; width: 60%; }
+div.profile { margin-left: auto; margin-right: auto; width: 100%; }
 
-@media screen and (min-width: 800px) { div.sidebar { margin-left: auto; margin-right: auto; width: 40%; } }
+@media screen and (min-width: 250px) { div.profile { margin-left: auto; margin-right: auto; width: 250px; } }
 
-@media screen and (min-width: 1500px) { div.sidebar { position: absolute; left: 75px; width: 250px; } }
+@media screen and (min-width: 1500px) { div.profile { position: absolute; left: 75px; width: 250px; top: 105px; } }
+
+@media screen and (min-width: 1500px) { div.sidebar { position: absolute; left: 75px; width: 250px; top: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

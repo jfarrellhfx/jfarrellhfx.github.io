@@ -38,7 +38,7 @@ include:
     - "_posts"
 
 header_pages:
-  -  index.markdown
+  -  index.md
   - _pages/science.md
   - _pages/film.md
   - _pages/blog.md

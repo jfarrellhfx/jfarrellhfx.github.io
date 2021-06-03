@@ -41,17 +41,26 @@ div.small {
   padding: 1%;
 }
 
-div.sidebar {
+div.profile {
     margin-left:auto;
     margin-right: auto;
-    width:60%;
+    width:100%;
 }
 
-@media screen and (min-width: 800px) {
-div.sidebar {
+@media screen and (min-width: 250px) {
+div.profile {
     margin-left:auto;
     margin-right: auto;
-    width:40%;
+    width:250px;
+}
+}
+
+@media screen and ( min-width: 1500px ) {
+div.profile {
+    position: absolute;
+    left: 75px;
+    width:250px;
+    top: 105px;
 }
 }
 
@@ -60,5 +69,6 @@ div.sidebar {
     position: absolute;
     left: 75px;
     width:250px;
+    top: 40px;
 }
 }

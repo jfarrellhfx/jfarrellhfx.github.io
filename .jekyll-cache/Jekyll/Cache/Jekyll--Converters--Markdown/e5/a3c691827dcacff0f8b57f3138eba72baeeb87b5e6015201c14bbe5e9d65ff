@@ -1,4 +1,4 @@
-I"{<!--
+I"<!--
 <div>
 <span data-nosnippet>
 <div style="margin-left:10%;margin-right:100">
@@ -19,7 +19,16 @@
 <div>
 
 
-<div class="sidebar">
+<div class="profile">
+
+
+
+<center>
+<img style="width:85%;margin-bottom:20px;border-radius:50%;" src="/assets/small_banner3.jpg" />
+
+
+
+</center>
 
 
 <div style="margin-bottom:30px">
@@ -27,41 +36,30 @@
     margin: 0 auto;
     text-align: left;">
 <li>
-<span class="material-icons" style="position:relative;top:0.2em">
-email</span>&ensp;jack DOT farrell AT colorado.edu
+<span class="fas fa-envelope"></span>&ensp;jack.farrell AT colorado.edu
 </li>
 <li>
 <a href="/schedule">
-<span class="material-icons" style="position:relative;top:0.2em">
-today
-</span>&ensp;Schedule</a>
+<span class="fas fa-calendar-day"></span>&ensp;Schedule</a>
 </li>
 <li>
 <a href="/assets/CV.pdf">
-<span class="material-icons" style="position:relative;top:0.2em">
-attachment
-</span>&ensp;CV
+<span class="fas fa-paperclip"></span>&ensp;CV
+</a>
+</li>
+
+<li>
+<a href="http://github.com/jfarrellhfx">
+<span class="fab fa-github"></span>&ensp;Github
 </a>
 </li>
 </ul>
 </div>
-<center>
-<img style="border-radius:20px;" src="/assets/small_banner3.jpg" />
-</center>
-
 </div>
 
 
 <p>My name is <b>Jack Hollis Farrell</b>, and I am a Ph.D. student in physics at the <i>University of Colorado Boulder</i>, a freelance filmmaker, and a science communicator.
 </p>
-
-<div class="small">
-<center>
-
-<img style="border-radius:20px;" src="/assets/small_banner3.jpg" />
-</center>
-
-</div>
 
 
 
@@ -96,7 +94,6 @@ attachment
 </li>
 
 </ul>
-
 
 <!--
 ## More about Me
