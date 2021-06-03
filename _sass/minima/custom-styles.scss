@@ -40,3 +40,25 @@ div.small {
   border: 1px solid currentColor;
   padding: 1%;
 }
+
+div.sidebar {
+    margin-left:auto;
+    margin-right: auto;
+    width:60%;
+}
+
+@media screen and (min-width: 800px) {
+div.sidebar {
+    margin-left:auto;
+    margin-right: auto;
+    width:40%;
+}
+}
+
+@media screen and ( min-width: 1500px ) {
+div.sidebar {
+    position: absolute;
+    left: 75px;
+    width:250px;
+}
+}
