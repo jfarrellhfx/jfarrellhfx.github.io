@@ -27,11 +27,11 @@ layout: homepage
 
 
 <div class = "profile">
-
+<div class = "profchild">
 
 
 <center>
-<img style = "width:85%;margin-bottom:20px;border-radius:50%;" src="/assets/small_banner3.jpg">
+<img style = "width:80%;margin-bottom:20px;border-radius:50%;" src="/assets/small_banner3.jpg">
 
 
 
@@ -45,15 +45,18 @@ layout: homepage
 <li>
 <span class="fas fa-envelope"></span>&ensp;jack.farrell AT colorado.edu
 </li>
-<li>
-<a href = "/schedule">
-<span class="fas fa-calendar-day"></span>&ensp;Schedule</a>
-</li>
+
 <li>
 <a href = "/assets/CV.pdf">
 <span class="fas fa-paperclip"></span>&ensp;CV
 </a>
 </li>
+
+<li>
+<a href = "/schedule">
+<span class="fas fa-calendar-day"></span>&ensp;Schedule</a>
+</li>
+
 
 <li>
 <a href = "http://github.com/jfarrellhfx">
@@ -63,7 +66,7 @@ layout: homepage
 </ul>
 </div>
 </div>
-
+</div>
 
 <p>My name is <b>Jack Hollis Farrell</b>, and I am a Ph.D. student in physics at the <i>University of Colorado Boulder</i>, a freelance filmmaker, and a science communicator.
 </p>

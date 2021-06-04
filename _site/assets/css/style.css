@@ -333,14 +333,14 @@ table td { border: 1px solid #404040; }
 
 .definition { border: 1px solid currentColor; padding: 1%; }
 
+div.sidebar { width: 100%; position: relative; }
+
 div.profile { margin-left: auto; margin-right: auto; width: 100%; }
 
 @media screen and (min-width: 250px) { div.profile { margin-left: auto; margin-right: auto; width: 250px; } }
 
-@media screen and (min-width: 1300px) { div.profile { position: absolute; left: 15px; width: 250px; top: 105px; } }
+div.profchild { position: relative; }
 
-@media screen and (min-width: 1400px) { div.profile { position: absolute; left: 60px; width: 250px; top: 105px; } }
-
-@media screen and (min-width: 1500px) { div.sidebar { position: absolute; left: 75px; width: 250px; top: 40px; } }
+@media screen and (min-width: 1350px) { div.sidebar { position: relative; top: -200px; left: 770px; width: 250px; } div.profile { position: relative; top: -60px; left: -520px; width: 250px; } div.profchild { position: absolute; } }
 
 /*# sourceMappingURL=style.css.map */
