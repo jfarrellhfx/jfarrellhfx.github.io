@@ -31,7 +31,7 @@ layout: homepage
 
 
 <center>
-<img style = "width:80%;margin-bottom:20px;border-radius:50%;" src="/assets/small_banner3.jpg">
+<img style = "width:80%;margin-bottom:20px;border-radius:50%;z-index:-1" src="/assets/small_banner3.jpg">
 
 
 
