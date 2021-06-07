@@ -68,6 +68,7 @@ div.profchild {
 
 @media screen and ( min-width: 1350px ) {
 div.sidebar {
+    z-index: 0;
     position:relative;
     top: -200px;
     left: 770px;
@@ -75,7 +76,8 @@ div.sidebar {
 }
 
 div.profile {
-    position:relative;
+    position:relative
+    z-index: 0;
     top: -60px;
     left:-520px;
     width:250px;
