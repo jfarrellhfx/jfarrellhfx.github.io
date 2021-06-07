@@ -75,7 +75,8 @@ div.sidebar {
 }
 
 div.profile {
-    position:relative
+    position:relative;
+    z-index: 0;
     top: -60px;
     left:-520px;
     width:250px;
@@ -83,6 +84,6 @@ div.profile {
 
 div.profchild {
     position:absolute;
-    z-index: 0;
+
 }
 }
