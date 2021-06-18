@@ -18,7 +18,3 @@ I am interested in the theoretical physics of materials, called *Condensed Matte
       <p style="text-align:center;position:relative;top:-0em;"><a href="{{ doc.url }}"> <i>(read more)</i></a></p>
   {% endfor %}
 </div>
-
-## Technical Writing
-### Unpublished
-- <a href = "/tech_writing/variational_report.pdf"><i>A Variational Monte Carlo Method for the Schrodinger Equation</i></a><br>Final report for the course PHY 407 taught by Nicolas Grisouard at the University of Toronto, taken in fall 2020.  <a href = "https://github.com/jfarrellhfx/variational-monte-carlo">GitHub Repo</a>.
