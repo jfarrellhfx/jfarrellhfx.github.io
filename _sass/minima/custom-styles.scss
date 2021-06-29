@@ -1,89 +1,67 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
-
-@media screen and ( max-width: 600px ) {
-div.small { width: 60%; display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  margin-top: 40px;
+* {
+    box-sizing: border-box;
 }
+.column {
+  float: left;
 }
 
-@media screen and ( max-width: 600px ) {
-    div.laptop {
-    width:0;
+.left {
+    width: 70%;
+}
+
+.right {
+    float:right;
+    width: 25%;
+}
+
+
+.row:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+
+
+/* Clear floats after the columns */
+
+@media screen and (max-width: $on-large) {
+  .column {
+    width: 100%;
+  }
+}
+
+.three-col {
+    width: 33.33%;
+    padding: 10px;
+    float:left;
+    height: 40%;
+}
+
+@media screen and (max-width: $on-large) {
+    .three-col {
+        width: 50%;
+        height: 500px;
     }
 }
 
-@media screen and ( min-width: 600px ) {
-div.laptop {
-
-    float:right;
-    width: 35%;
-    margin-top:auto;
-    margin-left: 30px;
-    margin-right: auto;
-    margin-bottom:40px};
-}
-
-@media screen and ( min-width: 600px ) {
-div.small {
-    width: 0px;
-}
-}
-//old
-//@media screen and ( min-width: 480px ) {
-//img.responsive { width: 30%; float:left; margin-left:0px;margin-right: 40px; margin-bottom:30px;margin-top:0}
-//}
-
-.definition {
-  border: 1px solid currentColor;
-  padding: 1%;
-}
-
-div.sidebar {
+@media screen and (max-width: $on-large) {
+  .column {
     width: 100%;
-    position:relative;
-}
+    padding: 0px;
 
-div.profile {
-    margin-left:auto;
-    margin-right: auto;
-    width:100%;
-}
-
-@media screen and (min-width: 250px) {
-div.profile {
-    margin-left:auto;
-    margin-right: auto;
-    width:250px;
-}
-}
-
-div.profchild {
-    position: relative
-}
-
-@media screen and ( min-width: 1350px ) {
-div.sidebar {
-    position:relative;
-    top: -200px;
-    left: 770px;
-    width:250px;
-}
-
-div.profile {
-    position:relative;
-    z-index: 0;
-    top: -60px;
-    left:-520px;
-    width:250px;
-}
-
-div.profchild {
-    position:absolute;
+  }
 
 }
+
+@media screen and (max-width: 800px) {
+  .three-col {
+    width: 100%;
+    padding:0px;
+    height: auto;
+  }
+
 }

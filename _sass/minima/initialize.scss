@@ -15,13 +15,13 @@ $spacing-unit:     30px !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    1150px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
 $on-medium:        $on-palm !default;
-$on-large:         $on-laptop !default;
+$on-large:         1150px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {

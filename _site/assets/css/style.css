@@ -182,9 +182,9 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .highlighter-rouge .highlight { background: #212121; }
 
 /** Wrapper */
-.wrapper { max-width: calc(800px - (30px)); margin-right: auto; margin-left: auto; padding-right: 15px; padding-left: 15px; }
+.wrapper { max-width: calc(1150px - (30px)); margin-right: auto; margin-left: auto; padding-right: 15px; padding-left: 15px; }
 
-@media screen and (min-width: 800px) { .wrapper { max-width: calc(800px - (30px * 2)); padding-right: 30px; padding-left: 30px; } }
+@media screen and (min-width: 1150px) { .wrapper { max-width: calc(1150px - (30px * 2)); padding-right: 30px; padding-left: 30px; } }
 
 /** Clearfix */
 .wrapper:after { content: ""; display: table; clear: both; }
@@ -255,7 +255,7 @@ table td { border: 1px solid #404040; }
 
 .footer-col-3 { width: calc(100% - (30px / 2)); }
 
-@media screen and (min-width: 800px) { .footer-col-1 { width: calc(35% - (30px / 2)); } .footer-col-2 { width: calc(20% - (30px / 2)); } .footer-col-3 { width: calc(45% - (30px / 2)); } }
+@media screen and (min-width: 1150px) { .footer-col-1 { width: calc(35% - (30px / 2)); } .footer-col-2 { width: calc(20% - (30px / 2)); } .footer-col-3 { width: calc(45% - (30px / 2)); } }
 
 @media screen and (min-width: 600px) { .footer-col-wrapper { display: flex; } .footer-col { width: calc(100% - (30px / 2)); padding: 0 15px; } .footer-col:first-child { padding-right: 15px; padding-left: 0; } .footer-col:last-child { padding-right: 0; padding-left: 15px; } }
 
@@ -279,7 +279,7 @@ table td { border: 1px solid #404040; }
 
 .post-title, .post-content h1 { font-size: 2.625rem; letter-spacing: -1px; line-height: 1.15; }
 
-@media screen and (min-width: 800px) { .post-title, .post-content h1 { font-size: 2.625rem; } }
+@media screen and (min-width: 1150px) { .post-title, .post-content h1 { font-size: 2.625rem; } }
 
 .post-content { margin-bottom: 30px; }
 
@@ -289,11 +289,11 @@ table td { border: 1px solid #404040; }
 
 .post-content h2 { font-size: 1.75rem; }
 
-@media screen and (min-width: 800px) { .post-content h2 { font-size: 2rem; } }
+@media screen and (min-width: 1150px) { .post-content h2 { font-size: 2rem; } }
 
 .post-content h3 { font-size: 1.375rem; }
 
-@media screen and (min-width: 800px) { .post-content h3 { font-size: 1.625rem; } }
+@media screen and (min-width: 1150px) { .post-content h3 { font-size: 1.625rem; } }
 
 .post-content h4 { font-size: 1.25rem; }
 
@@ -321,26 +321,27 @@ table td { border: 1px solid #404040; }
 .pagination li div.pager-edge { color: #404040; border: 1px dashed; }
 
 /** Grid helpers */
-@media screen and (min-width: 800px) { .one-half { width: calc(50% - (30px / 2)); } }
+@media screen and (min-width: 1150px) { .one-half { width: calc(50% - (30px / 2)); } }
 
-@media screen and (max-width: 600px) { div.small { width: 60%; display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px; margin-top: 40px; } }
+* { box-sizing: border-box; }
 
-@media screen and (max-width: 600px) { div.laptop { width: 0; } }
+.column { float: left; }
 
-@media screen and (min-width: 600px) { div.laptop { float: right; width: 35%; margin-top: auto; margin-left: 30px; margin-right: auto; margin-bottom: 40px; } }
+.left { width: 70%; }
 
-@media screen and (min-width: 600px) { div.small { width: 0px; } }
+.right { float: right; width: 25%; }
 
-.definition { border: 1px solid currentColor; padding: 1%; }
+.row:after { display: table; content: ""; clear: both; }
 
-div.sidebar { width: 100%; position: relative; }
+/* Clear floats after the columns */
+@media screen and (max-width: 1150px) { .column { width: 100%; } }
 
-div.profile { margin-left: auto; margin-right: auto; width: 100%; }
+.three-col { width: 33.33%; padding: 10px; float: left; height: 40%; }
 
-@media screen and (min-width: 250px) { div.profile { margin-left: auto; margin-right: auto; width: 250px; } }
+@media screen and (max-width: 1150px) { .three-col { width: 50%; height: 500px; } }
 
-div.profchild { position: relative; }
+@media screen and (max-width: 1150px) { .column { width: 100%; padding: 0px; } }
 
-@media screen and (min-width: 1350px) { div.sidebar { position: relative; top: -200px; left: 770px; width: 250px; } div.profile { position: relative; top: -60px; left: -520px; width: 250px; } div.profchild { position: absolute; } }
+@media screen and (max-width: 800px) { .three-col { width: 100%; padding: 0px; height: auto; } }
 
 /*# sourceMappingURL=style.css.map */
