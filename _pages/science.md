@@ -15,7 +15,7 @@ I am interested in the theoretical physics of materials, called *Condensed Matte
   {% for doc in projects %}
       <a href="{{ doc.url }}"><h3>{{ doc.title }}</h3></a>
       {{ doc.excerpt }}
-      <p style="font-size:14px;text-align:center;position:relative;top:0em;"><a href="{{ doc.url }}"> <i>(read more)</i></a></p>
+      <p style="font-size:14px;text-align:center;position:relative;top:0em;"><a href="{{ doc.url }}"><i>(read more)</i></a></p>
   {% endfor %}
 
 </div>
