@@ -17,13 +17,22 @@
     width: 25%;
 }
 
+.left2 {
+    width: 25%;
+}
+
+.right2 {
+    float:right;
+    width: 70%;
+}
+
+
 
 .row:after {
   display: table;
   content: "";
   clear: both;
 }
-
 
 
 /* Clear floats after the columns */
@@ -33,6 +42,8 @@
     width: 100%;
   }
 }
+
+
 
 .three-col {
     width: 33.33%;
@@ -46,6 +57,9 @@
         width: 50%;
         height: 500px;
     }
+
+
+
 }
 
 @media screen and (max-width: $on-large) {
@@ -53,9 +67,13 @@
     width: 100%;
     padding: 0px;
 
-  }
+}
+
 
 }
+
+
+
 
 @media screen and (max-width: 800px) {
   .three-col {
@@ -63,5 +81,40 @@
     padding:0px;
     height: auto;
   }
+
+  .2-col {
+      width:100%;
+      padding: 0;
+  }
+
+
+}
+
+@media screen and (min-width: 800px) {
+    .narrow {
+        width:800px;
+        margin:auto;
+    }
+
+
+
+
+}
+
+.test {
+    margin-top: 2 * $spacing-unit;
+}
+
+.two-col {
+    width: 50%;
+    padding: 10px;
+    float: left;
+}
+
+@media screen and (max-width: $on-large) {
+.two-col {
+    padding:0px;
+    width:100%;
+}
 
 }

@@ -331,6 +331,10 @@ table td { border: 1px solid #404040; }
 
 .right { float: right; width: 25%; }
 
+.left2 { width: 25%; }
+
+.right2 { float: right; width: 70%; }
+
 .row:after { display: table; content: ""; clear: both; }
 
 /* Clear floats after the columns */
@@ -342,6 +346,14 @@ table td { border: 1px solid #404040; }
 
 @media screen and (max-width: 1150px) { .column { width: 100%; padding: 0px; } }
 
-@media screen and (max-width: 800px) { .three-col { width: 100%; padding: 0px; height: auto; } }
+@media screen and (max-width: 800px) { .three-col { width: 100%; padding: 0px; height: auto; } .2-col { width: 100%; padding: 0; } }
+
+@media screen and (min-width: 800px) { .narrow { width: 800px; margin: auto; } }
+
+.test { margin-top: 60px; }
+
+.two-col { width: 50%; padding: 10px; float: left; }
+
+@media screen and (max-width: 1150px) { .two-col { padding: 0px; width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
