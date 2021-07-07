@@ -8,7 +8,7 @@ splash: <b>Test!!</b>
 
 Supervised by Prof. Graham Gagnon and Prof. Amina Stoddart at Dalhousie University, I collaborated with graduate students, postdoctoral fellows, and undergraduate researchers to produce several science communication outreach videos.
 <center>
-<div style = "width:80%">
+<div class = "figure>
 <div style="margin-top:1em;margin-bottom:1em">
   <div style="position:relative;padding-top:28.125%;">
     <iframe src="https://www.youtube.com/embed/ZA3DVoAm0fw" frameborder="0" allowfullscreen
