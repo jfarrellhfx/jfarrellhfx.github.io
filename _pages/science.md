@@ -9,7 +9,6 @@ layout: page
 
 I am interested in the theoretical physics of materials, called *Condensed Matter Physics*.  You can read about my recent research projects, in this area and others, below.
 
-<div class = "narrow">
 
   {% assign projects = (site.research_projects | sort: "order") %}
   {% for doc in projects %}
@@ -17,5 +16,3 @@ I am interested in the theoretical physics of materials, called *Condensed Matte
       {{ doc.excerpt }}
       <p style="font-size:14px;text-align:center;position:relative;top:0em;"><a href="{{ doc.url }}"><i>(read more)</i></a></p>
   {% endfor %}
-
-</div>

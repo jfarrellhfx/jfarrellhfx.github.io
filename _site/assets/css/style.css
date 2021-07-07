@@ -346,7 +346,7 @@ table td { border: 1px solid #404040; }
 
 @media screen and (max-width: 1150px) { .column { width: 100%; padding: 0px; } }
 
-@media screen and (max-width: 800px) { .three-col { width: 100%; padding: 0px; height: auto; } .2-col { width: 100%; padding: 0; } }
+@media screen and (max-width: 800px) { .three-col { width: 100%; padding: 0px; height: auto; } }
 
 @media screen and (min-width: 800px) { .narrow { width: 800px; margin: auto; } }
 
