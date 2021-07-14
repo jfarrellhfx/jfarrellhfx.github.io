@@ -14,7 +14,7 @@ I used a finite-volume method to simulate a viscous electron gas moving in one d
 
 
 <div style="margin-top:10px;margin-bottom:10px" >
-<video width = "100%" muted autoplay loop src="/research_projects/test.mp4">
+<video width = "100%" muted autoplay loop src="/research_projects/out.webm">
 </video>
 </div>
 
