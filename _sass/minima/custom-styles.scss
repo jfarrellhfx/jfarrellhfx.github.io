@@ -117,13 +117,13 @@
 }
 
 .figure {
-    width:80%;
+    width:100%;
     margin-top:10px
     margin-bottom:10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
     .figure {
-        width:100%;
+        width:80%;
     }
 }
