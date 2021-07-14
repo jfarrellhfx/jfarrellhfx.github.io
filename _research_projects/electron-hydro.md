@@ -13,8 +13,8 @@ In usual circumstances, collections of electrons moving in a solid do not experi
 I used a finite-volume method to simulate a viscous electron gas moving in one dimension in a field effect transistor.  With certain boundary conditions, this setup experiences an instability: small perturbations to the steady state grow and oscillate at a certain frequency.  Depending on the length of the channe, this frequency can reach the range of TeraHertz, a region of the electromagnetic spectrum for which no good sources or detectors currently exist.
 
 <center>
-<div class = "figure">
-<video width = "100%" muted loop src="/research_projects/basic_animation.mp4">
+<div class = "fig">
+<video width = "100%" muted controls loop src="/research_projects/basic_animation.mp4">
 </video>
 </div>
 </center>
