@@ -40,6 +40,7 @@ include:
 header_pages:
   -  index.md
   - _pages/science.md
+  - _pages/publications.md
   - _pages/film.md
   - _pages/blog.md
   - _pages/etc.md

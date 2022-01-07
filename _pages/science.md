@@ -1,14 +1,8 @@
 ---
-title: Science
-permalink: /science/
+title: Research
+permalink: /research/
 layout: page
 ---
-
-
-## Past Research Projects
-
-I am interested in the theoretical physics of materials, called *Condensed Matter Physics*.  You can read about my recent research projects, in this area and others, below.
-
 <div>
   {% assign projects = (site.research_projects | sort: "order") %}
   {% for doc in projects %}

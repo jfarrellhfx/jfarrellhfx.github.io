@@ -6,7 +6,7 @@ layout: page
 
 In addition to research, I am also an independent/freelance film-maker.  All of my publically-available projects are included below.
 
-<h2 id = "nonfiction">Nonfiction</h2>
+<h2>Nonfiction</h2>
 <div>
   {% for doc in site.films %}
     {% if doc.genre == "nonfiction" %}
@@ -16,7 +16,7 @@ In addition to research, I am also an independent/freelance film-maker.  All of 
   {% endfor %}
 </div>
 
-<h2 id = "fiction">Fiction</h2>
+<h2>Fiction</h2>
 <div>
   {% for doc in site.films %}
     {% if doc.genre == "fiction" %}
