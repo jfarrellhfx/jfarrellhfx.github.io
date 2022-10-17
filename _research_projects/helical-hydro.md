@@ -17,6 +17,6 @@ The figure is a cartoon illustrating helical symmetry.
 
 <div style="margin-top:10px;margin-bottom:10px">
 <center>
-<img src = "/assets/img/helix_dark.png" style="min-width:300px;width:50%;margin-bottom:20px">
+<img src = "/assets/img/helix_dark.png" style="min-width:350px;width:50%;margin-bottom:20px">
 </center>
 </div>

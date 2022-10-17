@@ -13,7 +13,7 @@
 
   
 
-  <meta name="description" content="{% assign projects = (site.research_projects | sort: &quot;order&quot;) %}
+  <meta name="description" content="{% assign projects = (site.research_projects | sort: 'date' | reverse)  %}
   {% for doc in projects %}
       {{ doc.title }}
       {{ doc.excerpt }}
@@ -78,7 +78,7 @@
   
   <meta property="og:site_name" content="Jack Farrell">
   <meta property="og:title" content="Research Projects">
-  <meta property="og:description" content="{% assign projects = (site.research_projects | sort: &quot;order&quot;) %}
+  <meta property="og:description" content="{% assign projects = (site.research_projects | sort: 'date' | reverse)  %}
   {% for doc in projects %}
       {{ doc.title }}
       {{ doc.excerpt }}
@@ -89,8 +89,8 @@
 
   
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://jackfarrell.ca/research/">
-  <link rel="canonical" href="https://jackfarrell.ca/research/">
+  <meta property="og:url" content="http://localhost:4000/research/">
+  <link rel="canonical" href="http://localhost:4000/research/">
   
 
   
@@ -100,7 +100,7 @@
   <meta name="twitter:creator" content="@">
 
   <meta property="twitter:title" content="Research Projects">
-  <meta property="twitter:description" content="{% assign projects = (site.research_projects | sort: &quot;order&quot;) %}
+  <meta property="twitter:description" content="{% assign projects = (site.research_projects | sort: 'date' | reverse)  %}
   {% for doc in projects %}
       {{ doc.title }}
       {{ doc.excerpt }}
@@ -179,7 +179,7 @@
   
 
 
-  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="https://jackfarrell.ca/">Jack Farrell</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-xl navbar-light fixed-top navbar-custom top-nav-regular"><a class="navbar-brand" href="http://localhost:4000/">Jack Farrell</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -266,7 +266,7 @@
 
 <div style="margin-top:10px;margin-bottom:10px">
 <center>
-<img src="/assets/img/helix_dark.png" style="min-width:400px;width:50%;margin-bottom:20px" />
+<img src="/assets/img/helix_dark.png" style="min-width:350px;width:50%;margin-bottom:20px" />
 </center>
 </div>
 
@@ -284,7 +284,7 @@
 
 <div style="margin-top:10px;margin-bottom:10px">
 <center>
-<img src="/assets/img/oscillation.png" style="min-width:400px;width:50%" />
+<img src="/assets/img/oscillation.png" style="min-width:350px;width:50%" />
 </center>
 </div>
 

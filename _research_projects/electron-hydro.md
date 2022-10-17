@@ -17,7 +17,7 @@ The figure shows the instability's growth rate and frequency as functions of the
 
 <div style="margin-top:10px;margin-bottom:10px">
 <center>
-<img src = "/assets/img/oscillation.png" style="min-width:300px;width:50%">
+<img src = "/assets/img/oscillation.png" style="min-width:350px;width:50%">
 </center>
 </div>
 

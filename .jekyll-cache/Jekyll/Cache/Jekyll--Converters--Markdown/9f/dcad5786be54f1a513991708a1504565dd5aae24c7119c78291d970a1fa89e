@@ -1,0 +1,45 @@
+I"Œ
+<hr color="#bbb" />
+
+<p><br /></p>
+<div>
+  
+  
+      <a href="/research_projects/electron-hydro"><h2>Dyakonov-Shur Instability in an Annulus</h2></a>
+      <ul>
+  <li><em>with</em> <em><a href="https://sites.google.com/view/thomasscaffidi/home">Prof. Thomas Scaffidi</a> &amp; <a href="https://sites.physics.utoronto.ca/nicolasgrisouard">Prof. Nicolas Grisouard</a></em></li>
+  <li><em>Supported by an NSERC Undergraduate Student Research Award</em></li>
+</ul>
+
+<p>In very clean samples, electrons can flow like a liquid.  For <a href="http://arxiv.org/abs/2112.07683" target="_blank"><em>Farrell, Grisouard, Scaffidi (2021)</em></a>, I used a finite-volume method to simulate a viscous electron gas flowing radially in a ring.  With certain boundary conditions, this setup experiences an instability: small perturbations to the steady state grow and oscillate at a certain frequency.  Depending on the length of the channel, this frequency can reach the range of TeraHertz, a region of the electromagnetic spectrum for which few good sources or detectors currently exist!</p>
+
+<p>The figure shows the instabilityâ€™s growth rate and frequency as functions of the bias current in the radial direction.</p>
+
+<div style="margin-top:10px;margin-bottom:10px">
+<center>
+<img src="/assets/img/oscillation.png" style="min-width:300px;width:50%" />
+</center>
+</div>
+
+
+      <div style="margin-bottom:10em"></div>
+  
+      <a href="/research_projects/helical-hydro"><h2>Helical Hydrodynamics</h2></a>
+      <ul>
+  <li><em>with Xiaoyang Huang and <a href="https://alucasphys.com">Prof. Andy Lucas</a></em></li>
+</ul>
+
+<p>Normal fluids like water and air are described by the famous <em>Navier-Stokes Equations</em>, which apply to any system that respects Galileo symmetry.  However, when the symmetry group is more exotic, novel terms may modify the NS equations and lead to interesting behaviour.  For <a href="https://arxiv.org/abs/2208.12269" target="_blank"><em>Farrell, Huang, Lucas (2022)</em></a>, we investigated a fluid with the symmetry of a <em>helix</em>: only the combination $\ P_z + L_z/\xi\ $  is a conserved quantity, not  $\ P_z$   or  $\ L_z \ $ separately.  Interestingly, the transport coefficients of the helical theory are partially <em>fixed</em> by symmetry alone, and the fluid also features transverse responses, for example supplying a torque in the presence of a uniform electric field!</p>
+
+<p>The figure is a cartoon illustrating helical symmetry.</p>
+
+<div style="margin-top:10px;margin-bottom:10px">
+<center>
+<img src="/assets/img/helix_dark.png" style="min-width:300px;width:50%;margin-bottom:20px" />
+</center>
+</div>
+
+      <div style="margin-bottom:10em"></div>
+  
+</div>
+:ET
