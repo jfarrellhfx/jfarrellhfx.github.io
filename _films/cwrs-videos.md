@@ -3,15 +3,12 @@ title: "Science Communication Videos at Dalhousie"
 layout: post
 genre: nonfiction
 excerpt_separator: <!--more-->
+order: 1
 ---
 
 Supervised by Prof. Graham Gagnon and Prof. Amina Stoddart at Dalhousie University, I collaborated with graduate students, postdoctoral fellows, and undergraduate researchers to produce several science communication outreach videos.
 
 <center>
-<<<<<<< HEAD
-
-=======
->>>>>>> 880802564bf9d9675488e59b6a52958e2500b26c
 <div style="margin-top:1em;margin-bottom:1em">
   <div style="position:relative;padding-top:28.125%;">
     <iframe src="https://www.youtube.com/embed/ZA3DVoAm0fw" frameborder="0" allowfullscreen

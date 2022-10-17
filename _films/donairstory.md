@@ -3,6 +3,7 @@ title: "A Donair Story"
 layout: page
 genre: fiction
 excerpt_separator: <!--more-->
+order: 5
 ---
 - *Starring Tom Fraser, Ryan Akler-Bishop, and Rachel Leggett*
 - *Directed by Jack Farrell*

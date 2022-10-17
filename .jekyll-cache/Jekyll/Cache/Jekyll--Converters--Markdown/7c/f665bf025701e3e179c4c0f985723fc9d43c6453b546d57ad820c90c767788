@@ -1,9 +1,0 @@
-I"J<p>To be able to type $\LaTeX$ equations in websites, you need to add a few lines of <code class="language-plaintext highlighter-rouge">html</code> to the heading of your page.  I use the configuration given below.</p>
-
-<p>First, tell your webpage where to find <code class="language-plaintext highlighter-rouge">MathJax</code>:</p>
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">id=</span><span class="s">"MathJax-script"</span> <span class="na">async</span>
-  <span class="na">src=</span><span class="s">"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/script&gt;</span>
-</code></pre></div></div>
-
-:ET
