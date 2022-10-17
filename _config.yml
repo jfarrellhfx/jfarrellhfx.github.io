@@ -75,7 +75,6 @@ collections:
     output: true
   research_projects:
       output: true
-      sort_by: order
   films:
       output: true
       sort_by: order
