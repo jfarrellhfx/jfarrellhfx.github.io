@@ -19,7 +19,7 @@ full-width: true
 # Published
 <div style = "margin-bottom:1.5em"></div>
 
-- **Jack H. Farrell**, Nicolas Grisouard, and Thomas Scaffidi. *"Terahertz Radiation from the Dyakonov-Shur Instability of Hydrodynamic Electrons in a Corbino Geometry,"* <a href = "https://doi.org/10.1103/PhysRevB.106.195432" target = "_blank">Phys. Rev. B **106**, 195432 (2022)</a>. 
+- **Jack H. Farrell**, Nicolas Grisouard, and Thomas Scaffidi. <i>"Terahertz Radiation from the Dyakonov-Shur Instability of Hydrodynamic Electrons in a Corbino Geometry,"</i> <a href = "https://doi.org/10.1103/PhysRevB.106.195432" target = "_blank">Phys. Rev. B **106**, 195432 (2022)</a>. 
 <br>
 
 
