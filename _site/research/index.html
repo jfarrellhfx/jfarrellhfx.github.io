@@ -13,7 +13,7 @@
 
   
 
-  <meta name="description" content="{% assign projects = (site.research_projects | sort: 'date' | reverse)  %}
+  <meta name="description" content="{% assign projects = (site.research_projects | sort: &apos;date&apos; | reverse)  %}
   {% for doc in projects %}
       {{ doc.title }}
       {{ doc.excerpt }}
@@ -78,7 +78,7 @@
   
   <meta property="og:site_name" content="Jack Farrell">
   <meta property="og:title" content="Research Projects">
-  <meta property="og:description" content="{% assign projects = (site.research_projects | sort: 'date' | reverse)  %}
+  <meta property="og:description" content="{% assign projects = (site.research_projects | sort: &apos;date&apos; | reverse)  %}
   {% for doc in projects %}
       {{ doc.title }}
       {{ doc.excerpt }}
@@ -100,7 +100,7 @@
   <meta name="twitter:creator" content="@">
 
   <meta property="twitter:title" content="Research Projects">
-  <meta property="twitter:description" content="{% assign projects = (site.research_projects | sort: 'date' | reverse)  %}
+  <meta property="twitter:description" content="{% assign projects = (site.research_projects | sort: &apos;date&apos; | reverse)  %}
   {% for doc in projects %}
       {{ doc.title }}
       {{ doc.excerpt }}
@@ -278,7 +278,7 @@
   <li><em>Supported by an NSERC Undergraduate Student Research Award</em></li>
 </ul>
 
-<p>In very clean samples, electrons can flow like a liquid.  For <a href="http://arxiv.org/abs/2112.07683" target="_blank"><em>Farrell, Grisouard, Scaffidi (2021)</em></a>, I used a finite-volume method to simulate a viscous electron gas flowing radially in a ring.  With certain boundary conditions, this setup experiences an instability: small perturbations to the steady state grow and oscillate at a certain frequency.  Depending on the length of the channel, this frequency can reach the range of TeraHertz, a region of the electromagnetic spectrum for which few good sources or detectors currently exist!</p>
+<p>In very clean samples, electrons can flow like a liquid.  For <a href="https://doi.org/10.1103/PhysRevB.106.195432" target="_blank"><em>Farrell, Grisouard, Scaffidi (2021)</em></a>, I used a finite-volume method to simulate a viscous electron gas flowing radially in a ring.  With certain boundary conditions, this setup experiences an instability: small perturbations to the steady state grow and oscillate at a certain frequency.  Depending on the length of the channel, this frequency can reach the range of TeraHertz, a region of the electromagnetic spectrum for which few good sources or detectors currently exist!</p>
 
 <p>The figure shows the instability’s growth rate and frequency as functions of the bias current in the radial direction.</p>
 

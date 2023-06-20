@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/films/cwrs-videos</loc>
-<lastmod>2022-11-30T11:08:41-07:00</lastmod>
+<lastmod>2023-05-03T15:57:06-06:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/films/indefensible</loc>
-<lastmod>2022-11-30T11:08:41-07:00</lastmod>
+<lastmod>2023-05-03T15:57:06-06:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/films/donairstory</loc>
-<lastmod>2022-11-30T11:08:41-07:00</lastmod>
+<lastmod>2023-05-03T15:57:06-06:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/graphic_novel_project</loc>
@@ -56,6 +56,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/assets/CV.pdf</loc>
-<lastmod>2022-10-16T23:26:55-06:00</lastmod>
+<lastmod>2023-05-03T15:38:38-06:00</lastmod>
 </url>
 </urlset>
