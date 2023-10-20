@@ -13,7 +13,7 @@ full-width: true
 # Preprints
 <div style = "margin-bottom:1.5em"></div>
 
-- **Jack H. Farrell**, Xiaoyang Huang, and Andrew Lucas. *"Hydrodynamics with Helical Symmetry,"* (2022),  arXiv: <a href = "https://arxiv.org/abs/2208.12269" target = "_blank">2208.12269</a>
+- **Jack H. Farrell**, Xiaoyang Huang, and Andrew Lucas. *"Hydrodynamics with Helical Symmetry,"* (2022),  arXiv: <a href = "https://arxiv.org/abs/2310.12233" target = "_blank">2310.12233</a>
 <div style = "margin-bottom:3em"></div>
 
 # Published
