@@ -14,7 +14,6 @@ full-width: true
 <div style = "margin-bottom:1.5em"></div>
 
 - **Jack H. Farrell**, Xiaoyang Huang, Aaron J. Friedman, Isabella Zane, Paolo Glorioso, and Andrew Lucas. *"Generalized time-reversal symmetry and effective theories for nonequilibrium matter,"* (2023),  arXiv: <a href = "https://arxiv.org/abs/2310.12233" target = "_blank">2310.12233</a>
-<div style = "margin-bottom:3em"></div>
 
 - **Jack H. Farrell**, Xiaoyang Huang, and Andrew Lucas. *"Hydrodynamics with Helical Symmetry,"* (2022),  arXiv: <a href = "https://arxiv.org/abs/2208.12269" target = "_blank">2208.12269</a>
 <div style = "margin-bottom:3em"></div>
