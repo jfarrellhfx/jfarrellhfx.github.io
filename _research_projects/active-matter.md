@@ -16,6 +16,6 @@ The figure shows how stationary thermal phases of matter and dynamic "active" ph
 
 <div style="margin-top:10px;margin-bottom:10px">
 <center>
-<img src = "/assets/img/flowchart-black.png" style="min-width:350px;width:75%;margin-bottom:20px">
+<img src = "/assets/img/flowchart-black.png" style="min-width:350px;width:100%;margin-bottom:20px">
 </center>
 </div>
